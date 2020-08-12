@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Page Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReinForest</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="content/css/site.css" />
 </head>
+
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+            <a class="navbar-brand">
+                <img src="content/image/logo_trans.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                ReinForest
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarReinforest" aria-controls="navbarReinforest" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarReinforest">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            職業心得
+                        </a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <vc:class-guide-list></vc:class-guide-list>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light">雜談</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light">實用連結</a>
+                    </li>
+                </ul>
+                <a href="~/Home/Login" class="btn btn-outline-success my-2 my-sm-0" type="">登入</a>
+            </div>
+        </nav>
 
+    </header>
+
+    <div>
+        <iframe></iframe>
+    </div>
+    <footer class="border-top footer text-muted bg-dark">
+        <div class="container text-light">
+            &copy; 2020 - ReinForest - <a class="text-light">Privacy</a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b0f0e4c86c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@widgetbot/crate@@3" async defer>
+        const button = new Crate({
+            server: '689104053690433546',
+            channel: '689104054164783247',
+            shard: 'https://e.widgetbot.io',
+            color: 'rgba(52, 58, 64, 0.8)',
+            glyph: ['@Url.Content("~/images/logo_trans.png")', '53.5px'],
+        })
+        button.notify('有問題歡迎討論!')
+    </script>
+    <script src="~/js/site.js"></script>
 </body>
+
 </html>
