@@ -9,6 +9,7 @@ var site = {
     navLinkClick:function(e){
         event.preventDefault();
         var url = $(e.target).attr("href");
+        /*
         $.getJSON( "guide/warlock/warlock_wind_ghost.json", function( data ) {
             var items = [];
             $.each( data, function( key, val ) {
@@ -20,6 +21,7 @@ var site = {
               html: items.join( "" )
             }).appendTo( "body" );
           });
-        //$("#main-content").load("/guide/warlock/guide_wwg.html");       
+          */
+        $("#main-content").load("/guide/warlock/guide_wwg.html");       
     }
 }
