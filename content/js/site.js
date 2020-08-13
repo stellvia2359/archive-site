@@ -1,27 +1,46 @@
 $(function () {
     site.initialize();
+    utility.hideLoadingMask();
 });
-
+var versionNumber = "20200814"
 var site = {
     initialize: function () {
-        $("#sidebarMenu .my-site-link").click(site.navLinkClick);
+        $(".my-site-link").click(site.navLinkClick);
+        site.loadHome();
     },
-    navLinkClick:function(e){
+    navLinkClick: function (e) {
+        utility.showLoadingMask();
         event.preventDefault();
-        var url = $(e.target).attr("href");
-        /*
-        $.getJSON( "guide/warlock/warlock_wind_ghost.json", function( data ) {
-            var items = [];
-            $.each( data, function( key, val ) {
-              items.push( "<li id='" + key + "'>" + val + "</li>" );
-            });
-           
-            $( "<ul/>", {
-              "class": "my-new-list",
-              html: items.join( "" )
-            }).appendTo( "body" );
-          });
-          */
-        $("#main-content").load("guide/warlock/guide_wwg.html");       
+        var target = $(e.target);
+        var url = $(target).data("url")+"?v=" + versionNumber;
+        $.ajax({
+            url: url,
+            dataType: "html",
+            success: function (data) {
+                $("#main-content").html(data);
+                $(".nav-link").removeClass("active");
+                $(target).addClass("active");
+                utility.hideLoadingMask();
+            }
+        });
+    },
+    loadHome:function(){
+        $.ajax({
+            url: "home.html",
+            async: false,
+            dataType: "html",
+            success: function (data) {
+                $("#main-content").html(data);
+            }
+        });
     }
 }
+
+var utility = {
+    showLoadingMask: function () {
+        $(".lmask").show();
+    },
+    hideLoadingMask: function () {
+        $(".lmask").hide();
+    }
+};

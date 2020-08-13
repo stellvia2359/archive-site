@@ -1,112 +1,176 @@
-
 body {
     font-size: .875rem;
-    font-family: 'Rajdhani','Noto Sans TC', sans-serif;
-  }
-  
-  .feather {
+    font-family: 'Rajdhani', 'Noto Sans TC', sans-serif;
+}
+
+.feather {
     width: 16px;
     height: 16px;
     vertical-align: text-bottom;
-  }
-  
-  /*
+}
+
+/*
    * Sidebar
    */
-  
-  .sidebar {
+
+.sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    z-index: 100; /* Behind the navbar */
-    padding: 48px 0 0; /* Height of navbar */
+    z-index: 100;
+    /* Behind the navbar */
+    padding: 48px 0 0;
+    /* Height of navbar */
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
-  }
-  
-  @media (max-width: 767.98px) {
+}
+
+@media (max-width: 767.98px) {
     .sidebar {
-      top: 5rem;
+        top: 5rem;
     }
-  }
-  
-  .sidebar-sticky {
+}
+
+.sidebar-sticky {
     position: relative;
     top: 0;
     height: calc(100vh - 48px);
     padding-top: .5rem;
     overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  }
-  
-  @supports ((position: -webkit-sticky) or (position: sticky)) {
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
     .sidebar-sticky {
-      position: -webkit-sticky;
-      position: sticky;
+        position: -webkit-sticky;
+        position: sticky;
     }
-  }
-  
-  .sidebar .nav-link {
+}
+
+.sidebar .nav-link {
     font-weight: 500;
     color: #333;
-  }
-  
-  .sidebar .nav-link .feather {
+}
+
+.sidebar .nav-link .feather {
     margin-right: 4px;
     color: #999;
-  }
-  
-  .sidebar .nav-link.active {
+}
+
+.sidebar .nav-link.active {
     color: #007bff;
-  }
-  
-  .sidebar .nav-link:hover .feather,
-  .sidebar .nav-link.active .feather {
+}
+
+.sidebar .nav-link:hover .feather, .sidebar .nav-link.active .feather {
     color: inherit;
-  }
-  
-  .sidebar-heading {
+}
+
+.sidebar-heading {
     font-size: .75rem;
     text-transform: uppercase;
-  }
-  
-  /*
+}
+
+/*
    * Navbar
    */
-  
-  .navbar-brand {
+
+.navbar-brand {
     padding-top: .75rem;
     padding-bottom: .75rem;
     font-size: 1rem;
     background-color: rgba(0, 0, 0, .25);
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
-  }
-  
-  .navbar .navbar-toggler {
+}
+
+.navbar .navbar-toggler {
     top: .25rem;
     right: 1rem;
-  }
-  
-  .navbar .form-control {
+}
+
+.navbar .form-control {
     padding: .75rem 1rem;
     border-width: 0;
     border-radius: 0;
-  }
-  
-  .form-control-dark {
+}
+
+.form-control-dark {
     color: #fff;
     background-color: rgba(255, 255, 255, .1);
     border-color: rgba(255, 255, 255, .1);
-  }
-  
-  .form-control-dark:focus {
+}
+
+.form-control-dark:focus {
     border-color: transparent;
     box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
-  }
+}
 
-  #main-content{
-      border: none;
-  }
-  #site-name{
-      font-size: 1.3rem;
-  }
+#main-content {
+    border: none;
+}
+
+#site-name {
+    font-size: 1.3rem;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: lightgrey !important;
+}
+
+#welcome {
+    background-image: url('../image/general/m4.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid;
+    color: white;
+    background-position: 0% 70%;
+    height: 25rem;
+}
+
+.lmask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    opacity: 0.8;
+}
+
+.img-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin-left: -2.5rem;
+    margin-top: -2.5rem;
+}
+
+.skill {
+    background-color: rgba(224, 237, 245, 0.753);
+    padding: 1rem;
+    width: 80%;
+    margin: 10px 0;
+    border-collapse: separate;
+}
+
+.skill>thead>tr:nth-child(1)>td:nth-child(1) {
+    width: 24px;
+}
+
+.skill>tbody>tr:nth-child(2) {
+    color: red;
+}
+
+.loot {
+    color: red;
+}
+#main-navbar{
+    background-color: rgba(52, 58, 64, 0.95) !important;
+}

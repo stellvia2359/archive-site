@@ -29,10 +29,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
-            <img src="content/image/logo_trans.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-            <span id="site-name">Rein Forest</span> 
+    <nav id="main-navbar" class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3 my-site-link" href="javascript:void(0);" data-url="home.html">
+            <img src="content/image/general/logo_trans.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy" data-url="home.html">
+            <span id="site-name" data-url="home.html">Rein Forest</span>
         </a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,58 +43,53 @@
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                 <div class="sidebar-sticky pt-3">
                     <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link my-site-link active" href="#">
-                                <span data-feather="home"></span>
-                                首頁
-                            </a>
-                        </li>
                         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                             <span>攻略 GUIDE</span>
                         </h6>
                         <li class="nav-item">
-                            <a class="nav-link my-site-link" href="#" data-json="warlock_wind_ghost.json">
+                            <a class="nav-link my-site-link" href="javascript:void(0);" data-url="guide/warlock/guide_wwg.html">
                                 <span data-feather="file"></span>
                                 風念型咒術士
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link my-site-link" href="#">
+                            <a class="nav-link my-site-link disabled" href="javascript:void(0);">
                                 <span data-feather="shopping-cart"></span>
                                 鑽石型妖術師
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link my-site-link" href="#">
+                            <a class="nav-link my-site-link disabled" href="#">
                                 <span data-feather="users"></span>
                                 大地型妖術師
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link my-site-link" href="#">
+                            <a class="nav-link my-site-link disabled" href="#">
                                 <span data-feather="bar-chart-2"></span>
                                 火系咒術士
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link my-site-link" href="#">
+                            <a class="nav-link my-site-link disabled" href="#">
                                 <span data-feather="layers"></span>
                                 謳歌大主教
                             </a>
                         </li>
                     </ul>
-
+                    <hr>
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                         <span>雜談 MISC</span>
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link my-site-link" href="#">
+                            <a class="nav-link my-site-link disabled" href="#">
                                 <span data-feather="file-text"></span>
                                 挑戰古城紀錄
                             </a>
-                        </li>        
+                        </li>
                     </ul>
+                    <hr>
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                         <span>連結 LINK</span>
                     </h6>
@@ -134,22 +129,27 @@
             </main>
         </div>
     </div>
-
+    <div class="lmask">
+        <div class="spinner-border img-loading" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b0f0e4c86c.js" crossorigin="anonymous"></script>
     <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
         const button = new Crate({
             server: '689104053690433546',
             channel: '689104054164783247',
             shard: 'https://e.widgetbot.io',
             color: 'rgba(52, 58, 64, 0.8)',
-            glyph: ['content/image/logo_trans.png', '53.5px'],
+            glyph: ['content/image/general/logo_trans.png', '53.5px'],
         })
         button.notify('有問題歡迎討論!')
     </script>
-    <script src="content/js/site.js"></script>
+    <script src="content/js/site.js?v=20200814"></script>
 </body>
 
 </html>
