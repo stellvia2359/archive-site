@@ -4,7 +4,7 @@ $(function () {
 
 var site = {
     initialize: function () {
-        $("#sidebarMenu .nav-link").click(site.navLinkClick);
+        $("#sidebarMenu .my-site-link").click(site.navLinkClick);
     },
     navLinkClick:function(e){
         event.preventDefault();
@@ -22,6 +22,6 @@ var site = {
             }).appendTo( "body" );
           });
           */
-        $("#main-content").load("/guide/warlock/guide_wwg.html");       
+        $("#main-content").load("guide/warlock/guide_wwg.html");       
     }
 }

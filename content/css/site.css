@@ -1,5 +1,7 @@
+
 body {
     font-size: .875rem;
+    font-family: 'Rajdhani','Noto Sans TC', sans-serif;
   }
   
   .feather {
@@ -104,4 +106,7 @@ body {
 
   #main-content{
       border: none;
+  }
+  #site-name{
+      font-size: 1.3rem;
   }

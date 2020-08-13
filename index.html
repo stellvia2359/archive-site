@@ -5,107 +5,122 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ReinForest</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="content/css/site.css" />
+
     <style>
         .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
-  
+
         @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
         }
-      </style>
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Company name</a>
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
+            <img src="content/image/logo_trans.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            <span id="site-name">Rein Forest</span> 
+        </a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
-
     <div class="container-fluid">
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                 <div class="sidebar-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
+                            <a class="nav-link my-site-link active" href="#">
                                 <span data-feather="home"></span>
                                 首頁
                             </a>
                         </li>
                         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                            <span>攻略</span>
+                            <span>攻略 GUIDE</span>
                         </h6>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-json="warlock_wind_ghost.json">
+                            <a class="nav-link my-site-link" href="#" data-json="warlock_wind_ghost.json">
                                 <span data-feather="file"></span>
-                                風念咒術
+                                風念型咒術士
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link my-site-link" href="#">
                                 <span data-feather="shopping-cart"></span>
-                                Products
+                                鑽石型妖術師
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link my-site-link" href="#">
                                 <span data-feather="users"></span>
-                                Customers
+                                大地型妖術師
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link my-site-link" href="#">
                                 <span data-feather="bar-chart-2"></span>
-                                Reports
+                                火系咒術士
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link my-site-link" href="#">
                                 <span data-feather="layers"></span>
-                                Integrations
+                                謳歌大主教
                             </a>
                         </li>
                     </ul>
 
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Saved reports</span>
+                        <span>雜談 MISC</span>
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link my-site-link" href="#">
                                 <span data-feather="file-text"></span>
-                                Current month
+                                挑戰古城紀錄
+                            </a>
+                        </li>        
+                    </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>連結 LINK</span>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ro.gnjoy.com.tw" target="_blank">
+                                <span data-feather="file-text"></span>
+                                RO 官方網站
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="https://landgris.github.io/ROCalculator/" target="_blank">
                                 <span data-feather="file-text"></span>
-                                Last quarter
+                                RO Calculator (傷害計算)
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="https://rocalweb.github.io/" target="_blank">
                                 <span data-feather="file-text"></span>
-                                Social engagement
+                                Ragnarok Online Stats Calculator (攻速計算)
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1X1IfMegyWWwwJJiEBswzOKefmrVtrXeQA4297E1MamE/edit#gid=0" target="_blank">
                                 <span data-feather="file-text"></span>
-                                Year-end sale
+                                轉蛋&附魔資訊
                             </a>
                         </li>
                     </ul>
@@ -114,12 +129,12 @@
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
                 <div id="main-content" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    
+
                 </div>
             </main>
         </div>
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b0f0e4c86c.js" crossorigin="anonymous"></script>
