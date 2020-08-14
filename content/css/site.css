@@ -188,3 +188,6 @@ a.disabled {
 .popover{
     max-width: 100%; /* Max Width of the popover (depending on the container!) */
 }
+.card-img{
+    width: 78px;
+}
