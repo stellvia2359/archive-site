@@ -6,13 +6,14 @@ var versionNumber = "20200814"
 var site = {
     initialize: function () {
         $(".my-site-link").click(site.navLinkClick);
-        site.loadHome();
+        //site.loadHome();
     },
     navLinkClick: function (e) {
         utility.showLoadingMask();
         event.preventDefault();
+        $('[data-toggle="popover"]').popover('dispose')
         var target = $(e.target);
-        var url = $(target).data("url")+"?v=" + versionNumber;
+        var url = $(target).data("url") + "?v=" + versionNumber;
         $.ajax({
             url: url,
             dataType: "html",
@@ -20,11 +21,12 @@ var site = {
                 $("#main-content").html(data);
                 $(".nav-link").removeClass("active");
                 $(target).addClass("active");
+                utility.loadPopover();
                 utility.hideLoadingMask();
             }
         });
     },
-    loadHome:function(){
+    loadHome: function () {
         $.ajax({
             url: "home.html",
             async: false,
@@ -42,5 +44,17 @@ var utility = {
     },
     hideLoadingMask: function () {
         $(".lmask").hide();
+    },
+    loadPopover: function () {
+        $(".equipment-info-content").hide();
+        $(".equipment-info").data("content", $(".equipment-info").closest(".media").children(".equipment-info-content").html());
+        var equipmentInfo = $(".equipment-info")
+        for (var i = 0; i < equipmentInfo.length; i++) {
+            var title = $(equipmentInfo[i]).siblings(".equipment-name").text();
+            var content = $(equipmentInfo[i]).closest(".media").children(".equipment-info-content").html();
+            $(equipmentInfo[i]).attr("title",title);
+            $(equipmentInfo[i]).data("content", content);
+        }
+        $('[data-toggle="popover"]').popover({ html: true });
     }
 };
