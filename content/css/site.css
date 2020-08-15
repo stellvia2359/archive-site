@@ -1,3 +1,6 @@
+html,body {
+    height: 100%
+  }
 body {
     font-size: .875rem;
     font-family: 'Rajdhani', 'Noto Sans TC', sans-serif;
@@ -119,14 +122,12 @@ a.disabled {
     color: lightgrey !important;
 }
 
-#welcome {
-    background-image: url('../image/general/m4.gif');
+.welcome {
+    background-image: url('../image/general/home90p.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    border: solid;
-    color: white;
     background-position: 0% 70%;
-    height: 25rem;
+    /*margin: -0.8rem -1.3rem !important;*/
 }
 
 .lmask {
@@ -155,9 +156,20 @@ a.disabled {
 .skill {
     background-color: rgba(224, 237, 245, 0.753);
     padding: 1rem;
-    width: 80%;
     margin: 10px 0;
     border-collapse: separate;
+}
+
+@media (min-width: 1000px) {
+    .skill {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .skill {
+        width: 45rem;
+    }
 }
 
 .skill>thead>tr:nth-child(1)>td:nth-child(1) {
@@ -171,13 +183,16 @@ a.disabled {
 .loot {
     color: red;
 }
-#main-navbar{
+
+#main-navbar {
     background-color: rgba(52, 58, 64, 0.95) !important;
 }
-.equipment{
+
+.equipment {
     margin-bottom: 2rem !important;
 }
-.equipment-info{
+
+.equipment-info {
     width: 1.1rem;
     height: 1.1rem;
     padding: 0 !important;
@@ -185,9 +200,12 @@ a.disabled {
     font-size: 0.7rem;
     margin-left: 3px;
 }
-.popover{
-    max-width: 100%; /* Max Width of the popover (depending on the container!) */
+
+.popover {
+    max-width: 100%;
+    /* Max Width of the popover (depending on the container!) */
 }
-.card-img{
+
+.card-img {
     width: 78px;
 }

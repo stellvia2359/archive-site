@@ -6,11 +6,13 @@ var versionNumber = "20200814"
 var site = {
     initialize: function () {
         $(".my-site-link").click(site.navLinkClick);
-        //site.loadHome();
+        $(".home-link").click(site.loadHome);
+        site.loadHome();
     },
     navLinkClick: function (e) {
         utility.showLoadingMask();
         event.preventDefault();
+        $("body").removeClass("welcome");
         $('[data-toggle="popover"]').popover('dispose')
         var target = $(e.target);
         var url = $(target).data("url") + "?v=" + versionNumber;
@@ -27,6 +29,7 @@ var site = {
         });
     },
     loadHome: function () {
+        $("body").addClass("welcome");
         $.ajax({
             url: "home.html",
             async: false,
