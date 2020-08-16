@@ -210,17 +210,21 @@ main {
     background-image: url('../image/general/home.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 0%;
+    background-position: 0% 100%;
 }
 .home-title{
     font-size: 4rem;
     color:white;
     text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 .home-description{
     font-size: 1.5rem;
     color:white;
     text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 .content {
     padding-top: 4.5rem;
