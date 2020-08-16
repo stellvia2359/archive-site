@@ -2,7 +2,7 @@ $(function () {
     site.initialize();
     utility.hideLoadingMask();
 });
-var versionNumber = "20200814"
+var versionNumber = "20200816"
 var site = {
     initialize: function () {
         $(".my-site-link").click(site.navLinkClick);
@@ -29,8 +29,9 @@ var site = {
         });
     },
     loadHome: function () {
+        var url = "home.html?v=" + versionNumber;
         $.ajax({
-            url: "home.html",
+            url: url,
             async: false,
             dataType: "html",
             success: function (data) {
