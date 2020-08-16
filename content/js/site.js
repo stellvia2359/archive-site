@@ -29,12 +29,12 @@ var site = {
         });
     },
     loadHome: function () {
-        $("body").addClass("welcome");
         $.ajax({
             url: "home.html",
             async: false,
             dataType: "html",
             success: function (data) {
+                $(".nav-link").removeClass("active");
                 $("#main-content").html(data);
             }
         });

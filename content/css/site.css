@@ -1,6 +1,3 @@
-html,body {
-    height: 100%
-  }
 body {
     font-size: .875rem;
     font-family: 'Rajdhani', 'Noto Sans TC', sans-serif;
@@ -73,7 +70,9 @@ body {
     font-size: .75rem;
     text-transform: uppercase;
 }
-
+.sidebar .nav-link:hover {
+    color: #007bff;
+}
 /*
    * Navbar
    */
@@ -120,14 +119,6 @@ a.disabled {
     pointer-events: none;
     cursor: default;
     color: lightgrey !important;
-}
-
-.welcome {
-    background-image: url('../image/general/home90p.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% 70%;
-    /*margin: -0.8rem -1.3rem !important;*/
 }
 
 .lmask {
@@ -208,4 +199,32 @@ a.disabled {
 
 .card-img {
     width: 78px;
+}
+
+main {
+    padding: 0!important;
+}
+
+#home {
+    height: 100vh;
+    background-image: url('../image/general/home.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+}
+.home-title{
+    font-size: 4rem;
+    color:white;
+    text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
+}
+.home-description{
+    font-size: 1.5rem;
+    color:white;
+    text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
+}
+.content {
+    padding-top: 4.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
