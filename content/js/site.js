@@ -7,9 +7,11 @@ var site = {
     initialize: function () {
         $(".my-site-link").click(site.navLinkClick);
         $(".home-link").click(site.loadHome);
+        $(".external-link").click(utility.closeMenu);
         site.loadHome();
     },
     navLinkClick: function (e) {
+        utility.closeMenu();
         utility.showLoadingMask();
         event.preventDefault();
         $("body").removeClass("welcome");
@@ -19,10 +21,10 @@ var site = {
         $.ajax({
             url: url,
             dataType: "html",
-            success: function (data) {
+            success: function (data) {             
                 $("#main-content").html(data);
                 $(".nav-link").removeClass("active");
-                $(target).addClass("active");
+                $(target).addClass("active");               
                 utility.loadPopover();
                 utility.hideLoadingMask();
             }
@@ -60,5 +62,8 @@ var utility = {
             $(equipmentInfo[i]).data("content", content);
         }
         $('[data-toggle="popover"]').popover({ html: true });
+    },
+    closeMenu:function(){
+        $('.navbar-toggler').click();
     }
 };
