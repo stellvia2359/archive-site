@@ -210,8 +210,14 @@ main {
     background-image: url('../image/general/home.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 100%;
+    background-position: 0% 0%;
 }
+@media (max-width: 767.98px) {
+    #home {
+        background-position: 50% 0%;
+    }
+}
+
 .home-title{
     font-size: 4rem;
     color:white;
