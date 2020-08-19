@@ -1,4 +1,4 @@
-body {
+body,.tooltip {
     font-size: .875rem;
     font-family: 'Rajdhani', 'Noto Sans TC', sans-serif;
 }
@@ -269,4 +269,8 @@ main {
 }
 .z-6{
     z-index: 6;
+}
+
+.pet-img-blk{
+    width: 150px;
 }

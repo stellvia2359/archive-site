@@ -9,6 +9,7 @@ var site = {
         $(".home-link").click(site.loadHome);
         $(".external-link").click(utility.closeMenu);
         site.loadHome();
+        utility.loadTooltip();
     },
     navLinkClick: function (e) {
         utility.closeMenu();
@@ -26,6 +27,7 @@ var site = {
                 $(".nav-link").removeClass("active");
                 $(target).addClass("active");               
                 utility.loadPopover();
+                
                 utility.hideLoadingMask();
             }
         });
@@ -63,7 +65,10 @@ var utility = {
         }
         $('[data-toggle="popover"]').popover({ html: true });
     },
+    loadTooltip:function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    },
     closeMenu:function(){
-        $('.navbar-toggler').click();
+        $('#sidebarMenu').collapse("hide");
     }
 };
