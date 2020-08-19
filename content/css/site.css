@@ -70,9 +70,11 @@ body {
     font-size: .75rem;
     text-transform: uppercase;
 }
+
 .sidebar .nav-link:hover {
     color: #007bff;
 }
+
 /*
    * Navbar
    */
@@ -212,29 +214,59 @@ main {
     background-size: cover;
     background-position: 0% 0%;
 }
+
 @media (max-width: 767.98px) {
     #home {
         background-position: 50% 0%;
     }
 }
 
-.home-title{
+.home-title {
     font-size: 4rem;
-    color:white;
+    color: white;
     text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
-.home-description{
+
+.home-description {
     font-size: 1.5rem;
-    color:white;
+    color: white;
     text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
+
 .content {
     padding-top: 4.5rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+@media (max-width: 992px) {
+    .back-image-6 {
+        margin-left: -70px;
+    }
+    .back-image-3 {
+        margin-left: -58px;
+    }
+}
+.z-1{
+    z-index: 1;
+}
+.z-2{
+    z-index: 2;
+}
+.z-3{
+    z-index: 3;
+}
+.z-4{
+    z-index: 4;
+}
+.z-5{
+    z-index: 5;
+}
+.z-6{
+    z-index: 6;
 }
