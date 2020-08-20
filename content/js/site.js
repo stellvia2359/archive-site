@@ -1,6 +1,7 @@
 $(function () {
     site.initialize();
     utility.hideLoadingMask();
+    
 });
 var versionNumber = "20200818"
 var site = {
@@ -8,6 +9,17 @@ var site = {
         $(".my-site-link").click(site.navLinkClick);
         $(".home-link").click(site.loadHome);
         $(".external-link").click(utility.closeMenu);
+        $('#back-to-top').click(function () {
+            utility.backToTop();
+            return false;
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
         site.loadHome();
         utility.loadTooltip();
     },
@@ -27,7 +39,7 @@ var site = {
                 $(".nav-link").removeClass("active");
                 $(target).addClass("active");               
                 utility.loadPopover();
-                
+                utility.backToTop();
                 utility.hideLoadingMask();
             }
         });
@@ -70,5 +82,10 @@ var utility = {
     },
     closeMenu:function(){
         $('#sidebarMenu').collapse("hide");
+    },
+    backToTop:function(){
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
     }
 };

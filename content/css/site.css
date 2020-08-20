@@ -286,3 +286,9 @@ main {
 .equipment-img{
     width:400px;
 }
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 100px;
+    display: none;
+}
