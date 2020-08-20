@@ -292,3 +292,9 @@ main {
     right: 100px;
     display: none;
 }
+@media (max-width: 500px) {
+    .back-to-top {
+        bottom: 6px;
+        right: 70px;
+    }
+}
