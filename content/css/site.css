@@ -189,8 +189,8 @@ a.disabled {
     width: 17px;
     height: 17px;
     padding: 0 !important;
-    line-height: 1.3;
-    font-size: 0.5rem;
+    line-height: 1.4;
+    font-size: 12px;
     margin-left: 3px;
 }
 
@@ -250,6 +250,9 @@ main {
     }
     .back-image-3 {
         margin-left: -58px;
+    }
+    .back-image-2 {
+        margin-left: -38px;
     }
 }
 .z-1{
