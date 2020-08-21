@@ -298,3 +298,8 @@ main {
         right: 70px;
     }
 }
+.stars{
+color: orange;
+margin-left: 5px;
+line-height: 1.2;
+}
