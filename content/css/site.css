@@ -186,6 +186,7 @@ a.disabled {
     line-height: 1.4;
     font-size: 12px;
     /*margin-left: 3px;*/
+    -webkit-appearance: none;
 }
 .score-name{
     height: 17px;
