@@ -303,3 +303,6 @@ main {
         right: 70px;
     }
 }
+.video-block{
+    max-width: 960px;
+}
