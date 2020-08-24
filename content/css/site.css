@@ -306,3 +306,13 @@ main {
 .video-block{
     max-width: 960px;
 }
+.page-title{
+    margin:0;
+    font-size: 2rem;
+}
+.guide-title-icon{
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-bottom: 4px;
+    margin-right: 3px;
+}
