@@ -3,7 +3,7 @@ $(function () {
     utility.hideLoadingMask();
 
 });
-var versionNumber = "20200824"
+var versionNumber = "20200825"
 var site = {
     initialize: function () {
         $(".my-site-link").click(site.navLinkClick);
