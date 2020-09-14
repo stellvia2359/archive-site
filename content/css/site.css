@@ -316,3 +316,9 @@ main {
     margin-bottom: 4px;
     margin-right: 3px;
 }
+.boss-info{
+    margin-right: 1rem;
+}
+.boss-info-img{
+    width: 200px;
+}
