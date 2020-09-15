@@ -1,4 +1,4 @@
-body,.tooltip {
+body, .tooltip {
     font-size: .875rem;
     font-family: 'Rajdhani', 'Noto Sans TC', sans-serif;
 }
@@ -188,17 +188,20 @@ a.disabled {
     /*margin-left: 3px;*/
     -webkit-appearance: none;
 }
-.score-name{
+
+.score-name {
     height: 17px;
     padding: 0 2px;
     line-height: 1.4;
     font-size: 12px;
     margin-left: 3px;
 }
-.stars{
+
+.stars {
     color: orange;
     margin-left: 2px;
-    }
+}
+
 .popover {
     max-width: 100%;
     /* Max Width of the popover (depending on the container!) */
@@ -260,65 +263,95 @@ main {
         margin-left: -38px;
     }
 }
-.z-1{
+
+.z-1 {
     z-index: 1;
 }
-.z-2{
+
+.z-2 {
     z-index: 2;
 }
-.z-3{
+
+.z-3 {
     z-index: 3;
 }
-.z-4{
+
+.z-4 {
     z-index: 4;
 }
-.z-5{
+
+.z-5 {
     z-index: 5;
 }
-.z-6{
+
+.z-6 {
     z-index: 6;
 }
 
-.pet-img-blk{
+.pet-img-blk {
     width: 150px;
 }
-.skill-img{
+
+.skill-img {
     width: 600px;
 }
-.status-img{
+
+.status-img {
     width: 400px;
 }
-.equipment-img{
-    width:400px;
+
+.equipment-img {
+    width: 400px;
 }
+
 .back-to-top {
     position: fixed;
     bottom: 25px;
     right: 100px;
     display: none;
 }
+
 @media (max-width: 500px) {
     .back-to-top {
         bottom: 6px;
         right: 70px;
     }
 }
-.video-block{
+
+.video-block {
     max-width: 960px;
 }
-.page-title{
-    margin:0;
+
+.page-title {
+    margin: 0;
     font-size: 2rem;
 }
-.guide-title-icon{
+
+.guide-title-icon {
     width: 2.2rem;
     height: 2.2rem;
     margin-bottom: 4px;
     margin-right: 3px;
 }
-.boss-info{
+
+.boss-info {
     margin-right: 1rem;
 }
-.boss-info-img{
+
+.boss-info-img {
     width: 250px;
+}
+
+.btn-discord {
+    background-color: #7289DA;
+    border-color: #7289DA;
+}
+
+.btn-discord:hover, .btn-discord:focus, .btn-discord:active, .btn-discord.active, .open .dropdown-toggle.btn-discord {
+    background-color: #5975DE;
+    color: #FFF;
+    border-color: #5975DE;
+}
+.btn-home{
+    width: 170px;
 }
