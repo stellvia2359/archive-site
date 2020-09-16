@@ -6,13 +6,23 @@ $(function () {
 var versionNumber = "20200825"
 var site = {
     initialize: function () {
-        $(".my-site-link").click(site.navLinkClick);
-        $(".home-link").click(site.loadHome);
+        //$(".my-site-link").click(site.navLinkClick);
+        //$(".home-link").click(site.loadHome);
+        var urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('page')) {
+            var url = urlParams.get('page');
+            site.loadPage(url);
+
+        } else {
+            site.loadHome();
+        }
+
         $(".external-link").click(utility.closeMenu);
         $('#back-to-top').click(function () {
             utility.backToTop();
             return false;
         });
+        /*
         $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
                 $('#back-to-top').fadeIn();
@@ -20,8 +30,26 @@ var site = {
                 $('#back-to-top').fadeOut();
             }
         });
-        site.loadHome();
+        */
+        //site.loadHome();
         utility.loadTooltip();
+
+
+    },
+    loadPage: function (url) {
+        $.ajax({
+            url: url,
+            dataType: "html",
+            success: function (data) {
+                $("#main-content").html(data);
+                $(".nav-link").removeClass("active");
+                $(target).addClass("active");
+                utility.loadPopover();
+                utility.generateStars();
+                utility.backToTop();
+                utility.hideLoadingMask();
+            }
+        });
     },
     navLinkClick: function (e) {
         utility.closeMenu();
