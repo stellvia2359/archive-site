@@ -37,7 +37,6 @@ var site = {
                 $("#" + navId).addClass("active");
                 utility.loadPopover();
                 utility.generateStars();
-                utility.backToTop();
                 utility.hideLoadingMask();
             }
         });
