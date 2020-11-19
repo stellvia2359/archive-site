@@ -50,16 +50,27 @@
                         <div>
                             共通延遲0.5秒
                         </div>
+                        <div>
+                            固定詠唱0.5秒
+                        </div>
+                        <div>
+                            變動詠唱2秒
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <ul>
-                            <li>[Lv1]: 風屬性魔法傷害600%，5次連鎖，固定詠唱1秒，變動詠唱3.5秒</li>
-                            <li>[Lv2]: 風屬性魔法傷害700%，6次連鎖，固定詠唱1秒，變動詠唱4秒</li>
-                            <li>[Lv3]: 風屬性魔法傷害800%，7次連鎖，固定詠唱1秒，變動詠唱4.5秒</li>
-                            <li>[Lv4]: 風屬性魔法傷害900%，8次連鎖，固定詠唱1秒，變動詠唱5秒</li>
-                            <li>[Lv5]: 風屬性魔法傷害1000%，9次連鎖，固定詠唱1秒，變動詠唱5.5秒</li>
+                            <li>[Lv1]: 聖屬性魔法攻擊力400% / 效果範圍指定目標周圍3格</li>
+                            <li>[Lv2]: 聖屬性魔法攻擊力470% / 效果範圍指定目標周圍3格</li>
+                            <li>[Lv3]: 聖屬性魔法攻擊力540% / 效果範圍指定目標周圍3格</li>
+                            <li>[Lv4]: 聖屬性魔法攻擊力610% / 效果範圍指定目標周圍3格</li>
+                            <li>[Lv5]: 聖屬性魔法攻擊力680% / 效果範圍指定目標周圍3格</li>
+                            <li>[Lv6]: 聖屬性魔法攻擊力750% / 效果範圍指定目標周圍3格</li>
+                            <li>[Lv7]: 聖屬性魔法攻擊力820% / 效果範圍指定目標周圍5格</li>
+                            <li>[Lv8]: 聖屬性魔法攻擊力890% / 效果範圍指定目標周圍5格</li>
+                            <li>[Lv9]: 聖屬性魔法攻擊力960% / 效果範圍指定目標周圍5格</li>
+                            <li>[Lv10]: 聖屬性魔法攻擊力1030% / 效果範圍指定目標周圍5格</li>
                         </ul>
                     </td>
                 </tr>
@@ -69,11 +80,8 @@
             </tbody>
         </table>
         <p>
-            連鎖電擊的第一個特性是無獨立延遲但是有非常高的高達3秒的共通延遲，所以才需要把減延遲撐到96%以上這麼高，再來就是每次傷害都是獨立計算，所以很容易觸發一些效果離如爆走魔法之類的，但魔增就只支援第一下，不過秒七的技能是不會用到魔增的。<br>
-            連鎖電擊還有個特別的地方就是無詠的時候完全不會舉手，頭上也不會有字，很像用眼神殺人，很有魔王的架勢XD，也因為這樣沒有卡動作延遲的問題。<br>
-            連鎖電擊單看公式會誤以為是會越電越痛，但實際上效果是越電越癢，以185等技能5級來說，實際上是 1850+900 = 2750% -> 2650% -> 2550%
-            .....這樣下去，每次的彈跳增傷都是以基本的傷害為準，不是上一次的傷害。<br>
-            靈魂爆炸則是各方面要求都比較低，所以只要達到連鎖電擊的秒7門檻，魂爆就OK了。
+            基本上是主教唯一一招上得了檯面的攻擊技能，但獨立延遲高達2.5秒，非常依賴特定幾件減少獨立延遲的裝備，導致配裝比較不靈活，而且目前缺點也蠻多，傷害低、單一屬性都是蠻致命的缺點，但練功就非常好用，範圍大又可連發。
+            <br>不過欣慰的是共通延遲只有0.5秒，這樣對於減延遲裝備的依賴度可以大大降低，只需要72%即可達到理論門檻。
         </p>
         <div class="d-flex flex-wrap">
             <figure class="figure m-1">
@@ -97,8 +105,7 @@
     <h5><i class="fas fa-angle-double-right"></i> 素質</h5>
     <div>
         <p>
-            為了達到每秒7次技能(秒7)，必須要無詠唱、延遲96%以上以及攻速(ASPD)193，配點就以這三個目標下去配，我V配108是為了觸發超越斗的5%延遲。<br>
-            現在我為了穿影子職業2.0和超越套，已經無法堅持不使用料理了，目前固定會吃的就是ALL+10的終極料理，以及菠色克藥水和攻速濃縮汁。
+            素質也是為了秒7而配，無詠唱(變詠)INT/2 + DEX >= 265，以及攻速193，LUK因為有MATK和抗混亂效果我就點了。
         </p>
         <figure class="figure m-1">
             <img src="content/image/guide/warlock/wind_ghost/Warlock_State_Full_2020.png"
@@ -113,7 +120,7 @@
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">減延遲</th>
-                    <th scope="col">連鎖電擊共通延遲</th>
+                    <th scope="col">謳歌共通延遲</th>
                     <th scope="col">攻速</th>
                     <th scope="col">攻擊延遲</th>
                     <th scope="col">每秒施放技能次數</th>
@@ -121,36 +128,36 @@
             </thead>
             <tbody>
                 <tr>
-                    <td scope="row">96%</td>
-                    <td>0.12s</td>
+                    <td scope="row">72%</td>
+                    <td>0.14s</td>
                     <td>193</td>
                     <td>0.14s</td>
                     <td>7.14</td>
                 </tr>
                 <tr>
-                    <td scope="row">95%</td>
-                    <td>0.15s</td>
+                    <td scope="row">68%</td>
+                    <td>0.16s</td>
                     <td>192</td>
                     <td>0.16s</td>
                     <td>6.25</td>
                 </tr>
                 <tr>
-                    <td scope="row">94%</td>
+                    <td scope="row">64%</td>
                     <td>0.18s</td>
                     <td>191</td>
                     <td>0.18s</td>
                     <td>5.55</td>
                 </tr>
                 <tr>
-                    <td scope="row">94%</td>
-                    <td>0.18s</td>
+                    <td scope="row">60%</td>
+                    <td>0.2s</td>
                     <td>190</td>
                     <td>0.2s</td>
                     <td>5</td>
                 </tr>
                 <tr>
-                    <td scope="row">93%</td>
-                    <td>0.21s</td>
+                    <td scope="row">56%</td>
+                    <td>0.22s</td>
                     <td>189</td>
                     <td>0.22s</td>
                     <td>4.54</td>
@@ -163,6 +170,7 @@
     <div>
         <p>
             以下是我自己目前的配裝，先提供給大家參考，後面我在列舉一些我有想到的裝備和我的評價給大家參考。推薦度就是我自己私心主觀判斷(可能包和強度、價錢高低、CP值、是否適合平民、...等等因素)，就僅供參考吧，有任何意見和問題或是想要幫什麼裝被平反，都可以提出來喔，因為我也不是對所有裝備100%了解。
+            <br>主教比較不缺延遲，破防用影子2.0套(55~60%)，贖罪(25%)，烏爾斗(10%)，就有95%了，如果是對惡魔或不死，烏爾斗可以再多15%。
         </p>
         <div class="d-flex flex-wrap">
             <figure class="figure m-1">
@@ -225,7 +233,7 @@
             <li class="media m-2 equipment">
                 <img src="content/image/guide/general/equipment/78.png" class="mr-3">
                 <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name flex-grow-1">超時空頭冠(咒術士)[1]</h6>
+                    <h6 class="mt-0 mb-0 equipment-name flex-grow-1">超時空頭冠(大主教)[1]</h6>
                     <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
@@ -233,7 +241,7 @@
                         <span class="stars" data-score="4.5"></span>
                     </div>
                     <p>
-                        挑戰古城生產的新裝備，對於連鎖電擊有很大的增幅，可以三段附魔，第三段甚至可以附戰死頭的魔精，但我覺得還是略遜於席琳套，畢竟實在是找不到跟胸針差不多增傷的飾品，但這個CP值很高，比胸針套便宜太多，是平民玩家的首選。
+                        挑戰古城生產的新裝備，對謳歌有大量增傷，可以三段附魔，第三段甚至可以附戰死頭的魔精，但我覺得還是略遜於席琳套，畢竟實在是找不到跟胸針差不多增傷的飾品，但這個CP值很高，比胸針套便宜太多，是平民玩家的首選。
                     </p>
                     <div class="loot">
                         取得方式: 以「封印超時空頭冠 x 5」於挑戰古城門口販賣機兌換
@@ -250,13 +258,13 @@
                     <div class="text-danger">該物品不可與其它帳號交易。</div>
                     <div>精煉每+2時，MATK+15。</div>
                     <div>精煉每+3時，變動詠唱-3%。</div>
-                    <div>精煉每+3時， [連鎖電擊、凍僵術]傷害+20%。</div>
-                    <div>精煉每+4時，風屬性、水屬性魔法傷害+5%。</div>
+                    <div>精煉每+3時，[謳歌]傷害+20%。</div>
+                    <div>精煉每+4時，聖屬性魔法傷害+7%。</div>
                     <div>精煉+11時，MATK+5%。</div>
                     <div>系列: 頭具 防禦: 10</div>
                     <div>位置: 頭上 重量: 0</div>
                     <div>要求等級: 170</div>
-                    <div>裝備: 咒術士系列</div>
+                    <div>裝備: 大主教系列</div>
                     <hr>
                     <b>附魔(範例)</b>
                     <ul>
@@ -277,20 +285,20 @@
                 </div>
             </li>
             <li class="media m-2 equipment">
-                <img src="content/image/guide/general/equipment/2.png" class="mr-3">
+                <img src="content/image/guide/general/equipment/114.png" class="mr-3">
                 <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">神秘魔力石帽子[1]</h6>
+                    <h6 class="mt-0 mb-0 equipment-name">神秘主教冠[1]</h6>
                     <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="3"></span>
+                        <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        上面兩頂帽子基本上就是高端和平民的PVE首選了，目前戰死頭我覺得適合打PVP用魂爆吧，加的東西實在太過時了，碧血隕石也是咒術後期滿等後最沒用的技能之一，而且還要170才能穿，連拿來練功都不適合，玩PVE不建議做，之後KRO有加強咒術戰死頭，但我覺得對於PVE來說還是很普通。
+                        完全沒有用。
                     </p>
                     <div class="loot">
-                        取得方式: 「(服裝)神秘魔力石帽子 x 1」、「魔法師之魂 x 1」、「能量碎片 x 20」，至戰死者之墓的「淒惘靈魂的思念」機率取得；若後兩者為5倍材料則100%成功。
+                        取得方式: 「(服裝)神秘主教冠 x 1」、「服事之魂 x 1」、「能量碎片 x 20」，至戰死者之墓的「淒惘靈魂的思念」機率取得；若後兩者為5倍材料則100%成功。
                     </div>
                     <a class="enchantment" href="https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=1246#subContainer"
                         targer="_blank">
@@ -300,16 +308,15 @@
                 </div>
                 <div class="equipment-info-content">
                     <div class="text-danger">該物品不可與其它帳號交易。</div>
-                    <div>All State+1、MDEF+5，SP恢復力+20%。</div>
-                    <div>當精煉+1時，MATK+1%。</div>
+                    <div>All State+1、MDEF+5。</div>
+                    <div>當精煉+1時，MATK+2，ATK+4，治癒量+2%。</div>
                     <div>當精煉+2時，MHP，MSP+1%。</div>
-                    <div>精煉每+2時，靈魂爆炸的傷害+5%。</div>
-                    <div>碧血隕石的冷卻時間 -1秒。</div>
-                    <div>依精煉值碧血隕石的冷卻時間-0.1秒。</div>
+                    <div>精煉每+2時，審判的傷害+20%。</div>
+                    <div>精煉每+2時，十字驅魔攻擊的傷害+10%。</div>
                     <div>系列: 頭具 防禦: 10</div>
                     <div>位置: 頭上 重量 :10</div>
                     <div>要求等級: 170</div>
-                    <div>裝備: 咒術士</div>
+                    <div>裝備: 大主教</div>
                     <hr>
                     <b>附魔(範例)</b>
                     <ul>
@@ -334,7 +341,7 @@
                         <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        這個真的嚴重過氣了，我寧願用超時空頭拚單下傷害彌補延遲不足，除非你已經有插好齊爾的是可以拿來用一用過過秒7癮。
+                        過氣裝，而且主教不是很缺延遲，不需要犧牲傷害。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -361,7 +368,7 @@
                         <span class="stars" data-score="1"></span>
                     </div>
                     <p>
-                        也是嚴重過氣裝，除非你不用連鎖電擊，不然超時空頭冠一定比較好。
+                        過氣裝，撐傷害就是席琳或超時空頭。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -381,42 +388,6 @@
                 </div>
             </li>
             <li class="media m-2 equipment">
-                <img src="content/image/guide/general/equipment/84.png" class="mr-3">
-                <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">修行者頭箍[1]</h6>
-                    <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                        <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
-                            data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
-                        <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="2.5"></span>
-                    </div>
-                    <p>
-                        搭配修行者魔球算是蠻不錯的平民裝備，主要就是便宜，可以參考巴哈的這兩篇實測文
-                        <a href="https://forum.gamer.com.tw/C.php?bsn=4212&snA=425298" target="_blank">實測1</a>
-                        <a href="https://forum.gamer.com.tw/C.php?bsn=4212&snA=425857" target="_blank">實測2</a>
-                    </p>
-                    <div class="loot">
-                        取得方式: 消費禮
-                    </div>
-
-                    <div class="equipment-info-content">
-                        <div>修行者們愛戴的髮飾，據說能引出使用者魔力的力量。</div>
-                        <div>INT+3。</div>
-                        <div>MATK+4%。</div>
-                        <div>精煉每+2時INT+1。</div>
-                        <div>BaseLV.130以上時，精煉每+1時INT+1。</div>
-                        <div>搭配高等生存的魔杖[1]時，高等生存的魔杖[1] 精煉每+1時MATK+10，</div>
-                        <div>精煉+10時，魔法攻擊時有機率5秒內變動詠唱時間 -50%。</div>
-                        <div>搭配生存的魔杖[1]時，生存的魔杖[1] 精煉每+1時MATK+10，</div>
-                        <div>精煉+10時，魔法攻擊時有機率5秒內變動詠唱時間 -50%。</div>
-                        <div>系列: 頭具 防禦: 10</div>
-                        <div>位置: 頭上 重量: 50</div>
-                        <div>要求等級: 50</div>
-                        <div>裝備: 全職業</div>
-                    </div>
-                </div>
-            </li>
-            <li class="media m-2 equipment">
                 <img src="content/image/guide/general/equipment/104.png" class="mr-3">
                 <div class="media-body">
                     <h6 class="mt-0 mb-1 equipment-name">長長貓耳朵帽子[1]</h6>
@@ -425,7 +396,7 @@
                     <span class="score-name border border-warning rounded text-warning">推薦度</span>
                     <span class="stars" data-score="0.5"></span>
                     <p>
-                        +10的時候有20%無視魔防，其實對平民來說是不錯，但是現在有超時空頭了。
+                        破防不靠這個，不需要。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -453,7 +424,7 @@
                     <span class="score-name border border-warning rounded text-warning">推薦度</span>
                     <span class="stars" data-score="0.5"></span>
                     <p>
-                        以前很多人愛用的頭上，但我從來都不覺得這頂適合咒術，因為以前沒有秒7的時代，觸發時技能都cd，現在的話有更多好的帽子可以選擇，畢竟這頂完全沒其他效果已經過氣了。
+                        同長長貓，主教已經長駐95%全種族BOSS破防，不需要這個。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -524,10 +495,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="3.5"></span>
+                        <span class="stars" data-score="1"></span>
                     </div>
                     <p>
-                        搭配其他破防裝備，例如職業2.0套、神聖盾、RTC斗篷、邪惡武器、黑杖...來達到BOSS破防100%，相較於影子風暴套，可以減少切裝的麻煩，可是風念咒蠻缺延遲的，所以要用這個要慎重考慮配裝。
+                        以前謳歌主教很愛配這張，但是現在有烏爾斗後，解放了影子裝，可以使用影子2.0來破防，就不太需要這個了。
                     </p>
                 </div>
                 <div class="equipment-info-content">
@@ -546,7 +517,7 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="3"></span>
+                        <span class="stars" data-score="1"></span>
                     </div>
                     <p>
                         同正卡
@@ -569,15 +540,37 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="1"></span>
+                        <span class="stars" data-score="3.5"></span>
                     </div>
                     <p>
-                        雖然加很多MATK，但不適合咒術，比較適合技能沒有共延的獵靈。固定詠唱%沒有用，因為只取全身最高%而且先扣秒數才扣%，無法靠%來歸零固詠。
+                        加蠻多MATK，如果延遲夠了是可以考慮看看這張。
                     </p>
                 </div>
                 <div class="equipment-info-content">
                     <div>MATK+50、精煉 MATK+5。</div>
                     <div>固定詠唱時間-70%。</div>
+                    <div>系列: 卡片</div>
+                    <div>裝備: 頭具</div>
+                    <div>重量: 1</div>
+                </div>
+            </li>
+            <li class="media m-2 equipment">
+                <img src="content/image/guide/general/card/high_sanare_card.png" class="mr-3 card-img">
+                <div class="media-body">
+                    <h6 class="mt-0 mb-0 equipment-name">高階薩納雷卡片</h6>
+                    <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
+                        <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
+                            data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
+                        <span class="score-name border border-warning rounded text-warning">推薦度</span>
+                        <span class="stars" data-score="3.5"></span>
+                    </div>
+                    <p>
+                        對謳歌來說蠻不錯的一張卡，便宜，CP值高，省錢就是用這張了。
+                    </p>
+                </div>
+                <div class="equipment-info-content">
+                    <div>MATK+10，聖屬性魔法傷害+5%。</div>
+                    <div>精煉+9以上時，聖屬性魔法傷害再+5%。</div>
                     <div>系列: 卡片</div>
                     <div>裝備: 頭具</div>
                     <div>重量: 1</div>
@@ -591,10 +584,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="2"></span>
+                        <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        無視所有小怪的魔防，練功好用。
+                        我覺得這張已經過氣了，影子2.0加上贖罪，小怪已經跟裸體沒啥兩樣了。
                     </p>
                 </div>
                 <div class="equipment-info-content">
@@ -614,10 +607,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="2"></span>
+                        <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        效果同正卡，額外的副作用可無視，練功好用。
+                        同正卡。
                     </p>
                 </div>
                 <div class="equipment-info-content">
@@ -630,50 +623,7 @@
                     <div>重量: 1</div>
                 </div>
             </li>
-            <li class="media m-2 equipment">
-                <img src="content/image/guide/general/card/Tikbalang.png" class="mr-3 card-img">
-                <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">邪魔馬卡片</h6>
-                    <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                        <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
-                            data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
-                        <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="1.5"></span>
-                    </div>
-                    <p>
-                        超貧民選擇，只能拚傷害無法追求連發速度
-                    </p>
-                </div>
-                <div class="equipment-info-content">
-                    <div>MATK+10，風屬性魔法攻擊力+5%。</div>
-                    <div>精煉+9以上時，風屬性魔法攻擊力再+5%。</div>
-                    <div>系列: 卡片</div>
-                    <div>裝備: 頭具</div>
-                    <div>重量: 1</div>
-                </div>
-            </li>
-            <li class="media m-2 equipment">
-                <img src="content/image/guide/general/card/Lichtern Green.png" class="mr-3 card-img">
-                <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">元素鬼火(綠)卡片</h6>
-                    <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                        <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
-                            data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
-                        <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="1.5"></span>
-                    </div>
-                    <p>
-                        超貧民選擇，只能拚傷害無法追求連發速度
-                    </p>
-                </div>
-                <div class="equipment-info-content">
-                    <div>MATK+10，念屬性魔法攻擊力+5%。</div>
-                    <div>精煉+9以上時，念屬性魔法攻擊力再+5%。</div>
-                    <div>系列: 卡片</div>
-                    <div>裝備: 頭具</div>
-                    <div>重量: 1</div>
-                </div>
-            </li>
+            
             <li class="media m-2 equipment">
                 <img src="content/image/guide/general/card/Mutant Coelacanth.png" class="mr-3 card-img">
                 <div class="media-body">
@@ -716,27 +666,7 @@
                     <div>重量: 1</div>
                 </div>
             </li>
-            <li class="media m-2 equipment">
-                <img src="content/image/guide/general/card/Cendrawasih.png" class="mr-3 card-img">
-                <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">天堂鳥卡片</h6>
-                    <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                        <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
-                            data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
-                        <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="0.5"></span>
-                    </div>
-                    <p>
-                        乞丐卡，不建議玩法系
-                    </p>
-                </div>
-                <div class="equipment-info-content">
-                    <div>INT+2，若是魔法師系列，則精煉每+3時 INT再+1。</div>
-                    <div>系列: 卡片</div>
-                    <div>裝備: 頭具</div>
-                    <div>重量: 1</div>
-                </div>
-            </li>
+            
         </ul>
         <br>
         <h5><i class="fas fa-angle-double-right"></i> 頭中裝備</h5>
@@ -752,7 +682,7 @@
                         <span class="stars" data-score="5"></span>
                     </div>
                     <p>
-                        我個人認為目前風念咒首選頭中，主要是因為搭配暴徒領巾
+                        我個人認為目前謳歌還是暴徒套最好，因為雖然比較不缺延遲，但也不是說完全不需要，頭上中雙齊爾加上烏爾斗剛好達到秒七門檻，這樣才不用綁蒼龍之環，放心使用席林，是謳歌主教頂配。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -802,7 +732,7 @@
                         <span class="stars" data-score="3"></span>
                     </div>
                     <p>
-                        目前延遲最高的洞頭中，但是沒有傷害，很稀有，所以很貴，但我覺得錢拿去買暴徒套比較好。
+                        目前延遲最高的洞頭中，但是沒有傷害，很稀有，所以很貴，而且主教沒有缺延遲缺到需要這個，用暴徒套比較好。
                     </p>
                     <div class="loot">
                         取得方式: 限時活動
@@ -828,7 +758,7 @@
                         <span class="stars" data-score="2.5"></span>
                     </div>
                     <p>
-                        目前延遲最高的頭中，可是沒有洞，沒有洞的的話要撐秒7我覺得不適合拉，這個可能就只能以秒5秒6為目標。
+                        同有洞的，主教真的沒必要。
                     </p>
                     <div class="loot">
                         取得方式: 神秘咒語集
@@ -851,10 +781,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="3"></span>
+                        <span class="stars" data-score="4"></span>
                     </div>
                     <p>
-                        MATK+很多，但是沒有洞可以插齊爾卡，對於以連鎖電擊為主力的風念咒不太適合，因為連鎖電擊共通延遲太高了(3秒)，我覺得比較適合打PVP，配合神木嫩葉有大量對人增傷。
+                        不是追求席琳齊爾暴徒套這種最頂配的可以考慮這個，畢竟蒼龍之環25%和影子改良6%加上布萊齊就夠秒7了，這個可以多撐傷害，而且比暴徒便宜很多。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -945,7 +875,7 @@
                         <span class="stars" data-score="3.5"></span>
                     </div>
                     <p>
-                        有1速和1%延遲，還有1洞，如果不是用暴徒套的話選這個不錯
+                        有1速和1%延遲，還有1洞，搭配消費禮的雙管加農砲還不錯。
                     </p>
                     <div class="loot">
                         取得方式: 消費禮
@@ -1008,10 +938,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="3"></span>
+                        <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        提供5%延遲，算是平民CP值之選
+                        主教不缺一點點延遲，只有一點點不如撐傷害。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -1036,10 +966,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="2"></span>
+                        <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        ASPD+1、延遲-1%，都是我們需要的，而且便宜容易入手的平民裝。
+                        主教不缺一點點延遲，只有一點點不如撐傷害。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -1063,10 +993,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="2"></span>
+                        <span class="stars" data-score="1.5"></span>
                     </div>
                     <p>
-                        +攻速又+全屬性，都是我們需要的，而且便宜容易入手的平民裝。
+                        缺攻速或是無詠屬性可以配這個，不過通常是非常中低配置才會考慮。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -1090,10 +1020,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="3"></span>
+                        <span class="stars" data-score="4"></span>
                     </div>
                     <p>
-                        搭配柯杜威之耳可+MATK，可是用這套裝犧牲了延遲和攻速，自行取捨
+                        搭配柯杜威之耳可+MATK，如果是選擇用柯耳就配這個。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -1123,10 +1053,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="2"></span>
+                        <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        平民缺固詠時可考慮
+                        謳歌主教靠主教石提供的0.5就夠了。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -1152,7 +1082,7 @@
                         <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        我個人是覺得很爛，加這麼一點點東西還敢放消費禮騙錢...而且其中妖咒加的東西又更爛了，大概是未來平民可以少衝魔精吧?可是狐尾草不用綁裝也-0.1秒...
+                        我個人是覺得很爛，加這麼一點點東西還敢放消費禮騙錢...加的屬性乞丐都不想要。
                     </p>
                     <div class="loot">
                         取得方式: 消費禮
@@ -1173,54 +1103,29 @@
                 </div>
             </li>
             <li class="media m-2 equipment">
-                <img src="content/image/guide/general/equipment/83.png" class="mr-3">
+                <img src="content/image/guide/general/equipment/115.png" class="mr-3">
                 <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">修行者魔球</h6>
+                    <h6 class="mt-0 mb-0 equipment-name">雙管加農砲</h6>
                     <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="3.5"></span>
+                        <span class="stars" data-score="3"></span>
                     </div>
                     <p>
-                        我覺得算是平民蠻優質的裝備，只要農就有，如果是不想花大錢的玩家可以考慮用這個。可以參考巴哈的這兩篇實測文
-                        <a href="https://forum.gamer.com.tw/C.php?bsn=4212&snA=425298" target="_blank">實測1</a>
-                        <a href="https://forum.gamer.com.tw/C.php?bsn=4212&snA=425857" target="_blank">實測2</a>
+                        如果有影子推助器的話就還不錯，不過如果是以秒7為目標，其實主教也不缺這麼一點延遲就是了。
                     </p>
                     <div class="loot">
-                        取得方式: 神秘咒語集
+                        取得方式: 轉蛋
                     </div>
                 </div>
                 <div class="equipment-info-content">
-                    <div>會自動輔助主人的自主型魔球。</div>
-                    <div>可使用隱匿1Lv。</div>
-                    <div>對全階級敵人的物理傷害 2%。</div>
-                    <div>Matk+2%。</div>
-                    <div>變動詠唱時間-3%。</div>
-                    <br>
-                    <div>當與「生存的魔杖[1]」或「高等生存的魔杖[1]」其一裝備時</div>
-                    <div>武器精煉每+1，MATK+10，</div>
-                    <div>當武器精煉+10時，獲得以下效果:</div>
-                    <div>BaseLv99以下時，變動詠唱時間-3%，崩裂術、雷鳴術傷害+70%，地牛翻身、連鎖電擊傷害+15%，</div>
-                    <div>BaseLv100以上時，變動詠唱時間-9%，崩裂術、雷鳴術傷害+210%，地牛翻身、連鎖電擊傷害+45%。</div>
-                    <br>
-                    <div>當與「修行者頭箍」裝備時，</div>
-                    <div>VIT+4，受到玩家人類型、人類型的傷害減少4%，變動詠唱-6%，風、地屬性魔法傷害+20%，</div>
-                    <div>頭盔精煉+7時，VIT再+4，受到玩家人類型、人類型的傷害再減少4%，變動詠唱再-6%，</div>
-                    <div>頭盔精煉+9時，VIT再+4，受到玩家人類型、人類型的傷害再減少4%，變動詠唱再-6%。</div>
-                    <br>
-                    <div>當與「生存斗篷[0]」裝備時，</div>
-                    <div>受到玩家人類型、人類型的傷害減少1%，</div>
-                    <div>斗篷精煉+5時，受到玩家人類型、人類型的傷害再減少2%，</div>
-                    <div>斗篷精煉+7時，受到玩家人類型、人類型的傷害再減少2%。</div>
-                    <br>
-                    <div>當與「生存斗篷[0]」和「生存的魔杖[1]」或「高等生存的魔杖[1]」其一裝備時，</div>
-                    <div>MATK+1%</div>
-                    <div>武器精煉+5時，MATK再+2%，</div>
-                    <div>武器精煉+7時，MATK再+2%。</div>
+                    <div>技能後延遲-3%，ASPD +1。</div>
+                    <div>當與「影子推助器」裝備時，</div>
+                    <div>技能後延遲再-4%，攻擊後延遲減少(攻擊速度增加5%)，遠距離物理傷害+8%，近距離物理傷害+8%。</div>
                     <div>系列: 頭具 防禦: 0</div>
-                    <div>位置 : 頭下 重量 : 30</div>
-                    <div>要求等級: 50</div>
+                    <div>位置 : 頭下 重量 : 10</div>
+                    <div>要求等級: 1</div>
                     <div>裝備: 全職業</div>
                 </div>
             </li>
@@ -1258,9 +1163,9 @@
         <h5><i class="fas fa-angle-double-right"></i> 鎧甲裝備</h5>
         <ul class="list-unstyled">
             <li class="media m-2 equipment">
-                <img src="content/image/guide/general/equipment/25.png" class="mr-3">
+                <img src="content/image/guide/general/equipment/116.png" class="mr-3">
                 <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">朱比特輕甲[1]</h6>
+                    <h6 class="mt-0 mb-0 equipment-name">議程外袍[1]</h6>
                     <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
@@ -1268,42 +1173,44 @@
                         <span class="stars" data-score="5"></span>
                     </div>
                     <p>
-                        我的配裝配點還是以朱比特為主，因為這樣素質無詠比較好撐，我換了B甲反而素質非常吃緊沒辦法無詠，加上我有雙齊爾，延遲沒有吃緊到一定要B甲，不過另一個原因是因為我早就已經插好滅絕古埃及王了，所以也沒有換B甲的必要。
+                        謳歌主教目前主力裝備，畢竟搭配審判決議靴的-1秒謳歌獨立延遲還是沒有能夠取代的裝備，如果不用這個，勢必要綁影子大主教手套，這樣不僅犧牲傷害又犧牲破防，反而其他地方又要去補洞。
                     </p>
                     <div class="loot">
-                        取得方式: 限時活動
+                        取得方式: 以「秀發茲榮譽之證 x 1000」兌換
                     </div>
-                    <a class="enchantment" href="https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=2166"
+                    <a class="enchantment" href="https://tro.gnjoy.com.tw/Content/Event/ACT_20171128_EP16_2/update.html"
                         targer="_blank">
                         <i class="fas fa-info-circle"></i>
                         相關資訊
                     </a>
                 </div>
                 <div class="equipment-info-content">
-                    <div>朱比特輕甲。</div>
-                    <div>精煉每+4時，INT+3、MATK+3%。</div>
+                    <div>感覺不太單純的長袍。</div>
+                    <div>那些主事者通常在黑箱作業時所穿的外袍。</div>
+                    <div>可使用念咒拆除1Lv，</div>
+                    <div>MATK+5%。</div>
+                    <div>穿戴者的等級為120以上時，MATK再+4%。</div>
+                    <div>穿戴者的等級為140以上時，MATK再+5%。</div>
                     <br>
-                    <div>精煉+10時，</div>
-                    <div>能量外套 技能的詠唱時間 -40%。</div>
+                    <div>搭配伯爵斗篷時，</div>
+                    <div>當鎧甲精煉值每+1時，變動詠唱時間-2%，且詠唱不會中斷。</div>
                     <br>
-                    <div>精煉+12時，</div>
-                    <div>半徑擴大技能等級每+1時，技能後延遲 -2%。</div>
-                    <div>進化之書技能等級每+1時，鑽石星塵技能後延遲 -0.1秒。</div>
-                    <br>
-                    <div>搭配滅絕木乃伊犬卡片時，</div>
-                    <div>MATK+30、MDEF+10，對所有種族的魔法傷害+3%。</div>
-                    <br>
-                    <div>搭配墮落大神官 悉潘卡片時，</div>
-                    <div>MATK+60、MDEF+20，對所有種族的魔法傷害+5%。</div>
+                    <div>搭配生存斗篷時，</div>
+                    <div>當魔法攻擊時，有機率對自己施展治癒術1Lv；依鎧甲精煉值對自己施展的治癒術機率會增加。</div>
                     <div>系列: 鎧甲 防禦 : 0</div>
-                    <div>重量: 30</div>
+                    <div>重量: 10</div>
                     <div>要求等級: 100</div>
-                    <div>裝備: 3轉魔法師系列</div>
+                    <div>裝備: 全職業</div>
                     <hr>
                     <b>附魔(範例)</b>
                     <ul>
-                        <li class="text-primary">DEX+3</li>
-                        <li class="text-primary">DEX+3</li>
+                        <li class="text-primary">魔力尼夫Lv.3
+                            <ul class="text-body">
+                                <li>精煉+7時，INT+7。</li>
+                                <li>精煉+12時，INT+1，MATK再+8%。</li>
+                                <li>精煉+13時，INT+1，MATK再+2%。</li>
+                            </ul>
+                        </li>
                         <li class="text-primary">魔力尼夫Lv.3
                             <ul class="text-body">
                                 <li>精煉+7時，INT+7。</li>
@@ -1322,10 +1229,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="5"></span>
+                        <span class="stars" data-score="1"></span>
                     </div>
                     <p>
-                        平民跟高端都能用的超高CP值裝備，低精煉就能提供超大量MATK和延遲，平民甚至能穿整套B甲B披B靴就能大幅增強戰力。基本上現在才要買衣服的話就是這件了，配裝可能沒辦法完全跟我一樣就是了。這件好處是可以所有職業共用，朱比特就只有妖咒能穿。
+                        雖然加很多MATK和延遲，但議程決議套的獨立延遲實在無法捨棄，除非你真的是只打算秒1。
                     </p>
                     <div class="loot">
                         取得方式: 以「核心零件 x 50」於特別警戒區柯爾NPC兌換。
@@ -1378,7 +1285,7 @@
                         </li>
                     </ul>
                 </div>
-            </li>
+            </li>       
             <li class="media m-2 equipment">
                 <img src="content/image/guide/general/equipment/24.png" class="mr-3">
                 <div class="media-body">
@@ -1387,10 +1294,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="3"></span>
+                        <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        已經過氣了，除非你上面插了滅絕古埃及王之類的，才有可能繼續用。
+                        已經完全被幻象B甲取代。
                     </p>
                     <div class="loot">
                         取得方式: 「榮譽之證 x 1200」於七王家任務NPC兌換
@@ -1447,10 +1354,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="3"></span>
+                        <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        近期才出的EDDA國王的裝備，但能力被B甲全面屌打，套裝效果也是很爛，我認為除非你連DELAY都不想買，才會考慮用這個套裝吧。
+                        B甲都沒辦法用了，這個更不用說。
                     </p>
                     <div class="loot">
                         取得方式: 「血腥詛咒水晶 x 5」、「時光結晶 x 10」於EDDA克雷斯特漢姆的沒落副本門口販賣機兌換
@@ -1493,10 +1400,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="1"></span>
+                        <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        以前沒有什麼鎧甲有減延遲，這個可以附魔10%，但現在有B甲了，是還可以拿來搭配時光斗，湊個動物惡魔100%破防，但現在職業2.0套已經普及，也沒必要再用這個了。
+                        無法取代議程。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -1529,11 +1436,11 @@
                         <li class="text-primary">技能後延遲-5%</li>
                     </ul>
                 </div>
-            </li>
+            </li>         
             <li class="media m-2 equipment">
-                <img src="content/image/guide/general/equipment/55.png" class="mr-3">
+                <img src="content/image/guide/general/equipment/108.png" class="mr-3">
                 <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">大法師爭戰鎧甲 [1]</h6>
+                    <h6 class="mt-0 mb-0 equipment-name">月全蝕魔力外袍[1]</h6>
                     <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
@@ -1541,39 +1448,7 @@
                         <span class="stars" data-score="0.5"></span>
                     </div>
                     <p>
-                        不適合風念咒。
-                    </p>
-                    <div class="loot">
-                        取得方式: 新幹線時期活動
-                    </div>
-                </div>
-                <div class="equipment-info-content">
-                    <div>象徵大法師最高地位的爭戰鎧甲。</div>
-                    <div>All Status+1，MHP+300，精煉每+3時MATK+5%，變動詠唱時間-5%。</div>
-                    <br>
-                    <div>與大法師爭戰戰靴與爭戰批肩同時裝備時：</div>
-                    <div>1.Matk+10%。</div>
-                    <div>2.INT 110以上時，固定詠唱時間-10%。</div>
-                    <div>3.遭受玩家人類型、人類型的傷害-10%。</div>
-                    <div>4.地牛翻身冷卻時間-5秒。</div>
-                    <div>系列: 鎧甲 防禦 : 55</div>
-                    <div>重量: 0</div>
-                    <div>要求等級: 99</div>
-                    <div>裝備: 咒術士/妖術師</div>
-                </div>
-            </li>
-            <li class="media m-2 equipment">
-                <img src="content/image/guide/general/equipment/108.png" class="mr-3">
-                <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">月全蝕魔力外袍 [1]</h6>
-                    <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                        <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
-                            data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
-                        <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="4.5"></span>
-                    </div>
-                    <p>
-                        對於撐硬來說蠻不錯的，高等挑戰古城對於薄皮職業來說很不友善，雖然MATK輸B甲，但用傷害換生存力，除了延遲以外也有減傷效果，搭配卡崙卡，有大量血量。
+                        無法取代議程。
                     </p>
                     <div class="loot">
                         取得方式: 轉蛋
@@ -1599,12 +1474,62 @@
                     <div>受到物理攻擊時，追加20%機率使對象陷入冰凍狀態，</div>
                     <div>受到中、大體型魔物的物理/魔法傷害-15%，</div>
                     <div>受到「朔月腳」、「滿月腳」的傷害再-20%。</div>
-                    <div></div>
-                    <div></div>
                     <div>系列: 鎧甲 防禦 : 120</div>
                     <div>重量: 60</div>
                     <div>要求等級: 99</div>
                     <div>裝備: 全職業</div>
+                </div>
+            </li>
+            <li class="media m-2 equipment">
+                <img src="content/image/guide/general/equipment/117.png" class="mr-3">
+                <div class="media-body">
+                    <h6 class="mt-0 mb-0 equipment-name">時光超越湧現鎧甲[1]</h6>
+                    <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
+                        <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
+                            data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
+                        <span class="score-name border border-warning rounded text-warning">推薦度</span>
+                        <span class="stars" data-score="0.5"></span>
+                    </div>
+                    <p>
+                        雖然泛用度很香，但還是無法取代議程。
+                    </p>
+                    <div class="loot">
+                        取得方式: 轉蛋
+                    </div>
+                </div>
+                <div class="equipment-info-content">
+                    <div>MDEF+10，</div>
+                    <div>ATK+30、MATK+30。</div>
+                    <div>精煉每+3時，ATK+2%、MATK+2%。</div>
+                    <div>精煉+7時，ATK+50、MATK+50。</div>
+                    <div>精煉+9時，無視動物型、惡魔型的物理/魔法防禦力30%。</div>
+                    <div>精煉+11時，對全屬性的敵人物理/魔法傷害+10%。</div>
+                    <br>
+                    <div>搭配「時光超越者斗篷」時：</div>
+                    <div>當斗篷與鎧甲精煉總和為22以上時，</div>
+                    <div>對全體型敵人的物理/魔法傷害+10%。</div>
+                    <div>暴擊傷害+8%。</div>
+                    <br>
+                    <div>搭配「時光超越者之靴」時：</div>
+                    <div>ATK+80、MATK+80。</div>
+                    <div>當鞋子與鎧甲精煉總和為22以上時，</div>
+                    <div>再無視動物型、惡魔型的物理/魔法防禦力20%。</div>
+                    <br>
+                    <div>搭配「時光超越者斗篷」、「時光超越者之靴」時：</div>
+                    <div>當鞋子、斗篷、鎧甲精煉總和為27以上時，</div>
+                    <div>技能後延遲-5%。</div>
+                    <div>當鞋子、斗篷、鎧甲精煉總和為37以上時，</div>
+                    <div>技能後延遲再-8%。</div>
+                    <div>系列: 鎧甲 防禦 : 120</div>
+                    <div>重量: 200</div>
+                    <div>要求等級: 1</div>
+                    <div>裝備: 全職業</div>
+                    <hr>
+                    <b>附魔(範例)</b>
+                    <ul>
+                        <li class="text-primary">技能後延遲-5%</li>
+                        <li class="text-primary">技能後延遲-5%</li>
+                    </ul>
                 </div>
             </li>
         </ul>
@@ -1705,10 +1630,10 @@
                         <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
                             data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                         <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="3.5"></span>
+                        <span class="stars" data-score="4"></span>
                     </div>
                     <p>
-                        泛用增傷卡片，但副作用太強，我不喜歡
+                        泛用增傷卡片，副作用可以用淨化抵銷，對主教來說蠻不錯的，算是小資選擇。
                     </p>
                 </div>
                 <div class="equipment-info-content">
@@ -1754,7 +1679,7 @@
                         <span class="stars" data-score="3.5"></span>
                     </div>
                     <p>
-                        簡單暴力的+100MATK，很泛用的增傷，不過我個人還是選擇滅絕古埃及王，因為增幅比較大。
+                        簡單暴力的+100MATK，很泛用的增傷，不過能見度比覺醒闇答低很多，不好買。
                     </p>
                 </div>
                 <div class="equipment-info-content">
@@ -1811,28 +1736,7 @@
                     <div>裝備: 鎧甲</div>
                     <div>重量: 1</div>
                 </div>
-            </li>
-            <li class="media m-2 equipment">
-                <img src="content/image/guide/general/card/Naght Seiger.png" class="mr-3 card-img">
-                <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">夜勝魔卡片</h6>
-                    <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                        <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
-                            data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
-                        <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="0.5"></span>
-                    </div>
-                    <p>
-                        因為靈魂爆炸沒有職業2.0套裝，所以已經無法做為主力輸出，只能當作電不到時候的替代方案，所以加念屬性已經沒有什麼作用了。未來魂爆運用場合可能是PVP居多了。
-                    </p>
-                </div>
-                <div class="equipment-info-content">
-                    <div>所有念屬性魔法之攻擊+30%。(心靈爆破，聖靈召喚，靈魂爆炸)</div>
-                    <div>系列: 卡片</div>
-                    <div>裝備: 鎧甲</div>
-                    <div>重量: 1</div>
-                </div>
-            </li>
+            </li>     
             <li class="media m-2 equipment">
                 <img src="content/image/guide/general/card/Sweet Nightmare.png" class="mr-3 card-img">
                 <div class="media-body">
@@ -1844,7 +1748,7 @@
                         <span class="stars" data-score="2"></span>
                     </div>
                     <p>
-                        目前多數平民法師的選擇，有MATK又有無副作用防斷。
+                        目前多數平民的選擇，有MATK又有無副作用防斷。
                     </p>
                 </div>
                 <div class="equipment-info-content">
@@ -1855,55 +1759,12 @@
                     <div>重量: 1</div>
                 </div>
             </li>
-            <li class="media m-2 equipment">
-                <img src="content/image/guide/general/card/Garm.png" class="mr-3 card-img">
-                <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">卡崙卡片</h6>
-                    <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                        <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
-                            data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
-                        <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="4.5"></span>
-                    </div>
-                    <p>
-                        搭配月全蝕魔力外袍用的，其他裝備不要插這張。
-                    </p>
-                </div>
-                <div class="equipment-info-content">
-                    <div>受到物理傷害時，讓敵人有50%的機率冰凍。</div>
-                    <div>系列: 卡片</div>
-                    <div>裝備: 鎧甲</div>
-                    <div>重量: 1</div>
-                </div>
-            </li>
-            <li class="media m-2 equipment">
-                <img src="content/image/guide/general/card/Shadow of Nydhog.png" class="mr-3 card-img">
-                <div class="media-body">
-                    <h6 class="mt-0 mb-0 equipment-name">尼德霍格幻影卡片</h6>
-                    <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                        <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover"
-                            data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
-                        <span class="score-name border border-warning rounded text-warning">推薦度</span>
-                        <span class="stars" data-score="4"></span>
-                    </div>
-                    <p>
-                        搭配守護精靈祈禱之鞋有BOSS增傷40%，對於滅絕古埃及王無法生效的場合來說蠻實用的。不過缺點也很明顯就是綁裝，而且搭配的鞋子又還要綁其他裝備，要慎重考慮。
-                    </p>
-                </div>
-                <div class="equipment-info-content">
-                    <div>INT+5, 超魔導師, 咒術士裝備時固定詠唱-50%。</div>
-                    <div>(固定詠唱減少不會重疊)</div>
-                    <div>系列: 卡片</div>
-                    <div>裝備: 鎧甲</div>
-                    <div>重量: 1</div>
-                </div>
-            </li>
         </ul>
         <br>
         <h5><i class="fas fa-angle-double-right"></i> 武器裝備</h5>
         <ul class="list-unstyled">
             <li class="media m-2 equipment">
-                <img src="content/image/guide/general/equipment/80.png" class="mr-3">
+                <img src="content/image/guide/general/equipment/118.png" class="mr-3">
                 <div class="media-body">
                     <h6 class="mt-0 mb-0 equipment-name">紅魔鬼法杖-OS[2]</h6>
                     <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
