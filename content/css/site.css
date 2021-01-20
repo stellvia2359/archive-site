@@ -1,4 +1,5 @@
-body, .tooltip {
+body,
+.tooltip {
     font-size: .875rem;
     font-family: 'Rajdhani', 'Noto Sans TC', sans-serif;
 }
@@ -8,6 +9,7 @@ body, .tooltip {
     height: 16px;
     vertical-align: text-bottom;
 }
+
 
 /*
    * Sidebar
@@ -56,7 +58,8 @@ body, .tooltip {
     color: #007bff;
 }
 
-.sidebar .nav-link:hover .feather, .sidebar .nav-link.active .feather {
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
     color: inherit;
 }
 
@@ -68,6 +71,7 @@ body, .tooltip {
 .sidebar .nav-link:hover {
     color: #007bff;
 }
+
 
 /*
    * Navbar
@@ -347,11 +351,25 @@ main {
     border-color: #7289DA;
 }
 
-.btn-discord:hover, .btn-discord:focus, .btn-discord:active, .btn-discord.active, .open .dropdown-toggle.btn-discord {
+.btn-discord:hover,
+.btn-discord:focus,
+.btn-discord:active,
+.btn-discord.active,
+.open .dropdown-toggle.btn-discord {
     background-color: #5975DE;
     color: #FFF;
     border-color: #5975DE;
 }
-.btn-home{
+
+.btn-home {
     width: 170px;
+}
+
+.equip-character {
+    object-fit: cover;
+    width: 100%;
+}
+
+.equip-table {
+    max-width: 1000px;
 }
