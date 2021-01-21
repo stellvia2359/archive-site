@@ -365,11 +365,51 @@ main {
     width: 170px;
 }
 
+
+/* 雜談配裝 */
+
 .equip-character {
     object-fit: cover;
     width: 100%;
 }
 
 .equip-table {
-    max-width: 1000px;
+    max-width: 777px;
+    min-width: 777px;
+}
+
+@media (max-width: 1000px) {
+    .equip-table {
+        min-width: 100px;
+        max-width: 777px;
+    }
+}
+
+.state-table {
+    max-width: 500px;
+    min-width: 500px;
+}
+
+.state-table .state-title {
+    width: 100px;
+}
+
+.state-table .state {
+    width: 50px;
+}
+
+.pet-table {
+    max-width: 300px;
+    min-width: 300px;
+}
+
+@media (max-width: 500px) {
+    .state-table {
+        max-width: 500px;
+        min-width: 200px;
+    }
+    .pet-table {
+        max-width: 300px;
+        min-width: 200px;
+    }
 }
