@@ -24,6 +24,13 @@ var site = {
                 $('#back-to-top').fadeOut();
             }
         });
+
+        $("body").attr({
+            "data-spy": "scroll",
+            "data-target": "#navbar-chapter"
+        }).scrollspy({
+            offset: 150
+        });
         utility.loadTooltip();
     },
     loadPage: function(url) {

@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 body,
 .tooltip {
     font-size: .875rem;
@@ -412,4 +416,8 @@ main {
         max-width: 300px;
         min-width: 200px;
     }
+}
+
+.navbar-inpage {
+    margin-bottom: 1rem;
 }
