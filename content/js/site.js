@@ -1,23 +1,23 @@
-$(function() {
+$(function () {
     site.initialize();
 
 });
 var versionNumber = "20210122"
 var site = {
-    initialize: function() {
+    initialize: function () {
         var urlParams = new URLSearchParams(window.location.search);
         if (urlParams.has('page')) {
             var url = urlParams.get('page');
-            site.loadPage(url + ".html");
+            site.loadPage(url);
         } else {
             site.loadHome();
         }
         $(".external-link").click(utility.closeMenu);
-        $('#back-to-top').click(function() {
+        $('#back-to-top').click(function () {
             utility.backToTop();
             return false;
         });
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
                 $('#back-to-top').fadeIn();
             } else {
@@ -33,30 +33,47 @@ var site = {
         });
         utility.loadTooltip();
     },
-    loadPage: function(url) {
+    loadPage: function (url) {
         $.ajax({
-            url: url,
+            url: url + ".html",
             dataType: "html",
-            success: function(data) {
+            success: function (data) {
                 $("#main-content").html(data);
                 $(".nav-link").removeClass("active");
                 var navId = $(".nav-id").val();
                 $("#" + navId).addClass("active");
-                utility.loadPopover();
-                utility.generateStars();
-                utility.hideLoadingMask();
+                site.loadJson(url);         
             }
         });
     },
-    loadHome: function() {
+    loadHome: function () {
         var url = "home.html?v=" + versionNumber;
         $.ajax({
             url: url,
             async: false,
             dataType: "html",
-            success: function(data) {
+            success: function (data) {
                 $(".nav-link").removeClass("active");
                 $("#main-content").html(data);
+                utility.hideLoadingMask();
+            }
+        });
+    },
+    loadJson: function (url) {
+        $.ajax({
+            url: url + ".json",
+            dataType: "json",
+            success: function (data) {
+                var template = $.templates("#equipment-template");
+                $.each(data.allEquipments,function(index,item){
+                    item.equipments.sort(utility.GetSortOrder("star"));
+                    console.log(item.equipments);
+                    item.cards.sort(utility.GetSortOrder("star"));
+                });
+                var htmlOutput = template.render(data);
+                $("#equipments-block").html(htmlOutput);
+                utility.loadPopover();
+                utility.generateStars();
                 utility.hideLoadingMask();
             }
         });
@@ -64,13 +81,13 @@ var site = {
 }
 
 var utility = {
-    showLoadingMask: function() {
+    showLoadingMask: function () {
         $(".lmask").show();
     },
-    hideLoadingMask: function() {
+    hideLoadingMask: function () {
         $(".lmask").hide();
     },
-    loadPopover: function() {
+    loadPopover: function () {
         $(".equipment-info-content").hide();
         $(".equipment-info").data("content", $(".equipment-info").closest(".media").children(".equipment-info-content").html());
         var equipmentInfo = $(".equipment-info");
@@ -84,18 +101,18 @@ var utility = {
             html: true
         });
     },
-    loadTooltip: function() {
+    loadTooltip: function () {
         $('[data-toggle="tooltip"]').tooltip();
     },
-    closeMenu: function() {
+    closeMenu: function () {
         $('#sidebarMenu').collapse("hide");
     },
-    backToTop: function() {
+    backToTop: function () {
         $('body,html').animate({
             scrollTop: 0
         }, 400);
     },
-    generateStars: function() {
+    generateStars: function () {
         var stars = $(".stars");
         for (var i = 0; i < stars.length; i++) {
             var score = $(stars[i]).data("score");
@@ -109,5 +126,16 @@ var utility = {
                 $(stars[i]).append('<i class="fas fa-star-half"></i>');
             }
         }
-    }
+    },
+    GetSortOrder: function (prop) {           
+        return function(a, b) {    
+            if (a[prop] < b[prop]) {    
+                return 1;    
+            } else if (a[prop] > b[prop]) {    
+                return -1;    
+            }    
+            return 0;    
+        }    
+    } 
+    
 };

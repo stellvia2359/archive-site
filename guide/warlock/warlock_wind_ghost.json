@@ -1,0 +1,355 @@
+{
+    "allEquipments": [
+        {
+            "category": "頭上",
+            "equipments": [
+                {
+                    "imgName": "16.png",
+                    "name": "席琳的蝴蝶結",
+                    "slots": 1,
+                    "star": 5,
+                    "comment": "首選頭上，搭配席琳的胸針、基米的胸針的套裝效果，可以說是法師的三大神裝，傷害直接三級跳，還能附魔速4(10%攻速)，對撐攻速193很有幫助",
+                    "loot": "「染血的硬幣 x 1000」與「+9新鮮的玫瑰 x 1」於恐怖玩具工廠NPC兌換",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://forum.gamer.com.tw/C.php?bsn=4212&snA=382166"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "鑲金邊的貴氣蝴蝶結，從被丟掉當時到現在都一直與基米同在。",
+                            "DEX+3、MATK+40、根據精煉值額外增加MATK(每+1 MATK+7)",
+                            "使用魔法攻擊將敵人致死時HP恢復200",
+                            "裝備後每5秒消耗50 HP"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭上",
+                        "weight": 20,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": [
+                            {
+                                "name": "DEX+3",
+                                "detail": []
+                            },
+                            {
+                                "name": "攻擊後延遲Lv.4",
+                                "detail": [
+                                    "攻擊速度增加。(攻擊後延遲 -10%)"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "imgName": "78.png",
+                    "name": "超時空頭冠(咒術士)",
+                    "slots": 1,
+                    "star": 4.5,
+                    "comment": "挑戰古城生產的新裝備，對於連鎖電擊有很大的增幅，可以三段附魔，第三段甚至可以附戰死頭的魔精，但我覺得還是略遜於席琳套，畢竟實在是找不到跟胸針差不多增傷的飾品，但這個CP值很高，比胸針套便宜太多，是平民玩家的首選。",
+                    "loot": "以「封印超時空頭冠 x 5」於挑戰古城門口販賣機兌換",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3949"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "使用從時間縫隙中產生的礦石和寶石加工而成的頭冠。",
+                            "吸收了福金特殊的氣息而產生了力量。",
+                            "<span class='text-danger'>該物品不可與其它帳號交易。</span>",
+                            "精煉每+2時，MATK+15。",
+                            "精煉每+3時，變動詠唱-3%。",
+                            "精煉每+3時， [連鎖電擊、凍僵術]傷害+20%。",
+                            "精煉每+4時，風屬性、水屬性魔法傷害+5%。",
+                            "精煉+11時，MATK+5%。"
+                        ],
+                        "class": "頭具",
+                        "defense": 10,
+                        "position": "頭上",
+                        "weight": 20,
+                        "requiredLevel": 170,
+                        "usableBy": "咒術士系列",
+                        "enchantments": [
+                            {
+                                "name": "INT+4",
+                                "detail": []
+                            },
+                            {
+                                "name": "超時空附魔寶石(INT) 3Lv",
+                                "detail": [
+                                    "依照頭具的精鍊每+2時，治癒量+5%。",
+                                    "依照頭具的精鍊每+2時，MATK+7。",
+                                    "依照頭具的精鍊每+5時，MATK+3%。"
+                                ]
+                            },
+                            {
+                                "name": "魔精Lv.5",
+                                "detail": [
+                                    "MATK+15%，固詠 -0.5秒。"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "imgName": "2.png",
+                    "name": "神秘魔力石帽子",
+                    "slots": 1,
+                    "star": 3,
+                    "comment": "上面兩頂帽子基本上就是高端和平民的PVE首選了，目前戰死頭我覺得適合打PVP用魂爆吧，加的東西實在太過時了，碧血隕石也是咒術後期滿等後最沒用的技能之一，而且還要170才能穿，連拿來練功都不適合，玩PVE不建議做，之後KRO有加強咒術戰死頭，但我覺得對於PVE來說還是很普通。",
+                    "loot": "「(服裝)神秘魔力石帽子 x 1」、「魔法師之魂 x 1」、「能量碎片 x 20」，至戰死者之墓的「淒惘靈魂的思念」機率取得；若後兩者為5倍材料則100%成功。",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=1246#subContainer"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "<span class='text-danger'>該物品不可與其它帳號交易。</span>",
+                            "All State+1、MDEF+5，SP恢復力+20%。",
+                            "當精煉+1時，MATK+1%。",
+                            "當精煉+2時，MHP，MSP+1%。",
+                            "精煉每+2時，靈魂爆炸的傷害+5%。",
+                            "碧血隕石的冷卻時間 -1秒。",
+                            "依精煉值碧血隕石的冷卻時間-0.1秒。"
+                        ],
+                        "class": "頭具",
+                        "defense": 10,
+                        "position": "頭上",
+                        "weight": 10,
+                        "requiredLevel": 170,
+                        "usableBy": "咒術士",
+                        "enchantments": [
+                            {
+                                "name": "INT+5",
+                                "detail": []
+                            },
+                            {
+                                "name": "INT+5",
+                                "detail": []
+                            },
+                            {
+                                "name": "魔精Lv.5",
+                                "detail": [
+                                    "MATK+15%，固詠 -0.5秒。"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "imgName": "1.png",
+                    "name": "心型羽翼髮夾",
+                    "slots": 1,
+                    "star": 0.5,
+                    "comment": "這個真的嚴重過氣了，我寧願用超時空頭拚單下傷害彌補延遲不足，除非你已經有插好齊爾的是可以拿來用一用過過秒7癮。不過現在版本也不一定要齊爾才能秒7了，可以參考小資風念配裝。",
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "裝飾著可愛心型羽翼和蕾絲邊的少女風髮夾。",
+                            "技能後延遲-5%，使用技能時，SP消耗-10%。",
+                            "精煉每+3時，技能後延遲、SP消耗再-3%。",
+                            "當精煉+2時，MHP，MSP+1%。",
+                            "精煉每+2時，靈魂爆炸的傷害+5%。",
+                            "碧血隕石的冷卻時間 -1秒。",
+                            "依精煉值碧血隕石的冷卻時間-0.1秒。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭上",
+                        "weight": 30,
+                        "requiredLevel": 50,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "17.png",
+                    "name": "魔幻羽毛髮夾",
+                    "slots": 1,
+                    "star": 1,
+                    "comment": "也是嚴重過氣裝，除非你不用連鎖電擊，不然超時空頭冠一定比較好。",
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "魔法攻擊時，給予毒/聖/暗/念/不死屬性的傷害+5%。",
+                            "當精煉值5以上起，每+1精練值給予毒/聖/暗/念/不死屬性的傷害再+5%(精煉上限為10)",
+                            "物理攻擊時以5%機率觸發自動念咒神聖之光 Lv.1",
+                            "依神威祈福的等級，神聖之光之攻擊力+80，消耗SP+15",
+                            "天使之擊 習得時，天使之擊每1級神聖之光隻觸發機率+0.5%。",
+                            "使用緊急治療時(100%機率)，10秒內變身為\"蘿莎蓮\"怪"
+                        ],
+                        "class": "頭具",
+                        "defense": 5,
+                        "position": "頭上",
+                        "weight": 3,
+                        "requiredLevel": 10,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "84.png",
+                    "name": "修行者頭箍",
+                    "slots": 1,
+                    "star": 2.5,
+                    "comment": "搭配修行者魔球算是蠻不錯的平民裝備，主要就是便宜，可以參考巴哈的這兩篇實測文",
+                    "loot": "消費禮",
+                    "externalUrls": [
+                        {
+                            "name": "實測1",
+                            "url": "https://forum.gamer.com.tw/C.php?bsn=4212&snA=425298"
+                        },
+                        {
+                            "name": "實測2",
+                            "url": "https://forum.gamer.com.tw/C.php?bsn=4212&snA=425857"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "修行者們愛戴的髮飾，據說能引出使用者魔力的力量。",
+                            "INT+3。",
+                            "MATK+4%。",
+                            "精煉每+2時INT+1。",
+                            "BaseLV.130以上時，精煉每+1時INT+1。",
+                            "搭配高等生存的魔杖[1]時，高等生存的魔杖[1] 精煉每+1時MATK+10，",
+                            "精煉+10時，魔法攻擊時有機率5秒內變動詠唱時間 -50%。",
+                            "搭配生存的魔杖[1]時，生存的魔杖[1] 精煉每+1時MATK+10，",
+                            "精煉+10時，魔法攻擊時有機率5秒內變動詠唱時間 -50%。"
+                        ],
+                        "class": "頭具",
+                        "defense": 10,
+                        "position": "頭上",
+                        "weight": 50,
+                        "requiredLevel": 50,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "104.png",
+                    "name": "長長貓耳朵帽子",
+                    "slots": 1,
+                    "star": 0.5,
+                    "comment": "+10的時候有20%無視魔防，其實對平民來說是不錯，但是現在有超時空頭了。",
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "以銀月魔女的黑貓'可魯'為範本製作的帽子，非常活靈活現。",
+                            "INT+2/MDEF+5。",
+                            "魔法防禦力無視+5%。",
+                            "精煉值每+1時，魔法防禦力無視+1。",
+                            "精煉值+7時，魔法防禦力不理另外+5 %。",
+                            "MATK+2%，精煉值+9時，MATK另外增加+5%。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭上",
+                        "weight": 10,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "105.png",
+                    "name": "修咖巴殷的黑貓耳朵",
+                    "slots": 0,
+                    "star": 0.5,
+                    "comment": "以前很多人愛用的頭上，但我從來都不覺得這頂適合咒術，因為以前沒有秒7的時代，觸發時技能都cd，現在的話有更多好的帽子可以選擇，畢竟這頂完全沒其他效果已經過氣了。",
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "修咖巴殷使用的黑貓耳朵, 十分精巧可愛",
+                            "暴擊傷害+10%。",
+                            "魔法攻擊時以極高的機率持續5秒無視魔法防禦，FLEE+10。",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        "class": "頭具",
+                        "defense": 4,
+                        "position": "頭上",
+                        "weight": 20,
+                        "requiredLevel": 45,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "",
+                    "name": "",
+                    "slots": 1,
+                    "star": 1,
+                    "comment": "",
+                    "loot": "",
+                    "externalUrls": [
+                        {
+                            "name": "",
+                            "url": ""
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            ""
+                        ],
+                        "class": "",
+                        "defense": 0,
+                        "position": "",
+                        "weight": 0,
+                        "requiredLevel": 0,
+                        "usableBy": "",
+                        "enchantments": [
+                            {
+                                "name": "",
+                                "detail": []
+                            },
+                            {
+                                "name": "",
+                                "detail": []
+                            },
+                            {
+                                "name": "",
+                                "detail": [
+                                    ""
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ],
+            "cards": [
+                {
+                    "imgName": "KIEL.png",
+                    "name": "齊爾-D-01卡片",
+                    "star": 5,
+                    "comment":"首選卡片，有錢就插這張就對了，秒7全靠他",
+                    "info": {
+                        "contents": [
+                            "所有技能後延遲-30%。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                }
+            ]
+        }
+    ]
+}
