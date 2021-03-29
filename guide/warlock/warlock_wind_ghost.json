@@ -8,7 +8,9 @@
                     "name": "席琳的蝴蝶結",
                     "slots": 1,
                     "star": 5,
-                    "comment": "首選頭上，搭配席琳的胸針、基米的胸針的套裝效果，可以說是法師的三大神裝，傷害直接三級跳，還能附魔速4(10%攻速)，對撐攻速193很有幫助",
+                    "comments": [
+                        "首選頭上，搭配席琳的胸針、基米的胸針的套裝效果，可以說是法師的三大神裝，傷害直接三級跳，還能附魔速4(10%攻速)，對撐攻速193很有幫助"
+                    ],
                     "loot": "「染血的硬幣 x 1000」與「+9新鮮的玫瑰 x 1」於恐怖玩具工廠NPC兌換",
                     "externalUrls": [
                         {
@@ -48,7 +50,9 @@
                     "name": "超時空頭冠(咒術士)",
                     "slots": 1,
                     "star": 4.5,
-                    "comment": "挑戰古城生產的新裝備，對於連鎖電擊有很大的增幅，可以三段附魔，第三段甚至可以附戰死頭的魔精，但我覺得還是略遜於席琳套，畢竟實在是找不到跟胸針差不多增傷的飾品，但這個CP值很高，比胸針套便宜太多，是平民玩家的首選。",
+                    "comments": [
+                        "挑戰古城生產的新裝備，對於連鎖電擊有很大的增幅，可以三段附魔，第三段甚至可以附戰死頭的魔精，但我覺得還是略遜於席琳套，畢竟實在是找不到跟胸針差不多增傷的飾品，但這個CP值很高，比胸針套便宜太多，是平民玩家的首選。"
+                    ],
                     "loot": "以「封印超時空頭冠 x 5」於挑戰古城門口販賣機兌換",
                     "externalUrls": [
                         {
@@ -100,7 +104,9 @@
                     "name": "神秘魔力石帽子",
                     "slots": 1,
                     "star": 3,
-                    "comment": "上面兩頂帽子基本上就是高端和平民的PVE首選了，目前戰死頭我覺得適合打PVP用魂爆吧，加的東西實在太過時了，碧血隕石也是咒術後期滿等後最沒用的技能之一，而且還要170才能穿，連拿來練功都不適合，玩PVE不建議做，之後KRO有加強咒術戰死頭，但我覺得對於PVE來說還是很普通。",
+                    "comments": [
+                        "上面兩頂帽子基本上就是高端和平民的PVE首選了，目前戰死頭我覺得適合打PVP用魂爆吧，加的東西實在太過時了，碧血隕石也是咒術後期滿等後最沒用的技能之一，而且還要170才能穿，連拿來練功都不適合，玩PVE不建議做，之後KRO有加強咒術戰死頭，但我覺得對於PVE來說還是很普通。"
+                    ],
                     "loot": "「(服裝)神秘魔力石帽子 x 1」、「魔法師之魂 x 1」、「能量碎片 x 20」，至戰死者之墓的「淒惘靈魂的思念」機率取得；若後兩者為5倍材料則100%成功。",
                     "externalUrls": [
                         {
@@ -147,7 +153,9 @@
                     "name": "心型羽翼髮夾",
                     "slots": 1,
                     "star": 0.5,
-                    "comment": "這個真的嚴重過氣了，我寧願用超時空頭拚單下傷害彌補延遲不足，除非你已經有插好齊爾的是可以拿來用一用過過秒7癮。不過現在版本也不一定要齊爾才能秒7了，可以參考小資風念配裝。",
+                    "comments": [
+                        "這個真的嚴重過氣了，我寧願用超時空頭拚單下傷害彌補延遲不足，除非你已經有插好齊爾的是可以拿來用一用過過秒7癮。不過現在版本也不一定要齊爾才能秒7了，可以參考小資風念配裝。"
+                    ],
                     "loot": "轉蛋",
                     "externalUrls": [],
                     "info": {
@@ -174,7 +182,9 @@
                     "name": "魔幻羽毛髮夾",
                     "slots": 1,
                     "star": 1,
-                    "comment": "也是嚴重過氣裝，除非你不用連鎖電擊，不然超時空頭冠一定比較好。",
+                    "comments": [
+                        "也是嚴重過氣裝，除非你不用連鎖電擊，不然超時空頭冠一定比較好。"
+                    ],
                     "loot": "轉蛋",
                     "externalUrls": [],
                     "info": {
@@ -200,7 +210,9 @@
                     "name": "修行者頭箍",
                     "slots": 1,
                     "star": 2.5,
-                    "comment": "搭配修行者魔球算是蠻不錯的平民裝備，主要就是便宜，可以參考巴哈的這兩篇實測文",
+                    "comments": [
+                        "搭配修行者魔球算是蠻不錯的平民裝備，主要就是便宜，可以參考巴哈的這兩篇實測文"
+                    ],
                     "loot": "消費禮",
                     "externalUrls": [
                         {
@@ -238,7 +250,9 @@
                     "name": "長長貓耳朵帽子",
                     "slots": 1,
                     "star": 0.5,
-                    "comment": "+10的時候有20%無視魔防，其實對平民來說是不錯，但是現在有超時空頭了。",
+                    "comments": [
+                        "+10的時候有20%無視魔防，其實對平民來說是不錯，但是現在有超時空頭了。"
+                    ],
                     "loot": "轉蛋",
                     "externalUrls": [],
                     "info": {
@@ -264,7 +278,9 @@
                     "name": "修咖巴殷的黑貓耳朵",
                     "slots": 0,
                     "star": 0.5,
-                    "comment": "以前很多人愛用的頭上，但我從來都不覺得這頂適合咒術，因為以前沒有秒7的時代，觸發時技能都cd，現在的話有更多好的帽子可以選擇，畢竟這頂完全沒其他效果已經過氣了。",
+                    "comments": [
+                        "以前很多人愛用的頭上，但我從來都不覺得這頂適合咒術，因為以前沒有秒7的時代，觸發時技能都cd，現在的話有更多好的帽子可以選擇，畢竟這頂完全沒其他效果已經過氣了。"
+                    ],
                     "loot": "轉蛋",
                     "externalUrls": [],
                     "info": {
@@ -291,7 +307,9 @@
                     "name": "",
                     "slots": 1,
                     "star": 1,
-                    "comment": "",
+                    "comments": [
+                        ""
+                    ],
                     "loot": "",
                     "externalUrls": [
                         {
@@ -339,7 +357,9 @@
                     "imgName": "KIEL.png",
                     "name": "齊爾-D-01卡片",
                     "star": 5,
-                    "comment":"首選卡片，有錢就插這張就對了，秒7全靠他",
+                    "comments": [
+                        "首選卡片，有錢就插這張就對了，秒7全靠他"
+                    ],
                     "info": {
                         "contents": [
                             "所有技能後延遲-30%。"
@@ -348,8 +368,626 @@
                         "position": "頭具",
                         "weight": 1
                     }
+                },
+                {
+                    "imgName": "Sealed Kiel.png",
+                    "name": "封印齊爾-D-01卡片",
+                    "star": 4.5,
+                    "comments": [
+                        "買不起正卡的第二選擇。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "所有技能後延遲-15%。",
+                            "當精練+15以上時，技能後延遲-5%。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Vesper.png",
+                    "name": "貝思波卡片",
+                    "star": 3.5,
+                    "comments": [
+                        "搭配其他破防裝備，例如職業2.0套、神聖盾、RTC斗篷、邪惡武器、黑杖...來達到BOSS破防100%，相較於影子風暴套，可以減少切裝的麻煩，可是風念咒蠻缺延遲的，所以要用這個要慎重考慮配裝。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "魔法攻擊時，對於Boss系怪物的魔法防禦力有30%的無視而給予傷害。",
+                            "DEX+2。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Sealed Vesper.png",
+                    "name": "封印貝思波卡片",
+                    "star": 3,
+                    "comments": [
+                        "同正卡"
+                    ],
+                    "info": {
+                        "contents": [
+                            "魔法攻擊時，對於Boss系怪物的魔法防禦力有15%的無視而給予傷害。",
+                            "當精練+15以上時，對於Boss系怪物的魔法防禦力有25%的無視而給予傷害。",
+                            "DEX+2。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "FENRIR.png",
+                    "name": "潘利爾卡片",
+                    "star": 1,
+                    "comments": [
+                        "雖然加很多MATK，但不適合咒術，比較適合技能沒有共延的獵靈。固定詠唱%沒有用，因為只取全身最高%而且先扣秒數才扣%，無法靠%來歸零固詠。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+50、精煉 MATK+5。",
+                            "固定詠唱時間-70%。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "High Wizard Katrinn.png",
+                    "name": "闇●超魔導師 凱特莉娜卡片",
+                    "star": 2,
+                    "comments": [
+                        "無視所有小怪的魔防，練功好用。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "無視一般怪物的魔法防禦力，變動詠唱時間+100%。",
+                            "SP恢復率-100%。",
+                            "卸除裝備時，SP-2000。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Sealed High Wizard Katrinn.png",
+                    "name": "封印闇●超魔導師 凱特莉娜卡片",
+                    "star": 2,
+                    "comments": [
+                        "效果同正卡，額外的副作用可無視，練功好用。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "無視一般怪物的魔法防禦力，變動詠唱時間+150%。",
+                            "SP恢復率-150%。",
+                            "卸除裝備時，SP-3000。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Tikbalang.png",
+                    "name": "邪魔馬卡片",
+                    "star": 1.5,
+                    "comments": [
+                        "超貧民選擇，只能拚傷害無法追求連發速度。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+10，風屬性魔法攻擊力+5%。",
+                            "精煉+9以上時，風屬性魔法攻擊力再+5%。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Lichtern Green.png",
+                    "name": "元素鬼火(綠)卡片",
+                    "star": 1.5,
+                    "comments": [
+                        "超貧民選擇，只能拚傷害無法追求連發速度。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+10，念屬性魔法攻擊力+5%。",
+                            "精煉+9以上時，念屬性魔法攻擊力再+5%。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Mutant Coelacanth.png",
+                    "name": "變種腔棘魚卡片",
+                    "star": 0.5,
+                    "comments": [
+                        "毫無王卡的威嚴，MATK%加的又少，還要扣血，感覺插上去是一種懲罰。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+2%，精煉每+2時， MATK+1%、MHP -1%。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "FENRIR(weak).png",
+                    "name": "弱化的潘利爾卡片",
+                    "star": 0.5,
+                    "comments": [
+                        "乞丐卡，不如不插存錢買更好的。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+25。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Cendrawasih.png",
+                    "name": "天堂鳥卡片",
+                    "star": 0.5,
+                    "comments": [
+                        "乞丐卡，不如不插存錢買更好的。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "INT+2，若是魔法師系列，則精煉每+3時 INT再+1。"
+                        ],
+                        "class": "卡片",
+                        "position": "頭具",
+                        "weight": 1
+                    }
                 }
             ]
+        },
+        {
+            "category": "頭中",
+            "equipments": [
+                {
+                    "imgName": "19.png",
+                    "name": "太陽眼鏡",
+                    "slots": 1,
+                    "star": 5,
+                    "comments": [
+                        "我個人認為目前風念咒首選頭中，主要是因為搭配暴徒領巾。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "黑色的眼鏡，可用來阻擋太陽用或當做時髦的裝飾品用。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭中",
+                        "weight": 10,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "46.png",
+                    "name": "眼鏡",
+                    "slots": 1,
+                    "star": 5,
+                    "comments": [
+                        "同太陽眼鏡"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "用玻璃壓縮做成的眼鏡，配帶這眼鏡的人，都是視力不太好的人。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭中",
+                        "weight": 10,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "18.png",
+                    "name": "新浪潮墨鏡",
+                    "slots": 1,
+                    "star": 3,
+                    "comments": [
+                        "目前延遲最高的洞頭中，但是沒有傷害，很稀有，所以很貴，但我覺得錢拿去買暴徒套比較好。"
+                    ],
+                    "loot": "限時活動",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "帶有未來主義風格的太陽眼鏡。",
+                            "技能後延遲 -5%。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭中",
+                        "weight": 10,
+                        "requiredLevel": 30,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "18.png",
+                    "name": "新浪潮墨鏡",
+                    "slots": 0,
+                    "star": 2.5,
+                    "comments": [
+                        "目前延遲最高的頭中，可是沒有洞，價格也是偏高，不太建議。"
+                    ],
+                    "loot": "限時活動",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "帶有未來主義風格的太陽眼鏡。",
+                            "技能後延遲 -10%。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭中",
+                        "weight": 10,
+                        "requiredLevel": 30,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "34.png",
+                    "name": "柯杜威之耳",
+                    "slots": 0,
+                    "star": 3,
+                    "comments": [
+                        "MATK+很多，缺點是沒有洞，以前可能會因為不能插齊爾就不考慮，但現在各種新的延遲裝出來後，齊爾已經不是秒7的必需品，但如果你的目標是自體免觸發秒7的話還是不能選柯耳。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "依守護精靈族王之耳朵為樣本而製作的飾品，蘊含著守護精靈族的魔力。",
+                            "當基本屬性Dex每+10，Matk+2。",
+                            "基本屬性Dex 108以上時，變動詠唱-10%，Matk+60。",
+                            "基本屬性Dex 120以上時，變動詠唱-5%，Matk+100。",
+                            "",
+                            "搭配守護精靈神盾時，當精煉+7以上時，毀滅彗星的冷卻時間-20秒。",
+                            "當精煉+9以上時，毀滅慧星的冷卻時間-40秒。",
+                            "搭配墮落大神官 悉潘卡片時，沒效果。",
+                            "搭配暴走魔法時，沒效果。",
+                            "",
+                            "搭配三角狂獅獸卡片、",
+                            "裝備書、法杖、雙手杖時，",
+                            "武器精煉值每+1時，",
+                            "對玩家人類型、喵族的魔法傷害+2% (精煉上限為10) 。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭中",
+                        "weight": 30,
+                        "requiredLevel": 70,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "20.png",
+                    "name": "惡魔小跟班",
+                    "slots": 1,
+                    "star": 3,
+                    "comments": [
+                        "為了齊爾卡，有洞60分。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "小小的惡魔波利，主人走到那就跟到那，那頑皮的樣子真讓人喜歡。",
+                            "All State+1。",
+                            "物理攻擊時有較低機率對自己觸發天使之賜福7Lv。",
+                            "精煉、破壞不可。"
+                        ],
+                        "class": "頭具",
+                        "defense": 5,
+                        "position": "頭中",
+                        "weight": 10,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "21.png",
+                    "name": "妖精長耳朵飾",
+                    "slots": 1,
+                    "star": 3,
+                    "comments": [
+                        "為了齊爾卡，有洞60分。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "仿照妖精的耳朵做成的，配帶時可以感覺到變身為妖精的感覺。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭中",
+                        "weight": 10,
+                        "requiredLevel": 70,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "62.png",
+                    "name": "影子推助器",
+                    "slots": 1,
+                    "star": 3,
+                    "comments": [
+                        "有1速和1%延遲，還有1洞，如果不是用暴徒套的話選這個不錯，後來還出了套裝雙管加農砲，可以進一步提升效果。"
+                    ],
+                    "loot": "消費禮",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "<span class=\"text-danger\">該物品不可與其它帳號交易。</span>",
+                            "調整腦波來提升自己的能力的工具。",
+                            "ASPD+1，技能後延遲- 1%。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭中",
+                        "weight": 30,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "133.png",
+                    "name": "魔力之星",
+                    "slots": 0,
+                    "star": 3,
+                    "comments": [
+                        "搭配魔力星環套裝拚裝備無詠和屬性、BOSS增傷、減固詠還不錯用，但價錢被炒得有點高。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "大環境的變化，人們相信有一種神秘力量在操縱著，期望能夠寄託和實現某些願望而誕生的魔力之星。",
+                            "變詠 -5%。",
+                            "基本屬性 STR 每12時, 無屬性魔法傷害 +2%。",
+                            "基本屬性 AGI 每12時, 風屬性魔法傷害 +2%。",
+                            "基本屬性 VIT 每12時, 水屬性魔法傷害 +2%。",
+                            "基本屬性 INT 每12時, 火屬性魔法傷害 +2%。",
+                            "基本屬性 DEX 每12時, 地屬性魔法傷害 +2%。",
+                            "基本屬性 LUK 每12時, 聖屬性魔法傷害 +2%。"
+                        ],
+                        "class": "頭具",
+                        "defense": 20,
+                        "position": "頭中",
+                        "weight": 20,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                }
+            ],
+            "cards": [],
+            "noCardMessage":"同頭上卡片"
+        },
+        {
+            "category": "頭下",
+            "equipments": [
+                {
+                    "imgName": "39.png",
+                    "name": "暴徒領巾",
+                    "slots": 0,
+                    "star": 5,
+                    "comments": [
+                        "首選頭下，搭配太陽眼鏡或眼鏡可以加大量的 魔攻、攻速、血量，雖然台版被閹割，但還是非常強。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "可使用念咒拆除 LV2。",
+                            "",
+                            "搭配太陽眼鏡、眼鏡時，對玩家人類型、喵族的抗性 +2%。",
+                            "基本屬性STR/LUK的總和每+80時，對全階級的物理傷害 +4%，Cri +5、暴擊傷害 +10%。",
+                            "基本屬性INT/DEX的總和每+80時，MATK +60、固定詠唱-10%(最高至-30%)，治癒量恢復 +10%。",
+                            "基本屬性AGI/VIT的總和每+80時，攻擊速度增加(攻擊後延遲 -5%)，MAXHP +5%，對玩家人類型、喵族的抗性 +2%。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭下",
+                        "weight": 10,
+                        "requiredLevel": 100,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "23.png",
+                    "name": "夢魘古城旁觀者",
+                    "slots": 0,
+                    "star": 3,
+                    "comments": [
+                        "提供5%延遲，算是平民CP值之選"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "傳說在古城生活很久的蝙蝠。",
+                            "雖不常在人類面前出現，但從很久起就關注著在古城裡所發生的一切事情。",
+                            "對全種族的物理傷害+2%。",
+                            "技能後延遲-5%。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭下",
+                        "weight": 10,
+                        "requiredLevel": 80,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "3.png",
+                    "name": "小巴風特降落傘",
+                    "slots": 0,
+                    "star": 2,
+                    "comments": [
+                        "ASPD+1、延遲-1%，都是我們需要的，而且便宜容易入手的平民裝。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "小巴風特保護協會，親手縫製的降落傘。",
+                            "尖叫吧、小巴控!!!",
+                            "ASPD +1，技能後延遲-1%。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭下",
+                        "weight": 20,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "22.png",
+                    "name": "貓熊氣球",
+                    "slots": 0,
+                    "star": 2,
+                    "comments": [
+                        "+攻速又+全屬性，都是我們需要的，而且便宜容易入手的平民裝。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "賣萌的小熊貓長大囉!",
+                            "All State +1、ASPD +1。",
+                            "不可精煉和破壞。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭下",
+                        "weight": 20,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "63.png",
+                    "name": "神木嫩葉",
+                    "slots": 0,
+                    "star": 3,
+                    "comments": [
+                        "搭配柯杜威之耳可+MATK，可是用這套裝犧牲了延遲和攻速，自行取捨"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "變動詠唱時間 - 5%。",
+                            "",
+                            "搭配柯杜威之耳時:",
+                            "Matk+10，變動詠唱時間 - 2%，遭受玩家人類型，喵族的傷害 - 2%。",
+                            "基本屬性Dex 108以上時，Matk再+20，變動詠唱時間 - 3%，遭受玩家人類型，喵族的傷害 - 2%。",
+                            "基本屬性Dex 120以上時，Matk再+30，變動詠唱時間 - 5%，遭受玩家人類型，喵族的傷害 - 4%。",
+                            "",
+                            "搭配三角狂獅獸卡片時:",
+                            "當書籍、單手杖、手杖的精煉值每+1時，以魔法攻擊給予人類玩家型、喵族的傷害+2%，直到精煉+10。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭下",
+                        "weight": 20,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "41.png",
+                    "name": "嘴叼狐尾草",
+                    "slots": 0,
+                    "star": 1,
+                    "comments": [
+                        "平民缺固詠時可考慮，但通常應該是不會缺。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "浪人在草地上躺著含在嘴裡的東西。",
+                            "MATK+10，所有固定詠唱 -0.1秒。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭下",
+                        "weight": 10,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "79.png",
+                    "name": "扭曲的超時空",
+                    "slots": 0,
+                    "star": 0.5,
+                    "comments": [
+                        "我個人是覺得很爛，加這麼一點點東西還敢放消費禮騙錢...而且其中妖咒加的東西又更爛了，大概是未來平民可以少衝魔精吧?可是狐尾草不用綁裝也-0.1秒..."
+                    ],
+                    "loot": "消費禮",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "浪人在草地上躺著含在嘴裡的東西。",
+                            "MATK+10，所有固定詠唱 -0.1秒。"
+                        ],
+                        "class": "頭具",
+                        "defense": 0,
+                        "position": "頭下",
+                        "weight": 10,
+                        "requiredLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+            ],
+            "cards": [],
+            "noCardMessage":"目前無頭下洞裝備"
         }
     ]
 }

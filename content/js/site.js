@@ -42,7 +42,7 @@ var site = {
                 $(".nav-link").removeClass("active");
                 var navId = $(".nav-id").val();
                 $("#" + navId).addClass("active");
-                site.loadJson(url);         
+                site.loadJson(url);
             }
         });
     },
@@ -64,17 +64,19 @@ var site = {
             url: url + ".json",
             dataType: "json",
             success: function (data) {
-                var template = $.templates("#equipment-template");
-                $.each(data.allEquipments,function(index,item){
+                $.each(data.allEquipments, function (index, item) {
                     item.equipments.sort(utility.GetSortOrder("star"));
-                    console.log(item.equipments);
                     item.cards.sort(utility.GetSortOrder("star"));
                 });
-                var htmlOutput = template.render(data);
-                $("#equipments-block").html(htmlOutput);
-                utility.loadPopover();
-                utility.generateStars();
-                utility.hideLoadingMask();
+                var template;
+                $.get("guide/common/template_equipment.txt", function (value) {
+                    template = $.templates(value);
+                    var htmlOutput = template.render(data);
+                    $("#equipments-block").html(htmlOutput);
+                    utility.loadPopover();
+                    utility.generateStars();
+                    utility.hideLoadingMask();
+                });
             }
         });
     }
@@ -127,15 +129,15 @@ var utility = {
             }
         }
     },
-    GetSortOrder: function (prop) {           
-        return function(a, b) {    
-            if (a[prop] < b[prop]) {    
-                return 1;    
-            } else if (a[prop] > b[prop]) {    
-                return -1;    
-            }    
-            return 0;    
-        }    
-    } 
-    
+    GetSortOrder: function (prop) {
+        return function (a, b) {
+            if (a[prop] < b[prop]) {
+                return 1;
+            } else if (a[prop] > b[prop]) {
+                return -1;
+            }
+            return 0;
+        }
+    }
+
 };
