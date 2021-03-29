@@ -33,7 +33,7 @@
             {{/for}}
             <br>
             <div>系列: {{:info.class}} 防禦: {{:info.defense}}</div>
-            <div>位置: {{:info.position}} 重量: {{:info.weight}}</div>
+            <div>{{if info.position}}位置: {{:info.position}}{{/if}} 重量: {{:info.weight}}</div>
             <div>要求等級: {{:info.requiredLevel}}</div>
             <div>裝備: {{:info.usableBy}}</div>
             {{if info.enchantments.length > 0}}
