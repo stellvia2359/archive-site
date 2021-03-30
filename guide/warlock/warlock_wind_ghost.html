@@ -1,3 +1,254 @@
-<div id="equipments-block">
+<div class="content">
+    <nav class="navbar navbar-light navbar-inpage navbar-chapter">
+        <a class="navbar-brand page-title" href="#"><img class="guide-title-icon" src="content/image/guide/warlock/icon.png">風念系咒術士</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item dropdown">
+                <a class="nav-link btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">裝備快速導覽</a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#equip-head-top">頭上</a>
+                    <a class="dropdown-item" href="#card-head-top">頭上卡片</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#equip-head-middle">頭中</a>
+                    <a class="dropdown-item" href="#card-head-middle">頭中卡片</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#equip-head-bottom">頭下</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#equip-body">鎧甲</a>
+                    <a class="dropdown-item" href="#card-body">鎧甲卡片</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#equip-weapon">武器</a>
+                    <a class="dropdown-item" href="#card-weapon">武器卡片</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#equip-shield">盾牌</a>
+                    <a class="dropdown-item" href="#card-shield">盾牌卡片</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#equip-robe">披肩</a>
+                    <a class="dropdown-item" href="#card-robe">披肩卡片</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#equip-shoes">鞋靴</a>
+                    <a class="dropdown-item" href="#card-shoes">鞋靴卡片</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#equip-acc">飾品</a>
+                    <a class="dropdown-item" href="#card-acc">飾品卡片</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#equip-shadow">影子裝備</a>
+                    <a class="dropdown-item" href="#equip-costume">服飾附魔</a>
+                    <a class="dropdown-item" href="#equip-pet">寵物</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    
+    <h3 id="chapter-introduction"><i class="fas fa-angle-right"></i> 介紹</h3>
+    <div>
+        <p>
+            咒術在最近一次優化後，樓地板終於提升到了正常水平，全部技能除了閃電以外傷害都有大幅提升，彗星的優化後非常好用，讓傷害上限也進一步提升。
+        </p>
+    </div>
+    <br>
+    <h3 id="chapter-status"><i class="fas fa-angle-right"></i> 配點</h3>
+    <div>
+        <p>
+            風念咒術就是以連鎖電擊(風)和靈魂爆炸(念)為主力技能的咒術，這兩個技能是在充滿超高獨立延遲的咒術技能樹中，難得的無獨立延遲技能，換句話說就是可以秒7。<br>
+            所以原則就是把連鎖電擊、靈魂爆炸、終極念力點滿，其他就看個人。不過在影子連鎖電擊套問世後，靈魂爆炸基本上只有電不到的時候才會拿出來用了。
+        </p>
+        <h5><i class="fas fa-angle-double-right"></i> 技能</h5>
+        <table class="skill rounded">
+            <thead>
+                <tr>
+                    <td><img src="content/image/guide/warlock/wind_ghost/wl_chainlightning.png" /></td>
+                    <td><strong>連鎖電擊</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            <p>
+                                用電擊魔法向1名目標給予損害，當受到電擊損害的目標附近有其他敵人時，連鎖電擊會自動找到目標並給予損害，當敵人數量是複數時會隨機攻擊。<br>
+                                技能等級越高連鎖的電擊次數也會增加，當最後的目標附近沒有其他目標時，會再攻擊該目標3次。
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                傷害公式: 技能等級傷害 x ([Base Lv] / 100) + 100 x (9 - 連鎖次數)%<br> (每次攻擊會依照100 x (9 - 連鎖次數)% 增加傷害)
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                初次攻擊會在對象5x5範圍內尋找連鎖目標，二次攻擊後會在對象7x7範圍內尋找目標
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            獨立延遲0秒
+                        </div>
+                        <div>
+                            共通延遲3秒
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li>[Lv1]: 風屬性魔法傷害600%，5次連鎖，固定詠唱1秒，變動詠唱3.5秒</li>
+                            <li>[Lv2]: 風屬性魔法傷害700%，6次連鎖，固定詠唱1秒，變動詠唱4秒</li>
+                            <li>[Lv3]: 風屬性魔法傷害800%，7次連鎖，固定詠唱1秒，變動詠唱4.5秒</li>
+                            <li>[Lv4]: 風屬性魔法傷害900%，8次連鎖，固定詠唱1秒，變動詠唱5秒</li>
+                            <li>[Lv5]: 風屬性魔法傷害1000%，9次連鎖，固定詠唱1秒，變動詠唱5.5秒</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">資料來源:官方、幻想廳</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="skill">
+            <thead>
+                <tr>
+                    <td><img src="content/image/guide/warlock/wind_ghost/wl_soulexpansion.png" /></td>
+                    <td><strong>靈魂爆炸</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            <p>對遠距離的敵人利用念力給予2次損害，對象處於白色監獄效果時會受到2倍的損害。</p>
+                        </div>
+                        <div>
+                            <p>傷害公式: (技能等級傷害 + INT) x ([Base Lv] / 100)%</p>
+                        </div>
+                        <div>
+                            <p>對<span class="whiteImprison">[白色監獄]</span>狀態的目標造成2倍傷害</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            獨立延遲0秒
+                        </div>
+                        <div>
+                            共通延遲0.5秒
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <ul>
+                            <li>[Lv1]: 念屬性魔法傷害900%，範圍3x3，固定詠唱0秒，變動詠唱2秒</li>
+                            <li>[Lv2]: 念屬性魔法傷害1050%，範圍3x3，固定詠唱0秒，變動詠唱2秒</li>
+                            <li>[Lv3]: 念屬性魔法傷害1200%，範圍3x3，固定詠唱0秒，變動詠唱2秒</li>
+                            <li>[Lv4]: 念屬性魔法傷害1350%，範圍5x5，固定詠唱0秒，變動詠唱2秒</li>
+                            <li>[Lv5]: 念屬性魔法傷害1500%，範圍5x5，固定詠唱0秒，變動詠唱2秒</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">資料來源:官方、幻想廳</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            連鎖電擊的第一個特性是無獨立延遲但是有非常高的高達3秒的共通延遲，所以才需要把減延遲撐到96%以上這麼高，再來就是每次傷害都是獨立計算，所以很容易觸發一些效果離如爆走魔法之類的，但魔增就只支援第一下，不過秒七的技能是不會用到魔增的。<br>
+            連鎖電擊還有個特別的地方就是無詠的時候完全不會舉手，頭上也不會有字，很像用眼神殺人，很有魔王的架勢XD，也因為這樣沒有卡動作延遲的問題。
+            <br> 連鎖電擊單看公式會誤以為是會越電越痛，但實際上效果是越電越癢，以185等技能5級來說，實際上是 1850+900 = 2750% -> 2650% -> 2550%
+            .....這樣下去，每次的彈跳增傷都是以基本的傷害為準，不是上一次的傷害。
+            <br> 靈魂爆炸則是各方面要求都比較低，所以只要達到連鎖電擊的秒7門檻，魂爆就OK了。
+        </p>
+        <div class="d-flex flex-wrap">
+            <figure class="figure m-1">
+                <img src="content/image/guide/warlock/wind_ghost/Warlock_Skill_1.png"
+                    class="figure-img img-fluid rounded skill-img">
+                <figcaption class="figure-caption"><span><i class="far fa-image"></i> 1轉技能配點</span></figcaption>
+            </figure>
+            <figure class="figure m-1">
+                <img src="content/image/guide/warlock/wind_ghost/Warlock_Skill_2.png"
+                    class="figure-img img-fluid rounded skill-img">
+                <figcaption class="figure-caption"><span><i class="far fa-image"></i> 2轉技能配點</span></figcaption>
+            </figure>
+            <figure class="figure m-1">
+                <img src="content/image/guide/warlock/wind_ghost/Warlock_Skill_3.png"
+                    class="figure-img img-fluid rounded skill-img">
+                <figcaption class="figure-caption"><span><i class="far fa-image"></i> 3轉技能配點</span></figcaption>
+            </figure>
+        </div>
+    </div>
+    <br>
+    <h5><i class="fas fa-angle-double-right"></i> 素質</h5>
+    <div>
+        <p>
+            為了達到每秒7次技能(秒7)，必須要無詠唱、延遲96%以上以及攻速(ASPD)193，配點就以這三個目標下去配，我V配108是為了觸發超越斗的5%延遲。<br>
+            現在我為了穿影子職業2.0和超越套，已經無法堅持不使用料理了，目前固定會吃的就是ALL+10的終極料理，以及菠色克藥水和攻速濃縮汁。
+        </p>
+        <figure class="figure m-1">
+            <img src="content/image/guide/warlock/wind_ghost/Warlock_State_Full_2020.png"
+                class="figure-img img-fluid rounded status-img" alt="...">
+            <figcaption class="figure-caption"><span><i class="far fa-image"></i> 素質配點(含群加、終極料理、菠色克藥水、攻速濃縮汁)</span>
+            </figcaption>
+        </figure>
+        <br>
+        <br>
+        <p>下面提供一個速查表讓大家評估自己能達到秒幾。</p>
+        <table class="table table-sm table-striped table-bordered table-hover text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">減延遲</th>
+                    <th scope="col">連鎖電擊共通延遲</th>
+                    <th scope="col">攻速</th>
+                    <th scope="col">攻擊延遲</th>
+                    <th scope="col">每秒施放技能次數</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">96%</td>
+                    <td>0.12s</td>
+                    <td>193</td>
+                    <td>0.14s</td>
+                    <td>7.14</td>
+                </tr>
+                <tr>
+                    <td scope="row">95%</td>
+                    <td>0.15s</td>
+                    <td>192</td>
+                    <td>0.16s</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td scope="row">94%</td>
+                    <td>0.18s</td>
+                    <td>191</td>
+                    <td>0.18s</td>
+                    <td>5.55</td>
+                </tr>
+                <tr>
+                    <td scope="row">94%</td>
+                    <td>0.18s</td>
+                    <td>190</td>
+                    <td>0.2s</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td scope="row">93%</td>
+                    <td>0.21s</td>
+                    <td>189</td>
+                    <td>0.22s</td>
+                    <td>4.54</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <h3 id="chapter-equipment"><i class="fas fa-angle-right"></i> 裝備</h3>
+    <div id="equipments-block">
 
+    </div>
 </div>

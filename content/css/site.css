@@ -81,7 +81,7 @@ body,
    * Navbar
    */
 
-.navbar-brand {
+.navbar-brand2 {
     padding-top: .75rem;
     padding-bottom: .75rem;
     font-size: 1rem;
@@ -197,12 +197,19 @@ a.disabled {
     -webkit-appearance: none;
 }
 
-.score-name {
+.tag-name {
     height: 17px;
     padding: 0 2px;
     line-height: 1.4;
     font-size: 12px;
     margin-left: 3px;
+}
+.score-name{
+    height: 17px;
+    padding: 0 2px;
+    line-height: 1.4;
+    font-size: 13px;
+    margin-left: 10px;
 }
 
 .stars {
@@ -420,4 +427,10 @@ main {
 
 .navbar-inpage {
     margin-bottom: 1rem;
+}
+
+.navbar-chapter{
+    border-radius: 5px;
+    padding-top:0;
+    padding-bottom: 0;
 }

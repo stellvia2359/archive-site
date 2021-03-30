@@ -8,7 +8,8 @@ var site = {
         var urlParams = new URLSearchParams(window.location.search);
         if (urlParams.has('page')) {
             var url = urlParams.get('page');
-            site.loadPage(url);
+            var loadeqjson = urlParams.get('loadeqjson');
+            site.loadPage(url,loadeqjson);
         } else {
             site.loadHome();
         }
@@ -33,7 +34,7 @@ var site = {
         });
         utility.loadTooltip();
     },
-    loadPage: function (url) {
+    loadPage: function (url,loadeqjson) {
         $.ajax({
             url: url + ".html",
             dataType: "html",
@@ -42,7 +43,14 @@ var site = {
                 $(".nav-link").removeClass("active");
                 var navId = $(".nav-id").val();
                 $("#" + navId).addClass("active");
-                site.loadJson(url);
+                if(loadeqjson){
+                    site.loadJson(url);
+                }
+                else{
+                    utility.loadPopover();
+                    utility.generateStars();
+                    utility.hideLoadingMask();
+                }
             }
         });
     },

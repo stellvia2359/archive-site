@@ -2,11 +2,13 @@
     "allEquipments": [
         {
             "category": "頭上",
+            "categoryCode":"head-top",
             "equipments": [
                 {
                     "imgName": "16.png",
                     "name": "席琳的蝴蝶結",
                     "slots": 1,
+                    "available": true,
                     "star": 5,
                     "comments": [
                         "首選頭上，搭配席琳的胸針、基米的胸針的套裝效果，可以說是法師的三大神裝，傷害直接三級跳，還能附魔速4(10%攻速)，對撐攻速193很有幫助"
@@ -49,6 +51,7 @@
                     "imgName": "78.png",
                     "name": "超時空頭冠(咒術士)",
                     "slots": 1,
+                    "available": true,
                     "star": 4.5,
                     "comments": [
                         "挑戰古城生產的新裝備，對於連鎖電擊有很大的增幅，可以三段附魔，第三段甚至可以附戰死頭的魔精，但我覺得還是略遜於席琳套，畢竟實在是找不到跟胸針差不多增傷的飾品，但這個CP值很高，比胸針套便宜太多，是平民玩家的首選。"
@@ -103,6 +106,7 @@
                     "imgName": "2.png",
                     "name": "神秘魔力石帽子",
                     "slots": 1,
+                    "available": true,
                     "star": 3,
                     "comments": [
                         "上面兩頂帽子基本上就是高端和平民的PVE首選了，目前戰死頭我覺得適合打PVP用魂爆吧，加的東西實在太過時了，碧血隕石也是咒術後期滿等後最沒用的技能之一，而且還要170才能穿，連拿來練功都不適合，玩PVE不建議做，之後KRO有加強咒術戰死頭，但我覺得對於PVE來說還是很普通。"
@@ -152,6 +156,7 @@
                     "imgName": "1.png",
                     "name": "心型羽翼髮夾",
                     "slots": 1,
+                    "available": true,
                     "star": 0.5,
                     "comments": [
                         "這個真的嚴重過氣了，我寧願用超時空頭拚單下傷害彌補延遲不足，除非你已經有插好齊爾的是可以拿來用一用過過秒7癮。不過現在版本也不一定要齊爾才能秒7了，可以參考小資風念配裝。"
@@ -181,6 +186,7 @@
                     "imgName": "17.png",
                     "name": "魔幻羽毛髮夾",
                     "slots": 1,
+                    "available": true,
                     "star": 1,
                     "comments": [
                         "也是嚴重過氣裝，除非你不用連鎖電擊，不然超時空頭冠一定比較好。"
@@ -209,6 +215,7 @@
                     "imgName": "84.png",
                     "name": "修行者頭箍",
                     "slots": 1,
+                    "available": true,
                     "star": 2.5,
                     "comments": [
                         "搭配修行者魔球算是蠻不錯的平民裝備，主要就是便宜，可以參考巴哈的這兩篇實測文"
@@ -249,6 +256,7 @@
                     "imgName": "104.png",
                     "name": "長長貓耳朵帽子",
                     "slots": 1,
+                    "available": true,
                     "star": 0.5,
                     "comments": [
                         "+10的時候有20%無視魔防，其實對平民來說是不錯，但是現在有超時空頭了。"
@@ -277,6 +285,7 @@
                     "imgName": "105.png",
                     "name": "修咖巴殷的黑貓耳朵",
                     "slots": 0,
+                    "available": true,
                     "star": 0.5,
                     "comments": [
                         "以前很多人愛用的頭上，但我從來都不覺得這頂適合咒術，因為以前沒有秒7的時代，觸發時技能都cd，現在的話有更多好的帽子可以選擇，畢竟這頂完全沒其他效果已經過氣了。"
@@ -307,6 +316,7 @@
                 {
                     "imgName": "KIEL.png",
                     "name": "齊爾-D-01卡片",
+                    "available": true,
                     "star": 5,
                     "comments": [
                         "首選卡片，有錢就插這張就對了，秒7全靠他"
@@ -323,6 +333,7 @@
                 {
                     "imgName": "Sealed Kiel.png",
                     "name": "封印齊爾-D-01卡片",
+                    "available": true,
                     "star": 4.5,
                     "comments": [
                         "買不起正卡的第二選擇。"
@@ -340,6 +351,7 @@
                 {
                     "imgName": "Vesper.png",
                     "name": "貝思波卡片",
+                    "available": true,
                     "star": 3.5,
                     "comments": [
                         "搭配其他破防裝備，例如職業2.0套、神聖盾、RTC斗篷、邪惡武器、黑杖...來達到BOSS破防100%，相較於影子風暴套，可以減少切裝的麻煩，可是風念咒蠻缺延遲的，所以要用這個要慎重考慮配裝。"
@@ -357,6 +369,7 @@
                 {
                     "imgName": "Sealed Vesper.png",
                     "name": "封印貝思波卡片",
+                    "available": true,
                     "star": 3,
                     "comments": [
                         "同正卡"
@@ -375,6 +388,7 @@
                 {
                     "imgName": "FENRIR.png",
                     "name": "潘利爾卡片",
+                    "available": true,
                     "star": 1,
                     "comments": [
                         "雖然加很多MATK，但不適合咒術，比較適合技能沒有共延的獵靈。固定詠唱%沒有用，因為只取全身最高%而且先扣秒數才扣%，無法靠%來歸零固詠。"
@@ -392,6 +406,7 @@
                 {
                     "imgName": "High Wizard Katrinn.png",
                     "name": "闇●超魔導師 凱特莉娜卡片",
+                    "available": true,
                     "star": 2,
                     "comments": [
                         "無視所有小怪的魔防，練功好用。"
@@ -410,6 +425,7 @@
                 {
                     "imgName": "Sealed High Wizard Katrinn.png",
                     "name": "封印闇●超魔導師 凱特莉娜卡片",
+                    "available": true,
                     "star": 2,
                     "comments": [
                         "效果同正卡，額外的副作用可無視，練功好用。"
@@ -428,6 +444,7 @@
                 {
                     "imgName": "Tikbalang.png",
                     "name": "邪魔馬卡片",
+                    "available": true,
                     "star": 1.5,
                     "comments": [
                         "超貧民選擇，只能拚傷害無法追求連發速度。"
@@ -445,6 +462,7 @@
                 {
                     "imgName": "Lichtern Green.png",
                     "name": "元素鬼火(綠)卡片",
+                    "available": true,
                     "star": 1.5,
                     "comments": [
                         "超貧民選擇，只能拚傷害無法追求連發速度。"
@@ -462,6 +480,7 @@
                 {
                     "imgName": "Mutant Coelacanth.png",
                     "name": "變種腔棘魚卡片",
+                    "available": true,
                     "star": 0.5,
                     "comments": [
                         "毫無王卡的威嚴，MATK%加的又少，還要扣血，感覺插上去是一種懲罰。"
@@ -478,6 +497,7 @@
                 {
                     "imgName": "FENRIR(weak).png",
                     "name": "弱化的潘利爾卡片",
+                    "available": true,
                     "star": 0.5,
                     "comments": [
                         "乞丐卡，不如不插存錢買更好的。"
@@ -494,6 +514,7 @@
                 {
                     "imgName": "Cendrawasih.png",
                     "name": "天堂鳥卡片",
+                    "available": true,
                     "star": 0.5,
                     "comments": [
                         "乞丐卡，不如不插存錢買更好的。"
@@ -511,11 +532,13 @@
         },
         {
             "category": "頭中",
+            "categoryCode":"head-middle",
             "equipments": [
                 {
                     "imgName": "19.png",
                     "name": "太陽眼鏡",
                     "slots": 1,
+                    "available": true,
                     "star": 5,
                     "comments": [
                         "我個人認為目前風念咒首選頭中，主要是因為搭配暴徒領巾。"
@@ -539,6 +562,7 @@
                     "imgName": "46.png",
                     "name": "眼鏡",
                     "slots": 1,
+                    "available": true,
                     "star": 5,
                     "comments": [
                         "同太陽眼鏡"
@@ -562,6 +586,7 @@
                     "imgName": "18.png",
                     "name": "新浪潮墨鏡",
                     "slots": 1,
+                    "available": true,
                     "star": 3,
                     "comments": [
                         "目前延遲最高的洞頭中，但是沒有傷害，很稀有，所以很貴，但我覺得錢拿去買暴徒套比較好。"
@@ -586,6 +611,7 @@
                     "imgName": "18.png",
                     "name": "新浪潮墨鏡",
                     "slots": 0,
+                    "available": true,
                     "star": 2.5,
                     "comments": [
                         "目前延遲最高的頭中，可是沒有洞，價格也是偏高，不太建議。"
@@ -610,6 +636,7 @@
                     "imgName": "34.png",
                     "name": "柯杜威之耳",
                     "slots": 0,
+                    "available": true,
                     "star": 3,
                     "comments": [
                         "MATK+很多，缺點是沒有洞，以前可能會因為不能插齊爾就不考慮，但現在各種新的延遲裝出來後，齊爾已經不是秒7的必需品，但如果你的目標是自體免觸發秒7的話還是不能選柯耳。"
@@ -646,6 +673,7 @@
                     "imgName": "20.png",
                     "name": "惡魔小跟班",
                     "slots": 1,
+                    "available": true,
                     "star": 3,
                     "comments": [
                         "為了齊爾卡，有洞60分。"
@@ -672,6 +700,7 @@
                     "imgName": "21.png",
                     "name": "妖精長耳朵飾",
                     "slots": 1,
+                    "available": true,
                     "star": 3,
                     "comments": [
                         "為了齊爾卡，有洞60分。"
@@ -695,6 +724,7 @@
                     "imgName": "62.png",
                     "name": "影子推助器",
                     "slots": 1,
+                    "available": true,
                     "star": 3,
                     "comments": [
                         "有1速和1%延遲，還有1洞，如果不是用暴徒套的話選這個不錯，後來還出了套裝雙管加農砲，可以進一步提升效果。"
@@ -720,6 +750,7 @@
                     "imgName": "133.png",
                     "name": "魔力之星",
                     "slots": 0,
+                    "available": true,
                     "star": 3,
                     "comments": [
                         "搭配魔力星環套裝拚裝備無詠和屬性、BOSS增傷、減固詠還不錯用，但價錢被炒得有點高。"
@@ -748,15 +779,17 @@
                 }
             ],
             "cards": [],
-            "noCardMessage":"同頭上卡片"
+            "noCardMessage": "同頭上卡片"
         },
         {
             "category": "頭下",
+            "categoryCode":"head-bottom",
             "equipments": [
                 {
                     "imgName": "39.png",
                     "name": "暴徒領巾",
                     "slots": 0,
+                    "available": true,
                     "star": 5,
                     "comments": [
                         "首選頭下，搭配太陽眼鏡或眼鏡可以加大量的 魔攻、攻速、血量，雖然台版被閹割，但還是非常強。"
@@ -785,6 +818,7 @@
                     "imgName": "23.png",
                     "name": "夢魘古城旁觀者",
                     "slots": 0,
+                    "available": true,
                     "star": 3,
                     "comments": [
                         "提供5%延遲，算是平民CP值之選"
@@ -811,6 +845,7 @@
                     "imgName": "3.png",
                     "name": "小巴風特降落傘",
                     "slots": 0,
+                    "available": true,
                     "star": 2,
                     "comments": [
                         "ASPD+1、延遲-1%，都是我們需要的，而且便宜容易入手的平民裝。"
@@ -836,6 +871,7 @@
                     "imgName": "22.png",
                     "name": "貓熊氣球",
                     "slots": 0,
+                    "available": true,
                     "star": 2,
                     "comments": [
                         "+攻速又+全屬性，都是我們需要的，而且便宜容易入手的平民裝。"
@@ -861,6 +897,7 @@
                     "imgName": "63.png",
                     "name": "神木嫩葉",
                     "slots": 0,
+                    "available": true,
                     "star": 3,
                     "comments": [
                         "搭配柯杜威之耳可+MATK，可是用這套裝犧牲了延遲和攻速，自行取捨"
@@ -892,6 +929,7 @@
                     "imgName": "41.png",
                     "name": "嘴叼狐尾草",
                     "slots": 0,
+                    "available": true,
                     "star": 1,
                     "comments": [
                         "平民缺固詠時可考慮，但通常應該是不會缺。"
@@ -916,6 +954,7 @@
                     "imgName": "79.png",
                     "name": "扭曲的超時空",
                     "slots": 0,
+                    "available": true,
                     "star": 0.5,
                     "comments": [
                         "我個人是覺得很爛，加這麼一點點東西還敢放消費禮騙錢...而且其中妖咒加的東西又更爛了，大概是未來平民可以少衝魔精吧?可是狐尾草不用綁裝也-0.1秒..."
@@ -945,6 +984,7 @@
                     "imgName": "83.png",
                     "name": "修行者魔球",
                     "slots": 0,
+                    "available": true,
                     "star": 3.5,
                     "comments": [
                         "我覺得算是平民蠻優質的裝備，只要農就有，如果是不想花大錢的玩家可以考慮用這個。可以參考巴哈的這兩篇實測文。"
@@ -1002,6 +1042,7 @@
                     "imgName": "107.png",
                     "name": "邪惡氣息",
                     "slots": 0,
+                    "available": true,
                     "star": 4,
                     "comments": [
                         "EDDA研究所出產的新頭下，搭配戰死斗會有很強力的效果，主要看點是提供大量延遲、減變詠和攻速，目前看韓服四轉咒術也在用這套。"
@@ -1031,6 +1072,7 @@
                     "imgName": "115.png",
                     "name": "雙管加農砲",
                     "slots": 0,
+                    "available": true,
                     "star": 3.5,
                     "comments": [
                         "如果有影子助推器的話就還不錯，有蠻多攻速和減延遲。不過缺點就是影子助推器很稀有。"
@@ -1055,15 +1097,17 @@
                 }
             ],
             "cards": [],
-            "noCardMessage":"目前無頭下洞裝備"
+            "noCardMessage": "目前無頭下洞裝備"
         },
         {
             "category": "鎧甲",
+            "categoryCode":"body",
             "equipments": [
                 {
                     "imgName": "25.png",
                     "name": "朱比特輕甲",
                     "slots": 1,
+                    "available": true,
                     "star": 4,
                     "comments": [
                         "現階段這件裝只能說還是堪用，而且現在滅世靴出來後，鞋子沒有屬性點，就算200等ID130要不靠20料無詠還有點小困難，這件有加素質還算能用。"
@@ -1123,6 +1167,7 @@
                     "imgName": "85.png",
                     "name": "幻象機甲B型",
                     "slots": 1,
+                    "available": true,
                     "star": 4,
                     "comments": [
                         "非常好入手的一件衣服，價格低、效果強，不過依照現在高難度副本環境，我會比較推薦智慧長袍。"
@@ -1186,6 +1231,7 @@
                     "imgName": "24.png",
                     "name": "奉承外袍",
                     "slots": 1,
+                    "available": true,
                     "star": 2,
                     "comments": [
                         "已經過氣了，除非你上面插了滅絕古埃及王之類的，才有可能繼續用。"
@@ -1243,6 +1289,7 @@
                     "imgName": "86.png",
                     "name": "施密特國王新衣",
                     "slots": 1,
+                    "available": true,
                     "star": 1.5,
                     "comments": [
                         "近期才出的EDDA國王的裝備，但能力實在不怎麼樣。"
@@ -1293,6 +1340,7 @@
                     "imgName": "75.png",
                     "name": "智慧湧現魔甲",
                     "slots": 1,
+                    "available": true,
                     "star": 1,
                     "comments": [
                         "以前沒有什麼鎧甲有減延遲，這個可以附魔10%，但現在有B甲了，是還可以拿來搭配時光斗，湊個動物惡魔100%破防，但現在職業2.0套已經普及，也沒必要再用這個了。"
@@ -1339,6 +1387,7 @@
                     "imgName": "55.png",
                     "name": "大法師爭戰鎧甲",
                     "slots": 1,
+                    "available": true,
                     "star": 0.5,
                     "comments": [
                         "不適合風念咒。"
@@ -1369,6 +1418,7 @@
                     "imgName": "108.png",
                     "name": "月全蝕魔力外袍",
                     "slots": 1,
+                    "available": true,
                     "star": 4,
                     "comments": [
                         "對於撐硬來說蠻不錯的，高等挑戰古城對於薄皮職業來說很不友善，雖然傷害較低，但相對的也提升生存力，除了延遲以外也有減傷效果，搭配卡崙卡，有大量血量。"
@@ -1411,6 +1461,7 @@
                     "imgName": "117.png",
                     "name": "時光超越湧現鎧甲",
                     "slots": 1,
+                    "available": true,
                     "star": 4,
                     "comments": [
                         "泛用度很高的裝備，但價錢偏高，有很多更經濟的選擇。"
@@ -1469,6 +1520,7 @@
                     "imgName": "125.png",
                     "name": "智慧長袍",
                     "slots": 1,
+                    "available": true,
                     "star": 5,
                     "comments": [
                         "對天使/惡魔特化的裝備，而且INT給非常多，換上滅世靴後如果不另外找裝備補素質，就算200等也不太能夠不靠20料就達到無詠，這件裝備解決了這個問題，而且現在會需要巨量傷害的也就只有挑戰古城，天使和惡魔增傷非常好用，而且就算打不是天使惡魔傷害也算是能在能接受的範圍，不會到很爛，畢竟各種MATK%卡裝逐漸退場的現在，MATK%反而變成稀有屬性了，對最終傷害的增幅也不會像以前那樣被稀釋的很慘。"
@@ -1526,6 +1578,7 @@
                     "imgName": "131.png",
                     "name": "靈巧長袍",
                     "slots": 1,
+                    "available": true,
                     "star": 0.5,
                     "comments": [
                         "同樣是對天使惡魔特化裝備，特點是如果附到DEX胸針會有-0.3秒固詠的效果，比較適合彗星咒。"
@@ -1583,6 +1636,7 @@
                     "imgName": "128.png",
                     "name": "藍龍鎧甲",
                     "slots": 1,
+                    "available": true,
                     "star": 0.5,
                     "comments": [
                         "主要賣點我覺得是減固詠，感覺蠻適合彗星咒，但風念的話我覺得不太適合。"
@@ -1636,9 +1690,10 @@
                     }
                 },
                 {
-                    "imgName": "128.png",
-                    "name": "席琳的禮服(暫譯)",
+                    "imgName": "132.png",
+                    "name": "席琳的禮服",
                     "slots": 1,
+                    "available": false,
                     "star": 5,
                     "comments": [
                         "KRO新出的衣服，並不是打什麼都最頂尖傷害，天使惡魔傷害可能會輸智袍、電擊傷害可能輸技能附魔自動甲，但就是萬金油。缺點是搭配滅世靴後，現存的裝備看起來沒有能夠解決需要+20料來達成素質無詠的問題，不過也不排除是我沒有想到。"
@@ -1683,22 +1738,275 @@
                         "usableBy": "全職業",
                         "enchantments": []
                     }
-                },
+                }
             ],
             "cards": [
                 {
-                    "imgName": "KIEL.png",
-                    "name": "齊爾-D-01卡片",
+                    "imgName": "Nightmare Amon Ra.png",
+                    "name": "滅絕古埃及王卡片",
+                    "available": true,
                     "star": 5,
                     "comments": [
-                        "首選卡片，有錢就插這張就對了，秒7全靠他"
+                        "拚傷害首選卡片，提供大量增傷，對不死屬、暗屬、不死型、惡魔型增加50%傷害，有機會同時觸發兩個+50%傷害，RO這些屬性的怪非常多，還有G社最愛的各式各樣的古城副本，例如現在正夯的挑戰古城，都是這張卡發揮的場所，你看到有人打出超級誇張的傷害一定是靠這張卡打的。"
                     ],
                     "info": {
                         "contents": [
-                            "所有技能後延遲-30%。"
+                            "對不死屬性、暗屬性、不死型、惡魔型怪造成的魔法傷害+50%。"
                         ],
                         "class": "卡片",
-                        "position": "頭具",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Tao Gunka.png",
+                    "name": "塔奧群卡卡片",
+                    "available": true,
+                    "star": 4,
+                    "comments": [
+                        "保命首選卡片，活著才是輸出，而且滅絕古埃也不是每次都能發揮效果，這張跟傷害卡就看大家自己取捨。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MAXHP+100%，依比例減少DEF、MDEF50%。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "null.png",
+                    "name": "封印塔奧群卡卡片",
+                    "available": true,
+                    "star": 3.5,
+                    "comments": [
+                        "省錢的保命選擇，好處是可以隨時拔卡。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MaxHP+50%，DEF，MDEF -50。",
+                            "當精練+15以上時，MaxHP+75%，DEF，MDEF -50。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Infinite Tao Gunka.png",
+                    "name": "無限塔奧群卡卡片",
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "我個人是覺得只+10000還要扣10AGI蠻爛的，應該不是設計給三轉職業用的，所以不推薦。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MHP+10000。",
+                            "AGI -10。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Realized Amdarais.png",
+                    "name": "覺醒闇答萊屍卡片",
+                    "available": true,
+                    "star": 4,
+                    "comments": [
+                        "泛用增傷卡片，但副作用強但加的東西很普通，我沒有很喜歡，但如果沒辦法觸發滅絕古埃及王的情況，這張幾乎是唯一選擇了。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "對全階級的物理傷害+20%、MATK+20%。",
+                            "每6秒HP損失666、SP損失66。",
+                            "卸除裝備時HP損失6666、SP損失666。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Amdarais.png",
+                    "name": "闇答萊屍卡片",
+                    "available": true,
+                    "star": 3.5,
+                    "comments": [
+                        "效果比較差，但便宜"
+                    ],
+                    "info": {
+                        "contents": [
+                            "對全階級的物理傷害+15%、MATK+15%。",
+                            "每4秒HP損失666、SP損失66。",
+                            "卸除裝備時HP損失6666、SP損失666。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Entweihen Crothen.png",
+                    "name": "骷髏觸角魔卡片",
+                    "available": true,
+                    "star": 4,
+                    "comments": [
+                        "簡單暴力的+100MATK，很泛用的增傷，再滅絕古埃及王無法觸發時的另一選擇。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+100。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Professor Celia.png",
+                    "name": "闇●智者 西里亞卡片",
+                    "available": true,
+                    "star": 3.5,
+                    "comments": [
+                        "沒有副作用的泛用增傷卡片，但有自詠的疑慮。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "受到魔法攻擊時有很高的機率觸發地元素領域Lv.5。",
+                            "MATK+7%、DEX 110以上時MATK再+7%。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Sealed Professor Celia.png",
+                    "name": "封印闇●智者 西里亞卡片",
+                    "available": true,
+                    "star": 2.5,
+                    "comments": [
+                        "加的有點太少了，不太建議。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "遭受魔法攻擊時，有較高機率觸發地元素領域 Lv.1。",
+                            "MATK+3%，DEX 110以上時MATK再+3%。",
+                            "",
+                            "精煉+15以上時，能力變為",
+                            "遭受魔法攻擊時，有較高機率觸發地元素領域Lv.3。",
+                            "MATK+5%，DEX 110以上時MATK再+5%。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Naght Seiger.png",
+                    "name": "夜勝魔卡片",
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "因為靈魂爆炸沒有職業2.0套裝，所以已經無法做為主力輸出，只能當作電不到時候的替代方案，所以加念屬性已經沒有什麼作用了。未來魂爆運用場合可能是PVP居多了。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "所有念屬性魔法之攻擊+30%。(心靈爆破，聖靈召喚，靈魂爆炸)"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Sweet Nightmare.png",
+                    "name": "幻影夢魘卡片",
+                    "available": true,
+                    "star": 2,
+                    "comments": [
+                        "目前多數平民法師的選擇，有MATK又有無副作用防斷。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK +20，詠唱不會中斷。",
+                            "搭配吸血鬼爪牙後，鎧甲精煉每+3時，MATK 再+1%。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Garm.png",
+                    "name": "卡崙卡片",
+                    "available": true,
+                    "star": 4,
+                    "comments": [
+                        "搭配月全蝕魔力外袍用的，其他裝備不要插這張。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "受到物理傷害時，讓敵人有50%的機率冰凍。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Shadow of Nydhog.png",
+                    "name": "尼德霍格幻影卡片",
+                    "available": true,
+                    "star": 4,
+                    "comments": [
+                        "搭配守護精靈祈禱之鞋有BOSS增傷40%，對於滅絕古埃及王無法生效的場合來說蠻實用的。不過缺點也很明顯就是綁裝，而且搭配的鞋子又還要綁其他裝備，要慎重考慮。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "INT+5, 超魔導師, 咒術士裝備時固定詠唱-50%。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "High Priest Magaleta.png",
+                    "name": "闇●神官 瑪嘉雷特卡片",
+                    "available": true,
+                    "star": 3,
+                    "comments": [
+                        "搭配阿斯戒的時候才用得到，其他時候都不考慮。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "當受到物理或是魔法攻擊時，對自己有機率會啟動 自動念咒 聖母之祈福 Lv.1。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Sealed Nightmare Amon Ra.png",
+                    "name": "封印滅絕古埃及王卡片",
+                    "available": true,
+                    "star": 4.5,
+                    "comments": [
+                        "同正卡，但加的傷害少一半，不過現在價錢有點太誇張了。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "對不死屬性、暗屬性、不死型、惡魔型的魔法傷害+25%。",
+                            "當鎧甲精煉+15以上時, 對不死屬性、暗屬性、不死型、惡魔型的魔法傷害再+12%。"
+                        ],
+                        "class": "卡片",
+                        "position": "鎧甲",
                         "weight": 1
                     }
                 }
