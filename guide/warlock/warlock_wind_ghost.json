@@ -2,7 +2,7 @@
     "allEquipments": [
         {
             "category": "頭上",
-            "categoryCode":"head-top",
+            "categoryCode": "head-top",
             "equipments": [
                 {
                     "imgName": "16.png",
@@ -28,10 +28,12 @@
                             "裝備後每5秒消耗50 HP"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭上",
                         "weight": 20,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": [
                             {
@@ -75,10 +77,12 @@
                             "精煉+11時，MATK+5%。"
                         ],
                         "class": "頭具",
-                        "defense": 10,
+                        "value": 10,
                         "position": "頭上",
                         "weight": 20,
-                        "requiredLevel": 170,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 170,
                         "usableBy": "咒術士系列",
                         "enchantments": [
                             {
@@ -129,10 +133,12 @@
                             "依精煉值碧血隕石的冷卻時間-0.1秒。"
                         ],
                         "class": "頭具",
-                        "defense": 10,
+                        "value": 10,
                         "position": "頭上",
                         "weight": 10,
-                        "requiredLevel": 170,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 170,
                         "usableBy": "咒術士",
                         "enchantments": [
                             {
@@ -174,10 +180,12 @@
                             "依精煉值碧血隕石的冷卻時間-0.1秒。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭上",
                         "weight": 30,
-                        "requiredLevel": 50,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 50,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -203,10 +211,12 @@
                             "使用緊急治療時(100%機率)，10秒內變身為\"蘿莎蓮\"怪"
                         ],
                         "class": "頭具",
-                        "defense": 5,
+                        "value": 5,
                         "position": "頭上",
                         "weight": 3,
-                        "requiredLevel": 10,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 10,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -244,10 +254,12 @@
                             "精煉+10時，魔法攻擊時有機率5秒內變動詠唱時間 -50%。"
                         ],
                         "class": "頭具",
-                        "defense": 10,
+                        "value": 10,
                         "position": "頭上",
                         "weight": 50,
-                        "requiredLevel": 50,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 50,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -273,10 +285,12 @@
                             "MATK+2%，精煉值+9時，MATK另外增加+5%。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭上",
                         "weight": 10,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -303,10 +317,12 @@
                             ""
                         ],
                         "class": "頭具",
-                        "defense": 4,
+                        "value": 4,
                         "position": "頭上",
                         "weight": 20,
-                        "requiredLevel": 45,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 45,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -532,7 +548,7 @@
         },
         {
             "category": "頭中",
-            "categoryCode":"head-middle",
+            "categoryCode": "head-middle",
             "equipments": [
                 {
                     "imgName": "19.png",
@@ -550,10 +566,12 @@
                             "黑色的眼鏡，可用來阻擋太陽用或當做時髦的裝飾品用。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭中",
                         "weight": 10,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -574,10 +592,12 @@
                             "用玻璃壓縮做成的眼鏡，配帶這眼鏡的人，都是視力不太好的人。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭中",
                         "weight": 10,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -599,10 +619,12 @@
                             "技能後延遲 -5%。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭中",
                         "weight": 10,
-                        "requiredLevel": 30,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 30,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -624,10 +646,12 @@
                             "技能後延遲 -10%。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭中",
                         "weight": 10,
-                        "requiredLevel": 30,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 30,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -661,10 +685,12 @@
                             "對玩家人類型、喵族的魔法傷害+2% (精煉上限為10) 。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭中",
                         "weight": 30,
-                        "requiredLevel": 70,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 70,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -688,10 +714,12 @@
                             "精煉、破壞不可。"
                         ],
                         "class": "頭具",
-                        "defense": 5,
+                        "value": 5,
                         "position": "頭中",
                         "weight": 10,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -712,10 +740,12 @@
                             "仿照妖精的耳朵做成的，配帶時可以感覺到變身為妖精的感覺。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭中",
                         "weight": 10,
-                        "requiredLevel": 70,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 70,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -738,10 +768,12 @@
                             "ASPD+1，技能後延遲- 1%。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭中",
                         "weight": 30,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -769,10 +801,12 @@
                             "基本屬性 LUK 每12時, 聖屬性魔法傷害 +2%。"
                         ],
                         "class": "頭具",
-                        "defense": 20,
+                        "value": 20,
                         "position": "頭中",
                         "weight": 20,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -783,7 +817,7 @@
         },
         {
             "category": "頭下",
-            "categoryCode":"head-bottom",
+            "categoryCode": "head-bottom",
             "equipments": [
                 {
                     "imgName": "39.png",
@@ -806,10 +840,12 @@
                             "基本屬性AGI/VIT的總和每+80時，攻擊速度增加(攻擊後延遲 -5%)，MAXHP +5%，對玩家人類型、喵族的抗性 +2%。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭下",
                         "weight": 10,
-                        "requiredLevel": 100,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 100,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -833,10 +869,12 @@
                             "技能後延遲-5%。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭下",
                         "weight": 10,
-                        "requiredLevel": 80,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 80,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -859,10 +897,12 @@
                             "ASPD +1，技能後延遲-1%。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭下",
                         "weight": 20,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -885,10 +925,12 @@
                             "不可精煉和破壞。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭下",
                         "weight": 20,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -917,10 +959,12 @@
                             "當書籍、單手杖、手杖的精煉值每+1時，以魔法攻擊給予人類玩家型、喵族的傷害+2%，直到精煉+10。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭下",
                         "weight": 20,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -942,10 +986,12 @@
                             "MATK+10，所有固定詠唱 -0.1秒。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭下",
                         "weight": 10,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -972,10 +1018,12 @@
                             "搭配「超時空頭冠(浪姬舞者&宮廷樂師)」時，MATK+2%、對全階級敵人的魔法傷害+3%。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭下",
                         "weight": 20,
-                        "requiredLevel": 170,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 170,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -1030,10 +1078,12 @@
                             "武器精煉+7時，MATK再+2%。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭下",
                         "weight": 30,
-                        "requiredLevel": 50,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 50,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -1060,10 +1110,12 @@
                             "基本屬性LUK30時，暴擊傷害+3%。"
                         ],
                         "class": "頭具",
-                        "defense": 5,
+                        "value": 5,
                         "position": "頭下",
                         "weight": 10,
-                        "requiredLevel": 170,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 170,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -1087,10 +1139,12 @@
                             "技能後延遲再-4%，攻擊後延遲減少(攻擊速度增加5%)，遠距離物理傷害+8%，近距離物理傷害+8%。"
                         ],
                         "class": "頭具",
-                        "defense": 0,
+                        "value": 0,
                         "position": "頭下",
                         "weight": 10,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -1101,7 +1155,7 @@
         },
         {
             "category": "鎧甲",
-            "categoryCode":"body",
+            "categoryCode": "body",
             "equipments": [
                 {
                     "imgName": "25.png",
@@ -1138,10 +1192,12 @@
                             "MATK+60、MDEF+20，對所有種族的魔法傷害+5%。"
                         ],
                         "class": "鎧甲",
-                        "defense": 0,
+                        "value": 0,
                         "position": "",
                         "weight": 30,
-                        "requiredLevel": 100,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 100,
                         "usableBy": "3轉魔法師系列",
                         "enchantments": [
                             {
@@ -1194,10 +1250,12 @@
                             "MATK+50。"
                         ],
                         "class": "鎧甲",
-                        "defense": 105,
+                        "value": 105,
                         "position": "",
                         "weight": 100,
-                        "requiredLevel": 130,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 130,
                         "usableBy": "全職業",
                         "enchantments": [
                             {
@@ -1260,10 +1318,12 @@
                             "MATK+2%，鎧甲精煉值每+1時，MATK+1%。"
                         ],
                         "class": "鎧甲",
-                        "defense": 0,
+                        "value": 0,
                         "position": "",
                         "weight": 10,
-                        "requiredLevel": 100,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 100,
                         "usableBy": "全職業",
                         "enchantments": [
                             {
@@ -1315,10 +1375,12 @@
                             "若施密特國王新衣和施密特國王斗篷的精煉值總合為22以上時，技能後延遲-15%。"
                         ],
                         "class": "鎧甲",
-                        "defense": 150,
+                        "value": 150,
                         "position": "",
                         "weight": 90,
-                        "requiredLevel": 130,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 130,
                         "usableBy": "全職業",
                         "enchantments": [
                             {
@@ -1366,10 +1428,12 @@
                             "若精煉值總合為21以上時，再無視動物型、惡魔型怪的魔法防禦力20%。"
                         ],
                         "class": "鎧甲",
-                        "defense": 60,
+                        "value": 60,
                         "position": "",
                         "weight": 90,
-                        "requiredLevel": 1,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
                         "usableBy": "全職業",
                         "enchantments": [
                             {
@@ -1406,10 +1470,12 @@
                             "4.地牛翻身冷卻時間-5秒。"
                         ],
                         "class": "鎧甲",
-                        "defense": 55,
+                        "value": 55,
                         "position": "",
                         "weight": 0,
-                        "requiredLevel": 99,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 99,
                         "usableBy": "咒術士/妖術師",
                         "enchantments": []
                     }
@@ -1449,10 +1515,12 @@
                             "受到「朔月腳」、「滿月腳」的傷害再-20%。"
                         ],
                         "class": "鎧甲",
-                        "defense": 120,
+                        "value": 120,
                         "position": "",
                         "weight": 60,
-                        "requiredLevel": 99,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 99,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -1499,10 +1567,12 @@
                             "技能後延遲再-8%。"
                         ],
                         "class": "鎧甲",
-                        "defense": 120,
+                        "value": 120,
                         "position": "",
                         "weight": 60,
-                        "requiredLevel": 99,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 99,
                         "usableBy": "全職業",
                         "enchantments": [
                             {
@@ -1549,10 +1619,12 @@
                             "MATK+10%、技能後延遲-20%、固定詠唱-20%。"
                         ],
                         "class": "鎧甲",
-                        "defense": 100,
+                        "value": 100,
                         "position": "",
                         "weight": 80,
-                        "requiredLevel": 170,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 170,
                         "usableBy": "全職業",
                         "enchantments": [
                             {
@@ -1607,10 +1679,12 @@
                             "ATK+7%、MATK+7%、技能後延遲-20%、固定詠唱-20%。"
                         ],
                         "class": "鎧甲",
-                        "defense": 100,
+                        "value": 100,
                         "position": "",
                         "weight": 80,
-                        "requiredLevel": 170,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 170,
                         "usableBy": "全職業",
                         "enchantments": [
                             {
@@ -1668,10 +1742,12 @@
                             "技能後延遲-25%。"
                         ],
                         "class": "鎧甲",
-                        "defense": 110,
+                        "value": 110,
                         "position": "",
                         "weight": 120,
-                        "requiredLevel": 170,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 170,
                         "usableBy": "全職業",
                         "enchantments": [
                             {
@@ -1731,10 +1807,12 @@
                             "精煉值達+13或以上時，鎧甲不會被破壞。"
                         ],
                         "class": "鎧甲",
-                        "defense": 40,
+                        "value": 40,
                         "position": "",
                         "weight": 50,
-                        "requiredLevel": 130,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 130,
                         "usableBy": "全職業",
                         "enchantments": []
                     }
@@ -2007,6 +2085,882 @@
                         ],
                         "class": "卡片",
                         "position": "鎧甲",
+                        "weight": 1
+                    }
+                }
+            ]
+        },
+        {
+            "category": "武器",
+            "categoryCode": "weapon",
+            "equipments": [
+                {
+                    "imgName": "80.png",
+                    "name": "紅魔鬼法杖-OS",
+                    "slots": 2,
+                    "available": true,
+                    "star": 4,
+                    "comments": [
+                        "看似很爛，但其實擁有現階段絕無僅有的體型魔法增傷附魔，對於法系來說是一大福音，便宜又好用，把以前MATK%為主的武器、王卡按在地上磨擦。而且還是單手杖，能夠搭配金蟲盾使用，對於挑戰古副來說是很合適的武器。"
+                    ],
+                    "loot": "以「損壞的武器 x 1」與「核心零件 x 50」於特別警戒區柯爾NPC隨機抽取獲得",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3661#tab04"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "球體會散發紅色光澤的手杖。",
+                            "不可破壞。",
+                            "MATK+175。",
+                            "對無屬性、地屬性敵人的魔法傷害+5%。",
+                            "精煉+7時，變動詠唱-7%。",
+                            "精煉+9時，魔法攻擊時，有機率10秒內火屬性魔法傷害+30%。",
+                            "精煉+11時，技能後延遲-10%。"
+                        ],
+                        "class": "單手杖",
+                        "value": 80,
+                        "position": "",
+                        "weight": 90,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 130,
+                        "usableBy": "初學者/魔法師/服事/悟靈士系列",
+                        "enchantments": [
+                            {
+                                "name": "MATK+15%",
+                                "detail": []
+                            },
+                            {
+                                "name": "對大型怪魔法攻擊傷害增加 20%",
+                                "detail": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "imgName": "26.png",
+                    "name": "向日葵少年魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "雙手杖沒有前途，不能拿盾傷害又沒多高，而且這把也過氣了。"
+                    ],
+                    "loot": "空中要塞副本MVP及BOSS機率掉落",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://accompanies.pixnet.net/blog/post/44485948"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "大魔法師羅兆希納曾使用的法杖，從法杖散發出來的魔力不會讓花枯萎。",
+                            "INT+5，MATK+320。",
+                            "精煉每+2時，MATK+1%。",
+                            "精煉每+1時，技能後延遲 -1%。",
+                            "不可破壞。"
+                        ],
+                        "class": "雙手杖",
+                        "value": 80,
+                        "position": "",
+                        "weight": 150,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 170,
+                        "usableBy": "咒術士",
+                        "enchantments": [
+                            {
+                                "name": "INT+6",
+                                "detail": []
+                            },
+                            {
+                                "name": "INT+6",
+                                "detail": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "imgName": "73.png",
+                    "name": "藍焰彩杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "雙手杖沒有前途，不能拿盾傷害又沒多高。"
+                    ],
+                    "loot": "深淵古城MVP機率掉落",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "搭載水屬性、火屬性魔法結晶的雙手杖。",
+                            "不可破壞。",
+                            "INT+7、MATK+300。",
+                            "精煉每+2時，MATK+1%。",
+                            "精煉+7時，火、地、水、聖屬性魔法傷害+5%。",
+                            "精煉+9時，火、地、水、聖屬性魔法傷害再+10%。",
+                            "精煉+11時，受到所有大小敵人的傷害-20%。",
+                            "精煉+13時，技能後延遲-15%。"
+                        ],
+                        "class": "雙手杖",
+                        "value": 110,
+                        "position": "",
+                        "weight": 80,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 175,
+                        "usableBy": "魔法師/服事/悟靈士系列",
+                        "enchantments": [
+                            {
+                                "name": "INT+6",
+                                "detail": []
+                            },
+                            {
+                                "name": "INT+6",
+                                "detail": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "imgName": "52.png",
+                    "name": "幻影生存的魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 2,
+                    "comments": [
+                        "身為雙手杖給的MATK有點低，只有240，靠精煉和套裝的特效彌補，但現在雙手杖真的很爛，雖然這把套裝也有體型增傷，但只有中小型，小型基本上沒什麼用，大型才是重點。"
+                    ],
+                    "loot": "以「+9生存的魔杖[1] x 1」或「+9高等生存的魔杖[1] x 1」、「幻影石 x 125」、「哥德式瓷娃娃 x 100」、「頂級蒼蠅娃娃 x 100」、「黏土娃娃 x 15」，於幻影泰迪熊NPC兌換",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3517"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "結合多個生存的魔杖製作而成的拐杖。",
+                            "DEX+2、INT+2。",
+                            "不可破壞。",
+                            "MATK+240、MHP+600。",
+                            "精煉每+2時，MATK+1%。",
+                            "精煉+7時，對小型、中型敵人的魔法傷害+15%。",
+                            "精煉+9時，受到小型、中型敵人的物理/魔法傷害-15%。",
+                            "精煉+11時，受到水/風/地/火屬性敵人的物理/魔法傷害-15%。",
+                            "",
+                            "搭配幻影生存斗篷時，MATK+50。",
+                            "幻影生存的魔杖，幻影生存斗篷的精練值各為+7以上時，水/風/地/火屬性 魔法傷害+10%。",
+                            "精煉值總合為18以上時，對水/風/地/火屬性敵人的魔法傷害+15%。",
+                            "精煉值總合為22以上時，技能後延遲-15%。"
+                        ],
+                        "class": "雙手杖",
+                        "value": 100,
+                        "position": "",
+                        "weight": 120,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 120,
+                        "usableBy": "魔法師/服事/悟靈士系列",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "9.png",
+                    "name": "邪惡權杖",
+                    "slots": 1,
+                    "available": true,
+                    "star": 2.5,
+                    "comments": [
+                        "這把武器強度完全取決於附魔好壞，不過附魔是掉落時就決定好，沒辦法洗，所以頂附魔機率實在是太低，完全不感想像三條頂副魔，而且現在礦3武器非常好取得，這把已經沒有什麼用了。"
+                    ],
+                    "loot": "空中要塞小怪隨機掉落",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "蘊含著邪惡的單手杖。",
+                            "INT+5，MATK+120。",
+                            "MATK增加至(精煉值*精煉值) 。(精煉上限為+15)",
+                            "不可破壞。"
+                        ],
+                        "class": "單手杖",
+                        "value": 60,
+                        "position": "",
+                        "weight": 60,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 160,
+                        "usableBy": "初學者系列/魔法師系列/服事系列/悟靈士",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "8.png",
+                    "name": "邪惡魔杖",
+                    "slots": 1,
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "同邪惡權杖，但是是雙手杖，只要是雙手杖就不用我再多說了。"
+                    ],
+                    "loot": "空中要塞小怪隨機掉落",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "蘊含著邪惡的單手杖。",
+                            "INT+5，MATK+120。",
+                            "MATK增加至(精煉值*精煉值) 。(精煉上限為+15)",
+                            "不可破壞。"
+                        ],
+                        "class": "雙手杖",
+                        "value": 100,
+                        "position": "",
+                        "weight": 100,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 160,
+                        "usableBy": "魔法師系列/悟靈士",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "47.png",
+                    "name": "鋼鐵魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "對風念咒無幫助。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "由異世界金屬製成的魔杖。",
+                            "相傳是某位大法師的傑作。",
+                            "似乎能跟古代英雄戰靴產生共鳴。",
+                            "MATK+200，",
+                            "不可破壞。",
+                            "精煉每+2時， MATK+10。",
+                            "精煉每+3時，地牛翻身的傷害+12%。",
+                            "精煉+11時，地牛翻身技能的冷卻時間-1秒。",
+                            "搭配古代英雄戰靴下魔法攻擊時，有機率7秒內INT+20、MATK+15%。"
+                        ],
+                        "class": "雙手杖",
+                        "value": 100,
+                        "position": "",
+                        "weight": 80,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 100,
+                        "usableBy": "咒術士",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "81.png",
+                    "name": "皇室魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 1,
+                    "comments": [
+                        "挑戰古城出產的武器，是雙手杖，但有增加連鎖電擊傷害，就算不搭配套裝也有對不死和天使型怪物增傷，打挑戰古城算不錯，希梅爾茲是天使型，小怪是不死型，可是致命弱點是沒有減延遲，這樣對於風念咒來說太傷，除非你能背著詩人幫你唱歌，不然延遲應該是會不夠。"
+                    ],
+                    "loot": "於挑戰古城門口販賣機以「超時空魔力 x 10」兌換或以「超時空寶石原石 x 2」、「超時空魔力碎片 x 20」隨機抽取",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3949"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "克雷斯特漢姆的魔法師們所使用的魔杖。",
+                            "雖然是沒有什麼特別之處的普通武器，但受到希梅爾茲的影響而魔力四射。",
+                            "不可破壞，MATK+270、MATK+5%。",
+                            "精煉每+1時，MATK+5。",
+                            "精煉+9時， [連鎖電擊、地牛翻身]傷害+20%。",
+                            "精煉+11時，對不死型、天使型怪的魔法傷害+20%。",
+                            "",
+                            "搭配施密特國王新衣、施密特國王斗篷時，",
+                            "MATK+30，魔法攻擊時有機率10秒內風屬性、地屬性魔法傷害+10%。",
+                            "",
+                            "施密特國王新衣、施密特國王斗篷、皇室魔杖的精煉值總合為30以上時，對聖屬性、不死屬性敵人的魔法傷害+20%。"
+                        ],
+                        "class": "雙手杖",
+                        "value": 100,
+                        "position": "",
+                        "weight": 150,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 170,
+                        "usableBy": "咒術士系列",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "82.png",
+                    "name": "皇室高級魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 1,
+                    "comments": [
+                        "一樣是挑戰古城出產的武器，雖然是單手杖，但是沒有增加風念相關的效果，也沒有延遲。"
+                    ],
+                    "loot": "於挑戰古城門口販賣機以「超時空魔力 x 10」兌換或以「超時空寶石原石 x 2」、「超時空魔力碎片 x 20」隨機抽取",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3949"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "克雷斯特漢姆的魔法師們所使用的高級魔杖。",
+                            "雖然是沒有什麼特別之處的普通武器，但受到希梅爾茲的影響而魔力四射。",
+                            "不可破壞，MATK+180，火屬性魔法傷害+5%。",
+                            "精煉每+1時，MATK+4。",
+                            "精煉+9時， [地獄火焰、碧血隕石]傷害+20%。",
+                            "精煉+11時，對不死型、天使型怪的魔法傷害+20%。",
+                            "",
+                            "搭配施密特國王新衣、施密特國王斗篷時，",
+                            "MATK+30，魔法攻擊時有機率10秒內火屬性，暗屬性魔法傷害+10%。",
+                            "",
+                            "施密特國王新衣、施密特國王斗篷、皇室高級魔杖的精煉值總合為30以上時，對聖屬性、不死屬性敵人的魔法傷害+20%。"
+                        ],
+                        "class": "單手杖",
+                        "value": 80,
+                        "position": "",
+                        "weight": 80,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 170,
+                        "usableBy": "咒術士系列",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "50.png",
+                    "name": "守護精靈魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "只是3級武器且沒有提供減延遲，本身效果非常爛，算是為了觸發守護精靈神盾加魔攻效果的附屬品，不太適合風念咒。而且比傷害的話現在還有很多更強的武器。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "精靈族收集魔力時將常用的石頭經加工後製作而成的魔杖。",
+                            "精煉值每+1時固定詠唱 -1%。(不會與卡片或其他部位的下降效果重疊)",
+                            "MATK+180"
+                        ],
+                        "class": "單手杖",
+                        "value": 30,
+                        "position": "",
+                        "weight": 50,
+                        "property": "",
+                        "equipmentLevel": 3,
+                        "requiresLevel": 100,
+                        "usableBy": "3轉魔法師，3轉服事系列",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "53.png",
+                    "name": "生存的魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 3,
+                    "comments": [
+                        "主要是用來搭配修行者魔球，蠻不錯的平民裝，可以參考巴哈的實測文。"
+                    ],
+                    "loot": "骷髏觸角魔、齊爾-D-01掉落",
+                    "externalUrls": [
+                        {
+                            "name": "實測1",
+                            "url": "https://forum.gamer.com.tw/C.php?bsn=4212&snA=425298"
+                        },
+                        {
+                            "name": "實測2",
+                            "url": "https://forum.gamer.com.tw/C.php?bsn=4212&snA=425857"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "為了苦行的修行者們，魔法師公會和教團所協力完成的手杖，有兩種類型。",
+                            "DEX+3，MATK+120，HP+400。"
+                        ],
+                        "class": "單手杖",
+                        "value": 50,
+                        "position": "",
+                        "weight": 100,
+                        "property": "無",
+                        "equipmentLevel": 3,
+                        "requiresLevel": 24,
+                        "usableBy": "魔法師系列/服事系列/悟靈士",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "87.png",
+                    "name": "高等生存的魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 3,
+                    "comments": [
+                        "主要是用來搭配修行者魔球，蠻不錯的平民裝，可以參考巴哈的實測文。"
+                    ],
+                    "loot": "骷髏觸角魔、齊爾-D-01掉落",
+                    "externalUrls": [
+                        {
+                            "name": "實測1",
+                            "url": "https://forum.gamer.com.tw/C.php?bsn=4212&snA=425298"
+                        },
+                        {
+                            "name": "實測2",
+                            "url": "https://forum.gamer.com.tw/C.php?bsn=4212&snA=425857"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "為了苦行的修行者們，魔法師公會和教團所協力完成的手杖，有兩種類型。",
+                            "INT+3，MATK+120，HP+400。"
+                        ],
+                        "class": "單手杖",
+                        "value": 50,
+                        "position": "",
+                        "weight": 100,
+                        "property": "無",
+                        "equipmentLevel": 3,
+                        "requiresLevel": 24,
+                        "usableBy": "魔法師系列/服事系列/悟靈士",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "57.png",
+                    "name": "幻影大巫師之杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "主要是搭配幻影生存斗篷時可以增加地獄火傷害，可是咒術\"優化\"後這招變成有CD，實用性打個大問號，而且這招本來就不是主力，只是打聖4時的不得以手段，我覺得不適合當主力裝備。然後又是雙手杖，不能拿盾真的虧，少了金蟲很多東西都難打，不過會考慮這把的應該不會把金蟲放在考慮範圍內就是了。"
+                    ],
+                    "loot": "以「+9大巫師之杖 x 1」、「幻影石 x 40」、「可疑魔法陣 x 100」於幻影吸血鬼NPC兌換",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=2301"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "INT +6、DEX +2。",
+                            "精煉每+2時，INT 再+1、DEX再+1(效果只到精煉10)。",
+                            "MATK +250。"
+                        ],
+                        "class": "雙手杖",
+                        "value": 150,
+                        "position": "",
+                        "weight": 240,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 100,
+                        "usableBy": "進階魔法師系列",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "7.png",
+                    "name": "黑暗的荊棘骷髏杖",
+                    "slots": 1,
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "時代的眼淚，完全不建議買了，現在礦三武器+11就直接-20%還有兩個洞屌打這把。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "布滿棘荊的咒術骷髏杖。",
+                            "MATK+160，INT+3，DEX+3。",
+                            "依精煉值會忽視部分對方的魔法防禦力。(每+1無視1%MDEF)",
+                            "依精煉值會降低技能後延遲。(每+2減少3%延遲)"
+                        ],
+                        "class": "單手杖",
+                        "value": 60,
+                        "position": "",
+                        "weight": 70,
+                        "property": "暗屬性",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 75,
+                        "usableBy": "進階魔法系列/服事系列",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "35.png",
+                    "name": "破壞之杖",
+                    "slots": 1,
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "曾經的平民法杖，現在已經不推薦使用。"
+                    ],
+                    "loot": "詛咒蠅王掉落",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "擁有破壞任何物品的雙手杖。當使用者的手杖越來越增強時，因為廣大力量的影響使得犧牲掉部份的精神力。",
+                            "MATK+280，INT+3，AGI+10。",
+                            "魔力增幅的詠唱時間-50%。",
+                            "精煉值每+2時增加 MATK 1%。",
+                            "依據精煉值的不同使用技能時，SP消耗率增加",
+                            "依據精煉值的不同得到物理攻擊時，有特定的機率啟動 雷鳴術Lv.5。"
+                        ],
+                        "class": "雙手杖",
+                        "value": 130,
+                        "position": "",
+                        "weight": 250,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 80,
+                        "usableBy": "超魔導師",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "36.png",
+                    "name": "赤火焰魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 0.5,
+                    "comments": [
+                        "完全沒用別買。"
+                    ],
+                    "loot": "穆拉村NPC兌換",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "可匯集火燒力量之魔杖，",
+                            "火箭術，火球術的攻擊力+10%。",
+                            "INT+3，MATK+230。",
+                            "當配戴火焰系列的裝備時，所有火屬性魔法的攻擊力+40%、水屬性魔法的攻擊力 -30%、 對水屬性攻擊的抗性 -50%。"
+                        ],
+                        "class": "雙手杖",
+                        "value": 30,
+                        "position": "",
+                        "weight": 90,
+                        "property": "火屬性",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 100,
+                        "usableBy": "咒術士",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "111.png",
+                    "name": "焊接魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 5,
+                    "comments": [
+                        "礦山3F開放後的首選武器，超高減延遲又有可以有三條附魔加MATK和BOSS傷害，就算沒附魔也很強，機率觸發體型傷害基本上可以常駐。"
+                    ],
+                    "loot": "使用「超神力礦石 x 50」隨機兌換",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "使用魔力來進行焊接的道具，具有優異的增強魔力效果，在戰鬥中十分受歡迎。",
+                            "MATK + 200。",
+                            "無屬性、水屬性、火屬性魔法傷害+7%。",
+                            "精煉+7時，MATK+40，變動詠唱-10%。",
+                            "精煉+9時，無屬性、水屬性、火屬性魔法傷害再+8%。",
+                            "魔法攻擊時，有機率10秒內對全體型敵人的魔法傷害+15%。",
+                            "精煉+11時，技能後延遲-20%。"
+                        ],
+                        "class": "單手杖",
+                        "value": 160,
+                        "position": "",
+                        "weight": 120,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 170,
+                        "usableBy": "魔法師/悟靈士系列",
+                        "enchantments": [
+                            {
+                                "name": "MATK+10%",
+                                "detail": []
+                            },
+                            {
+                                "name": "對暗屬性魔物魔法傷害 + 20%",
+                                "detail": []
+                            },
+                            {
+                                "name": "對BOSS階級魔物魔法傷害 + 18%",
+                                "detail": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "imgName": "110.png",
+                    "name": "感測魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "star": 3.5,
+                    "comments": [
+                        "雙手杖版本的焊接魔杖，個人覺得沒有什麼用，屬性增傷也只有最沒用的火屬，完全不值得犧牲盾牌來用。"
+                    ],
+                    "loot": "使用「超神力礦石 x 50」隨機兌換",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "用於尋找艾音貝赫礦山特殊金屬的探測器，自從有了魔力增幅效果後，經常用於其它地方。",
+                            "MATK + 330。",
+                            "無法破壞。",
+                            "MATK + 10%。",
+                            "精煉+7時，MATK+60、變動詠唱-10%。",
+                            "精煉+9時，火屬性魔法傷害+15%。",
+                            "魔法攻擊時，有機率10秒內對全體型敵人的魔法傷害+20%。",
+                            "精煉+11時，技能後延遲-20%。"
+                        ],
+                        "class": "雙手杖",
+                        "value": 180,
+                        "position": "",
+                        "weight": 200,
+                        "property": "",
+                        "equipmentLevel": 4,
+                        "requiresLevel": 170,
+                        "usableBy": "咒術士系列",
+                        "enchantments": [
+                            {
+                                "name": "MATK+10%",
+                                "detail": []
+                            },
+                            {
+                                "name": "對暗屬性魔物魔法傷害 + 20%",
+                                "detail": []
+                            },
+                            {
+                                "name": "對BOSS階級魔物魔法傷害 + 18%",
+                                "detail": []
+                            }
+                        ]
+                    }
+                }
+            ],
+            "cards": [
+                {
+                    "imgName": "null.png",
+                    "name": "變異白色騎士卡片",
+                    "available": true,
+                    "star": 5,
+                    "comments": [
+                        "首選卡片，幾乎所有王都是中大型，體型增傷的效果往往遠大於其他種類增傷，因為稀有。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+15。",
+                            "對中型、大型敵人的魔法傷害+20%。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "null.png",
+                    "name": "多彩泰迪熊卡片",
+                    "available": true,
+                    "star": 4,
+                    "comments": [
+                        "次一級的選擇，優點就是便宜。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+5。",
+                            "對大型怪的魔法傷害+15%。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "null.png",
+                    "name": "靈魂碎片卡片",
+                    "available": true,
+                    "star": 4,
+                    "comments": [
+                        "次一級的選擇，優點就是便宜。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+5。",
+                            "對中型敵人的魔法傷害+15%。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "null.png",
+                    "name": "穹拱等離子體卡片",
+                    "available": true,
+                    "star": 2,
+                    "comments": [
+                        "最高能30%屬性傷害，但我算起來效果還是輸體型，因為我的配裝屬性傷害已經蠻多了。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "搭配「單手杖」或「雙手杖」系列武器時，風屬性魔法傷害+10%。",
+                            "精煉+10以上時，風屬性魔法傷害+10%。",
+                            "精煉+14以上時，風屬性魔法傷害+10%。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "null.png",
+                    "name": "光譜等離子體卡片",
+                    "available": true,
+                    "star": 2,
+                    "comments": [
+                        "最高能30%屬性傷害，但我算起來效果還是輸體型，因為我的配裝屬性傷害已經蠻多了。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "搭配「單手杖」或「雙手杖」系列武器時，念屬性魔法傷害+10%。",
+                            "精煉+10以上時，念屬性魔法傷害+10%。",
+                            "精煉+14以上時，念屬性魔法傷害+10%。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Time Holder.png",
+                    "name": "時間支配者卡片",
+                    "available": true,
+                    "star": 3,
+                    "comments": [
+                        "雖然現在的配裝MATK%已經不會像以前一樣這麼多，但還是輸體型傷害。這張卡只能等G社拯救了。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+20%。",
+                            "使用技能時SP消耗量+10%。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Sealed Time Holder.png",
+                    "name": "封印時間支配者卡片",
+                    "available": true,
+                    "star": 1,
+                    "comments": [
+                        "正卡都輸小怪卡了，封印更不用說。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+10%。",
+                            "使用技能時，SP消耗量+20%。",
+                            "",
+                            "精煉+15以上時，能力變為",
+                            "MATK+15%。",
+                            "使用技能時，SP消耗量+15%。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Celine Kimi.png",
+                    "name": "席琳基米卡片",
+                    "available": true,
+                    "star": 1,
+                    "comments": [
+                        "20%的都沒搞頭了，基本上這些10%MATK的卡片都是沒有用了。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+10%。",
+                            "魔法攻擊時，有機率對以自己為中心全畫面的敵人觸發致命傷口 Lv3。",
+                            "精煉每+3時，觸發機率大幅增加。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "Immortal Wind Ghost.png",
+                    "name": "不朽風魔巫師卡片",
+                    "available": true,
+                    "star": 1,
+                    "comments": [
+                        "20%的都沒搞頭了，基本上這些10%MATK的卡片都是沒有用了。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+10%。",
+                            "魔法攻擊時有機率觸發自動念咒雲殺Lv5。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "null.png",
+                    "name": "深海的深海電鰻卡片",
+                    "available": false,
+                    "star": 1,
+                    "comments": [
+                        "只有10%，遠輸給等離子系列。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "風屬性的魔法傷害 + 3%",
+                            "武器精煉值達 + 9 或以上時，風屬性的魔法傷害 + 2%",
+                            "武器精煉值達 +11 或以上時，風屬性的魔法傷害 + 5%"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                },
+                {
+                    "imgName": "null.png",
+                    "name": "天使方體惡魔卡片",
+                    "available": false,
+                    "star": 1,
+                    "comments": [
+                        "對惡魔特化的卡片，不過要搭配褐方體惡魔卡是大敗筆，這樣+12武器也才30%惡魔傷，那不如用中大體型卡兩張就40%了，還不會被滅絕古埃及王之類的對惡魔裝稀釋。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "對惡魔型怪的魔法攻擊力+10%。",
+                            "搭配褐方體惡魔卡片時，武器精煉每+2，對惡魔型怪的魔法攻擊力再+3%。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
                         "weight": 1
                     }
                 }

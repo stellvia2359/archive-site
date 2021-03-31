@@ -37,9 +37,12 @@
             <div>{{:}}</div>
             {{/for}}
             <br>
-            <div>系列: {{:info.class}} 防禦: {{:info.defense}}</div>
-            <div>{{if info.position}}位置: {{:info.position}}{{/if}} 重量: {{:info.weight}}</div>
-            <div>要求等級: {{:info.requiredLevel}}</div>
+            <div>系列: {{:info.class}} {{if #parent.parent.data.categoryCode=="weapon"}}攻擊{{else}}防禦{{/if}}: {{:info.value}}</div>
+            <div>{{if info.position}}位置: {{:info.position}}{{/if}} 重量: {{:info.weight}} {{if info.property}}屬性: {{:info.property}}{{/if}}</div>
+            {{if #parent.parent.data.categoryCode=="weapon"}}
+            <div>武器等級: {{:info.equipmentLevel}}</div>
+            {{/if}}
+            <div>要求等級: {{:info.requiresLevel}}</div>
             <div>裝備: {{:info.usableBy}}</div>
             {{if info.enchantments.length > 0}}
             <hr>
