@@ -2949,7 +2949,7 @@
                 {
                     "imgName": "null.png",
                     "name": "天使方體惡魔卡片",
-                    "available": false,
+                    "available": true,
                     "star": 1,
                     "comments": [
                         "對惡魔特化的卡片，不過要搭配褐方體惡魔卡是大敗筆，這樣+12武器也才30%惡魔傷，那不如用中大體型卡兩張就40%了，還不會被滅絕古埃及王之類的對惡魔裝稀釋。"
@@ -2958,6 +2958,199 @@
                         "contents": [
                             "對惡魔型怪的魔法攻擊力+10%。",
                             "搭配褐方體惡魔卡片時，武器精煉每+2，對惡魔型怪的魔法攻擊力再+3%。"
+                        ],
+                        "class": "卡片",
+                        "position": "武器",
+                        "weight": 1
+                    }
+                }
+            ]
+        },
+        {
+            "category": "盾牌",
+            "categoryCode": "shield",
+            "equipments": [
+                {
+                    "imgName": "49.png",
+                    "name": "神聖騎士盾牌",
+                    "slots": 1,
+                    "available": true,
+                    "star": 5,
+                    "comments": [
+                        "目前RO最強的盾牌，能夠付魔BOSS無視魔防30~60%，搭配影子職業2.0輕鬆無視100%魔防不用切裝，屬於夢幻逸品。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=1778"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "成功地淨化詛咒的騎士盾牌，再度恢復了原有的強大力量。",
+                            "攻擊速度增加(攻擊後延遲-10%)。",
+                            "ATK+5%、MATK+5%。",
+                            "遭受所有屬性敵人的傷害-10%。",
+                            "被攻擊時，有機率7秒內每1秒SP恢復50。",
+                            "物理/魔法攻擊時，有機率7秒內每1秒HP恢復300。",
+                            "精煉+7時，ATK+20、MATK+20。",
+                            "精煉+9時，ASPD+2。",
+                            "精煉+12時，技能後延遲-5%。"
+                        ],
+                        "class": "盾牌",
+                        "value": 0,
+                        "position": "",
+                        "weight": 80,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": [
+                            {
+                                "name": "變動施法時間減少 5%",
+                                "detail": []
+                            },
+                            {
+                                "name": "攻擊速度增加(減少攻擊後延遲 5%)",
+                                "detail": []
+                            },
+                            {
+                                "name": "首領類怪的魔法防禦忽視 60%",
+                                "detail": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "imgName": "48.png",
+                    "name": "血腥騎士盾牌",
+                    "slots": 1,
+                    "available": true,
+                    "star": 4.5,
+                    "comments": [
+                        "神聖盾的副產品，屬性都略低於神聖盾，但沒有第三條附魔，沒有無視BOSS魔防配裝上就差很多了，但是速5%的附魔還是很好用，基本上大部分情況都是搭配這個盾牌。"
+                    ],
+                    "loot": "轉蛋",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=1778"
+                        }
+                    ],
+                    "info": {
+                        "contents": [
+                            "因淨化儀式失敗後變得更血淋淋的詛咒騎士盾牌，恐怕無法再淨化了。",
+                            "攻擊速度增加(攻擊後延遲-10%)。",
+                            "ATK+3%，MATK+3%。",
+                            "遭受所有屬性敵人的傷害-7%。",
+                            "被攻擊時，以較低機率5秒內每1秒SP恢復25。",
+                            "物理/魔法攻擊時，以較低機率5秒內每1秒HP恢復150。",
+                            "精煉+7時，ATK+10、MATK+10。",
+                            "精煉+9時，ASPD+1。",
+                            "精煉+12時，技能後延遲-3%。"
+                        ],
+                        "class": "盾牌",
+                        "value": 0,
+                        "position": "",
+                        "weight": 80,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": [
+                            {
+                                "name": "變動施法時間減少 5%",
+                                "detail": []
+                            },
+                            {
+                                "name": "攻擊速度增加(減少攻擊後延遲 5%)",
+                                "detail": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "imgName": "70.png",
+                    "name": "瘋狂兔寶寶",
+                    "slots": 1,
+                    "available": true,
+                    "star": 3.5,
+                    "comments": [
+                        "也是加攻擊的盾牌，但我覺得還是攻速多又有延遲的血腥盾比較好用，然後防斷其實用不到，因為都無詠。"
+                    ],
+                    "loot": "轉蛋、神秘咒語集",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "匹阿漫特為方便攻擊和防禦而使用的絨毛娃娃。",
+                            "看起來還會動啊...",
+                            "對全種族的物理傷害+5%，MATK+5%。",
+                            "反射遭受近距離物理攻擊的10%。",
+                            "遭受魔法攻擊時，有10%機率2秒內以60%的機率反射魔法。",
+                            "精煉+7時，ATK+5，MATK+5。",
+                            "精煉+9時，ATK+15，MATK+15。",
+                            "精煉+12時，詠唱不會中斷，CRI+10。"
+                        ],
+                        "class": "盾牌",
+                        "value": 0,
+                        "position": "",
+                        "weight": 10,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                },
+                {
+                    "imgName": "70.png",
+                    "name": "被詛咒的瘋狂兔寶寶",
+                    "slots": 1,
+                    "available": true,
+                    "star": 1,
+                    "comments": [
+                        "加很多攻速的盾牌，致命缺點是沒有洞。"
+                    ],
+                    "loot": "轉蛋、神秘咒語集",
+                    "externalUrls": [],
+                    "info": {
+                        "contents": [
+                            "匹阿漫特為方便攻擊和防禦而使用的絨毛娃娃。",
+                            "看起來還會動啊...",
+                            "ASPD+3。",
+                            "對全種族的物理傷害+5%，MATK+5%。",
+                            "反射遭受近距離物理攻擊的10%。",
+                            "遭受魔法攻擊時，有10%機率2秒內以60%的機率反射魔法。",
+                            "精煉+7時，ATK+5，MATK+5。",
+                            "精煉+9時，ATK+15，MATK+15。",
+                            "精煉+12時，詠唱不會中斷，CRI+10。"
+                        ],
+                        "class": "盾牌",
+                        "value": 0,
+                        "position": "",
+                        "weight": 10,
+                        "property": "",
+                        "equipmentLevel": 1,
+                        "requiresLevel": 1,
+                        "usableBy": "全職業",
+                        "enchantments": []
+                    }
+                }
+            ],
+            "cards": [
+                {
+                    "imgName": "null.png",
+                    "name": "變異白色騎士卡片",
+                    "available": true,
+                    "star": 5,
+                    "comments": [
+                        "首選卡片，幾乎所有王都是中大型，體型增傷的效果往往遠大於其他種類增傷，因為稀有。"
+                    ],
+                    "info": {
+                        "contents": [
+                            "MATK+15。",
+                            "對中型、大型敵人的魔法傷害+20%。"
                         ],
                         "class": "卡片",
                         "position": "武器",

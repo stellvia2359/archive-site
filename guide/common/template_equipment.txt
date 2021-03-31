@@ -11,7 +11,7 @@
                 {{if available == true}}
                 <span class="tag-name border border-primary rounded text-primary">已實裝</span>
                 {{else}}
-                <span class="score-name border border-secondary rounded text-secondary">未實裝</span>
+                <span class="tag-name border border-secondary rounded text-secondary">未實裝</span>
                 {{/if}}
                 <span class="score-name">{{:star.toFixed(1)}}</span>
                 <span class="stars" data-score="{{:star}}"></span>
@@ -78,7 +78,7 @@
                 {{if available == true}}
                 <span class="tag-name border border-primary rounded text-primary">已實裝</span>
                 {{else}}
-                <span class="score-name border border-secondary rounded text-secondary">未實裝</span>
+                <span class="tag-name border border-secondary rounded text-secondary">未實裝</span>
                 {{/if}}
                 <span class="score-name">{{:star.toFixed(1)}}</span>
                 <span class="stars" data-score="{{:star}}"></span>
