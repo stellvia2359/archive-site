@@ -18,9 +18,14 @@
             </div>
             <div>
                 {{for comments}}
-                <p>{{:}}</p>
+                {{if #data == ""}}
+                <br>
+                {{else}}
+                <div>{{:#data}}</div>
+                {{/if}}
                 {{/for}}
             </div>
+            <br>
             <div class="loot">
                 取得方式: {{:loot}}
             </div>
@@ -34,7 +39,11 @@
         </div>
         <div class="equipment-info-content">
             {{for info.contents}}
-            <div>{{:}}</div>
+            {{if #data == ""}}
+            <br>
+            {{else}}
+            <div>{{:#data}}</div>
+            {{/if}}
             {{/for}}
             <br>
             <div>系列: {{:info.class}} {{if #parent.parent.data.categoryCode=="weapon"}}攻擊{{else}}防禦{{/if}}: {{:info.value}}</div>
@@ -85,13 +94,21 @@
             </div>
             <div>
                 {{for comments}}
-                <p>{{:}}</p>
+                {{if #data == ""}}
+                <br>
+                {{else}}
+                <div>{{:#data}}</div>
+                {{/if}}
                 {{/for}}
             </div>
         </div>
         <div class="equipment-info-content">
             {{for info.contents}}
-            <div>{{:}}</div>
+            {{if #data == ""}}
+            <br>
+            {{else}}
+            <div>{{:#data}}</div>
+            {{/if}}
             {{/for}}
             <br>
             <div>系列: {{:info.class}}</div>
