@@ -76,6 +76,7 @@ var site = {
                     item.equipments.sort(utility.GetSortOrder("star"));
                     item.cards.sort(utility.GetSortOrder("star"));
                 });
+                data.costumeEnchantments.sort(utility.GetSortOrder("star"));
                 var template;
                 $.get("guide/common/template_equipment.txt", function (value) {
                     template = $.templates(value);
