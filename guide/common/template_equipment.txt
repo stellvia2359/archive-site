@@ -1,12 +1,12 @@
-{{for allEquipments}}
-<h5 id="equip-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}裝備</h5>
+{{for equipments}}
+<h5 id="equip-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}{{if !overrideCategoryName}}裝備{{/if}}</h5>
 <ul class="list-unstyled">
-    {{for equipments}}
+    {{for items sort="star" reverse=true}}
     <li class="media m-2 equipment">
         <div class="shadow-equipmenmt-img d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
             {{if #index == 0}}
-            <img src="content/image/guide/general/equipment/{{:}}" class="z-{{:~array.length-#getIndex()}}">
+            <img src="content/image/guide/general/{{if #parent.parent.parent.parent.parent.data.categoryCode != "pet"}}equipment{{else}}pet{{/if}}/{{:}}" class="z-{{:~array.length-#getIndex()}}">
             {{else}}
             <img src="content/image/guide/general/equipment/{{:}}" class="back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}}">
             {{/if}}
@@ -59,13 +59,25 @@
                 {{/if}}
             {{/for}}
             <br>
+            {{if class || value}}
             <div>系列: {{:class}} {{if #parent.parent.parent.parent.data.categoryCode != "shadow"}}{{if #parent.parent.parent.parent.parent.data.categoryCode=="weapon"}}攻擊{{else}}防禦{{/if}}: {{:value}}{{/if}}</div>
-            <div>{{if position}}位置: {{:position}}{{/if}} 重量: {{:weight}} {{if property}}屬性: {{:property}}{{/if}}</div>
-            {{if #parent.parent.data.categoryCode=="weapon"}}
-            <div>武器等級: {{:equipmentLevel}}</div>
-            {{/if}}          
+            {{/if}}      
+            <div>
+            {{if position}}位置: {{:position}}{{/if}}
+            {{if weight}}重量: {{:weight}}{{/if}}
+            {{if property}}屬性: {{:property}}{{/if}}
+            </div>
+            {{if equipmentLevel}}
+                {{if #parent.parent.parent.parent.parent.data.categoryCode=="weapon"}}
+                <div>武器等級: {{:equipmentLevel}}</div>
+                {{/if}} 
+            {{/if}}    
+            {{if requiresLevel}}  
             <div>要求等級: {{:requiresLevel}}</div>
+            {{/if}}
+            {{if usableBy}}
             <div>裝備: {{:usableBy}}</div>
+            {{/if}}      
             {{if enchantments.length > 0}}
             <hr>
             <b>附魔(範例)</b>
@@ -92,7 +104,7 @@
 <h5 id="card-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}卡片</h5>
 {{if cards.length > 0}}
 <ul class="list-unstyled">
-    {{for cards}}
+    {{for cards sort="star" reverse=true}}
     <li class="media m-2 equipment">
         <div class="shadow-equipmenmt-img d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
@@ -154,57 +166,3 @@
 {{/if}}
 {{/if}}
 {{/for}}
-
-<ul class="list-unstyled">
-    {{for costumeEnchantments}}
-    <li class="media m-2 equipment">
-        <div class="d-flex flex-nowrap mr-3">
-            {{for imgNames ~array=imgNames}}
-            {{if #index == 0}}
-            <img src="content/image/guide/general/equipment/{{:}}" class="z-{{:~array.length-#getIndex()}}">
-            {{else}}
-            <img src="content/image/guide/general/equipment/{{:}}" class="back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}}">
-            {{/if}}
-            {{/for}}
-        </div>
-        <div class="media-body">
-            <h6 class="mt-0 mb-0 equipment-name">{{:name}}</h6>
-            <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover" data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
-                {{if available == true}}
-                <span class="tag-name border border-primary rounded text-primary">已實裝</span>
-                {{else}}
-                <span class="tag-name border border-secondary rounded text-secondary">未實裝</span>
-                {{/if}}
-                <span class="score-name">{{:star.toFixed(1)}}</span>
-                <span class="stars" data-score="{{:star}}"></span>
-            </div>
-            <div>
-                {{for comments}}
-                {{if #data == ""}}
-                <br>
-                {{else}}
-                <div>{{:#data}}</div>
-                {{/if}}
-                {{/for}}
-            </div>
-        </div>
-        <div class="equipment-info-content">
-        {{for infos}}
-            {{if #getIndex()>0}}
-            <hr>
-            {{/if}}
-            {{for contents}}
-            {{if #data == ""}}
-            <br>
-            {{else}}
-            <div>{{:#data}}</div>
-            {{/if}}
-            {{/for}}
-            <br>
-            <div>重量: {{:weight}}</div>
-        {{/for}}
-        </div>
-    </li>
-{{/for}}
-</ul>
