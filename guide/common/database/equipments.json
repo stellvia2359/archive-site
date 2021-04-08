@@ -899,7 +899,8 @@
                     ]
                 }
             ],
-            "cards": []
+            "cards": [],
+            "noCardMessage":"同頭上卡片"
         },
         {
             "category": "頭下",
