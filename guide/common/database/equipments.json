@@ -5995,7 +5995,7 @@
                         "14.png",
                         "15.png"
                     ],
-                    "name": "影子咒術士套(手/耳/墜/鎧/盾/靴)",
+                    "name": "影子咒術士套裝(手/耳/墜/鎧/盾/靴)",
                     "slots": 0,
                     "available": true,
                     "loot": "轉蛋",
@@ -6166,6 +6166,120 @@
                                 "<b>影子全能墜子</b>",
                                 "可守護佩戴者的神聖項鍊，並能引發佩戴者的潛能。",
                                 "精煉每+1時，All State+1。"
+                            ],
+                            "class": "影子裝備",
+                            "value": 0,
+                            "position": "墜子",
+                            "weight": 0,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 1,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "26a0403f-2f4b-4561-91d8-ca5031b22f29",
+                    "imgNames": [
+                        "139.png",
+                        "138.png"
+                    ],
+                    "name": "影子完全風暴套裝(鎧/靴)",
+                    "slots": 0,
+                    "available": false,
+                    "loot": "轉蛋",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://forum.gamer.com.tw/C.php?bsn=4212&snA=427741"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "<b>影子完全風暴鎧甲</b>",
+                                "無視所有種族（不含玩家）5% 的 MDEF，",
+                                "精煉值每 + 2 時，無視所有種族（不含玩家）1% 的 MDEF，",
+                                "精煉值達 +10 時，對所有種族（不含玩家）的魔法傷害 + 3%。",
+                                "",
+                                "與「影子完全風暴戰靴」同時裝備時，獲得以下效果:",
+                                "MATK + 2%，",
+                                "合計精煉值為 +18 或以上時，無視所有種族（不含玩家）100% 的 MDEF。"
+                            ],
+                            "class": "影子裝備",
+                            "value": 0,
+                            "position": "鎧甲",
+                            "weight": 0,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 1,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        },
+                        {
+                            "contents": [
+                                "<b>影子完全風暴戰靴</b>",
+                                "無視所有種族（不含玩家）5% 的 MDEF，",
+                                "精煉值每 + 2 時，無視所有種族（不含玩家）1% 的 MDEF，",
+                                "精煉值達 +10 時，對所有種族（不含玩家）的魔法傷害 + 3%。"
+                            ],
+                            "class": "影子裝備",
+                            "value": 0,
+                            "position": "鞋類",
+                            "weight": 0,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 1,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "faabf757-a9f4-4a86-9633-db742f117016",
+                    "imgNames": [
+                        "44.png",
+                        "45.png"
+                    ],
+                    "name": "影子完全風暴套裝(耳/墜)",
+                    "slots": 0,
+                    "available": false,
+                    "loot": "轉蛋",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://forum.gamer.com.tw/C.php?bsn=4212&snA=427741"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "<b>影子完全風暴耳環</b>",
+                                "無視所有種族（不含玩家）5% 的 MDEF，",
+                                "精煉值每 + 2 時，無視所有種族（不含玩家）1% 的 MDEF，",
+                                "精煉值達 +10 時，對所有種族（不含玩家）的魔法傷害 + 3%。",
+                                "",
+                                "與「影子完全風暴墜子」同時裝備時，獲得以下效果:",
+                                "MATK + 2%，",
+                                "合計精煉值為 +18 或以上時，無視所有種族（不含玩家）100% 的 MDEF。"
+                            ],
+                            "class": "影子裝備",
+                            "value": 0,
+                            "position": "耳環",
+                            "weight": 0,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 1,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        },
+                        {
+                            "contents": [
+                                "<b>影子完全風暴墜子</b>",
+                                "無視所有種族（不含玩家）5% 的 MDEF，",
+                                "精煉值每 + 2 時，無視所有種族（不含玩家）1% 的 MDEF，",
+                                "精煉值達 +10 時，對所有種族（不含玩家）的魔法傷害 + 3%。"
                             ],
                             "class": "影子裝備",
                             "value": 0,
