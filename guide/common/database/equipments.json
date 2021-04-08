@@ -1928,6 +1928,44 @@
                             "enchantments": []
                         }
                     ]
+                },
+                {
+                    "id": "5773016e-55cc-4aa2-86fd-46a58cbb2522",
+                    "imgNames": [
+                        "136.png"
+                    ],
+                    "name": "瓦爾哈拉之心●布林喜德",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "以「布林喜得 x 1」、「巴哈拉的花 x 200」、「女神的戰甲 x 3」機率製作。",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4491"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "擁有「戰鬥之心」的美稱，是其中一位巴基利歷經戰鬥的鎧甲。",
+                                "MDEF+15，",
+                                "對全階級對象的物理/魔法傷害+15%，",
+                                "技能後延遲-20%，",
+                                "以Base Lv.100倍的數值增加MaxHP，",
+                                "以Base Lv.20倍的數值增加MaxSP，",
+                                "以Base Lv.2倍的數值增加ATK、MATK。"
+                            ],
+                            "class": "鎧甲",
+                            "value": 150,
+                            "position": "",
+                            "weight": 150,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 150,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
                 }
             ],
             "cards": [
@@ -4189,6 +4227,43 @@
                                     "detail": []
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "id": "da4824ba-46aa-4410-8993-387aea7ae3d0",
+                    "imgNames": [
+                        "137.png"
+                    ],
+                    "name": "世界之光●阿斯富力咖",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "以「阿斯富力咖 x 1」、「黑雲母 x 100」、「白雲母 x 100」、「金雲母 x 100」、「照亮大地的晨光 x 3」機率製作。",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4491"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "匯集著眾神之光，並獲有抵擋一切黑暗力量的翅膀。",
+                                "MaxHP+20%、Flee+40、MDEF+10，",
+                                "可使用瞬間移動Lv.1，",
+                                "技能後延遲-10%，",
+                                "對所有屬性的抗性+30%(含物理/魔法)，",
+                                "對全體型敵人的物理/魔法傷害+30%。"
+                            ],
+                            "class": "披肩",
+                            "value": 40,
+                            "position": "",
+                            "weight": 40,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 1,
+                            "usableBy": "全職業",
+                            "enchantments": []
                         }
                     ]
                 }

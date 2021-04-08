@@ -185,7 +185,7 @@ var utility = {
     },
     loadPopover: function () {
         $(".equipment-info-content").hide();
-        $(".equipment-info").data("content", $(".equipment-info").closest(".media").children(".equipment-info-content").html());
+        
         var equipmentInfo = $(".equipment-info");
         for (var i = 0; i < equipmentInfo.length; i++) {
             var title = $(equipmentInfo[i]).closest(".secondary-title-line").siblings(".equipment-name").text();
