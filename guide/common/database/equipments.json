@@ -336,6 +336,117 @@
                             "enchantments": []
                         }
                     ]
+                },
+                {
+                    "id": "f67cc0dd-6bb9-466a-b5a4-0c141033228a",
+                    "imgNames": [
+                        "78.png"
+                    ],
+                    "name": "超時空頭冠(大主教)",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "以「封印超時空頭冠 x 5」於挑戰古城門口販賣機兌換",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3949"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "使用從時間縫隙中產生的礦石和寶石加工而成的頭冠。",
+                                "吸收了福金特殊的氣息而產生了力量。",
+                                "<span class='text-danger'>該物品不可與其它帳號交易。</span>",
+                                "精煉每+2時，MATK+15。",
+                                "精煉每+3時，變動詠唱-3%。",
+                                "精煉每+3時， [謳歌]傷害+20%。",
+                                "精煉每+4時，聖屬性魔法傷害+7%。",
+                                "精煉+11時，MATK+5%。"
+                            ],
+                            "class": "頭具",
+                            "value": 10,
+                            "position": "頭上",
+                            "weight": 20,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 170,
+                            "usableBy": "大主教系列",
+                            "enchantments": [
+                                {
+                                    "name": "INT+4",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "超時空附魔寶石(INT) 3Lv",
+                                    "detail": [
+                                        "依照頭具的精鍊每+2時，治癒量+5%。",
+                                        "依照頭具的精鍊每+2時，MATK+7。",
+                                        "依照頭具的精鍊每+5時，MATK+3%。"
+                                    ]
+                                },
+                                {
+                                    "name": "魔精Lv.5",
+                                    "detail": [
+                                        "MATK+15%，固詠 -0.5秒。"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "408ff80c-d1d5-4970-9de4-ba40711527f4",
+                    "imgNames": [
+                        "114.png"
+                    ],
+                    "name": "神秘主教冠",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "「(服裝)神秘主教冠 x 1」、「服事之魂 x 1」、「能量碎片 x 20」，至戰死者之墓的「淒惘靈魂的思念」機率取得；若後兩者為5倍材料則100%成功。",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=1246#subContainer"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "<span class='text-danger'>該物品不可與其它帳號交易。</span>",
+                                "All State+1、MDEF+5，SP恢復力+20%。",
+                                "當精煉+1時，MATK+2，ATK+4，治癒量+2%。",
+                                "當精煉+2時，MHP，MSP+1%。",
+                                "精煉每+2時，審判的傷害+20%。",
+                                "精煉每+2時，十字驅魔攻擊的傷害+10%。",
+                                "依精煉值碧血隕石的冷卻時間-0.1秒。"
+                            ],
+                            "class": "頭具",
+                            "value": 10,
+                            "position": "頭上",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 170,
+                            "usableBy": "大主教",
+                            "enchantments": [
+                                {
+                                    "name": "INT+5",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "INT+5",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "魔精Lv.5",
+                                    "detail": [
+                                        "MATK+15%，固詠 -0.5秒。"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "cards": [
@@ -559,6 +670,44 @@
                         {
                             "contents": [
                                 "INT+2，若是魔法師系列，則精煉每+3時 INT再+1。"
+                            ],
+                            "class": "卡片",
+                            "position": "頭具",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "d2b9a663-bcf1-4c20-9f21-6a54a3f5b525",
+                    "imgNames": [
+                        "high_sanare_card.png"
+                    ],
+                    "name": "高階薩納雷卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "MATK+10，聖屬性魔法傷害+5%。",
+                                "精煉+9以上時，聖屬性魔法傷害再+5%。"
+                            ],
+                            "class": "卡片",
+                            "position": "頭具",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "4a64782e-2b4a-4863-afd8-95fbf306f025",
+                    "imgNames": [
+                        "Archangeling.png"
+                    ],
+                    "name": "聖天使波利卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "MHP+300",
+                                "LUK77以上時，HP恢復力和SP恢復力+100%。"
                             ],
                             "class": "卡片",
                             "position": "頭具",
