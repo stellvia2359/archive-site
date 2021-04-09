@@ -790,7 +790,12 @@
                     "slots": 1,
                     "available": true,
                     "loot": "消費禮",
-                    "externalUrls": [],
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4488"
+                        }
+                    ],
                     "infos": [
                         {
                             "contents": [
@@ -1226,8 +1231,13 @@
                     "name": "雙管加農砲",
                     "slots": 0,
                     "available": true,
-                    "loot": "EDDA研究所副本BOSS掉落",
-                    "externalUrls": [],
+                    "loot": "消費禮",
+                    "externalUrls": [
+                        {
+                            "name":"相關資訊",
+                            "url":"https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4152"
+                        }
+                    ],
                     "infos": [
                         {
                             "contents": [
