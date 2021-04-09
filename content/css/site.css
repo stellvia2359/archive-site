@@ -243,6 +243,20 @@ main {
     #home {
         background-position: 50% 0%;
     }
+    #eq-nav-1{
+        display: none;
+    }
+    #eq-nav-2{
+        display: inline;
+    }
+}
+@media (min-width:767.98px){
+    #eq-nav-1{
+        display: inline;
+    }
+    #eq-nav-2{
+        display: none;
+    }
 }
 
 .home-title {
