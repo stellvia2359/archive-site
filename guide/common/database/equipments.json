@@ -2125,6 +2125,66 @@
                             "enchantments": []
                         }
                     ]
+                },
+                {
+                    "id": "2dd0c4d6-c1a1-49c8-afbd-ce7fbee98d9a",
+                    "imgNames": [
+                        "116.png"
+                    ],
+                    "name": "議程外袍",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "以「秀發茲榮譽之證 x 1000」兌換。",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://tro.gnjoy.com.tw/Content/Event/ACT_20171128_EP16_2/update.html"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "感覺不太單純的長袍。",
+                                "那些主事者通常在黑箱作業時所穿的外袍。",
+                                "可使用念咒拆除1Lv，",
+                                "MATK+5%。",
+                                "穿戴者的等級為120以上時，MATK再+4%。",
+                                "穿戴者的等級為140以上時，MATK再+5%。",
+                                "",
+                                "搭配伯爵斗篷時，",
+                                "當鎧甲精煉值每+1時，變動詠唱時間-2%，且詠唱不會中斷。",
+                                "",
+                                "搭配生存斗篷時，",
+                                "當魔法攻擊時，有機率對自己施展治癒術1Lv；依鎧甲精煉值對自己施展的治癒術機率會增加。"
+                            ],
+                            "class": "鎧甲",
+                            "value": 0,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 100,
+                            "usableBy": "全職業",
+                            "enchantments": [
+                                {
+                                    "name": "魔力尼夫Lv.3",
+                                    "detail": [
+                                        "精煉+7時，INT+7。",
+                                        "精煉+12時，INT+1，MATK再+8%。",
+                                        "精煉+13時，INT+1，MATK再+2%。"
+                                    ]
+                                },
+                                {
+                                    "name": "魔力尼夫Lv.3",
+                                    "detail": [
+                                        "精煉+7時，INT+7。",
+                                        "精煉+12時，INT+1，MATK再+8%。",
+                                        "精煉+13時，INT+1，MATK再+2%。"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "cards": [
@@ -3097,6 +3157,190 @@
                                     "detail": []
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "id": "9034935f-bb0f-4084-b319-b97601c38eea",
+                    "imgNames": [
+                        "118.png"
+                    ],
+                    "name": "烏爾蒂奧流星錘-OS",
+                    "slots": 2,
+                    "available": true,
+                    "loot": "以「損壞的武器 x 1」與「核心零件 x 50」於特別警戒區柯爾NPC隨機抽取獲得。",
+                    "externalUrls": [],
+                    "infos": [
+                        {
+                            "contents": [
+                                "以黑色光澤的球體裝飾的鈍器。",
+                                "不可破壞。",
+                                "MATK+170。",
+                                "MATK+3%。",
+                                "精煉+7時，攻擊速度增加(攻擊後延遲-7%)。",
+                                "精煉+9時，[謳歌]傷害+20%。",
+                                "精煉+11時，聖屬性魔法傷害+15%。"
+                            ],
+                            "class": "鈍器",
+                            "value": 150,
+                            "position": "",
+                            "weight": 120,
+                            "property": "",
+                            "equipmentLevel": 4,
+                            "requiresLevel": 130,
+                            "usableBy": "大主教系列",
+                            "enchantments": [
+                                {
+                                    "name": "MATK+15%",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "對大型怪魔法攻擊傷害增加20%",
+                                    "detail": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "4d949959-824f-418a-b631-6b254c867500",
+                    "imgNames": [
+                        "120.png"
+                    ],
+                    "name": "古代聖殿審判錘",
+                    "slots": 2,
+                    "available": true,
+                    "loot": "轉蛋",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=2934"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "某位神職人員曾使用的鐵錘。",
+                                "似乎能跟古代英雄戰靴產生共鳴。",
+                                "不可破壞，",
+                                "MATK+165、MATK+3%。",
+                                "精煉每+2時，聖屬性魔法傷害+1%。",
+                                "精煉每+3時，謳歌傷害+5%。",
+                                "精煉+9時，變動詠唱-10%。",
+                                "精煉+11時，聖屬性魔法傷害再+10%。",
+                                "搭配古代英雄戰靴後魔法攻擊時，有機率7秒內INT+20、MATK+15%。"
+                            ],
+                            "class": "鈍器",
+                            "value": 170,
+                            "position": "",
+                            "weight": 80,
+                            "property": "",
+                            "equipmentLevel": 4,
+                            "requiresLevel": 100,
+                            "usableBy": "大主教系列",
+                            "enchantments": [
+                                {
+                                    "name": "對暗屬性魔物的魔法傷害增加20%",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "對惡魔系魔物魔法傷害增加20%",
+                                    "detail": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "f7aa8f9a-c91c-4ea1-849a-c4c4ce3068cc",
+                    "imgNames": [
+                        "140.png"
+                    ],
+                    "name": "神話聖殿審判錘",
+                    "slots": 2,
+                    "available": true,
+                    "loot": "轉蛋",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4493"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "某位神職人員曾使用的鐵錘。",
+                                "自從蘊含神聖的力量後，開始發揮自己的本領。",
+                                "似乎能跟神話英雄戰靴產生共鳴。",
+                                "不可破壞，",
+                                "MATK+200、MATK+3%。",
+                                "精煉每+2時，聖屬性魔法傷害+1%。",
+                                "精煉每+3時，謳歌傷害+5%。",
+                                "精煉+7時，變動詠唱-10%，聖屬性魔法傷害再+10%。",
+                                "精煉+9時，對全種族怪的魔法傷害+15%(玩家型除外)。",
+                                "精煉+11時，謳歌傷害再+15%。",
+                                "搭配神話英雄戰靴時，INT+10、MATK+7%。"
+                            ],
+                            "class": "鈍器",
+                            "value": 170,
+                            "position": "",
+                            "weight": 100,
+                            "property": "",
+                            "equipmentLevel": 4,
+                            "requiresLevel": 150,
+                            "usableBy": "大主教系列",
+                            "enchantments": [
+                                {
+                                    "name": "對暗屬性魔物的魔法傷害增加25%",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "對惡魔系魔物魔法傷害增加25%",
+                                    "detail": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "a844f521-8433-44ec-a10f-70aec6bcac22",
+                    "imgNames": [
+                        "121.png"
+                    ],
+                    "name": "皇室教士手杖",
+                    "slots": 2,
+                    "available": true,
+                    "loot": "於挑戰古城門口販賣機以「超時空魔力 x 10」兌換或以「超時空寶石原石 x 2」、「超時空魔力碎片 x 20」隨機抽取。",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3949"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "克雷斯特漢姆的神職人員所使用的儀式用手杖。",
+                                "雖然是沒有什麼特別之處的普通武器，但受到希梅爾茲的影響而魔力四射。",
+                                "不可破壞，MATK+170、MATK+5%。",
+                                "精煉每+1時，MATK+4。",
+                                "精煉+9時，謳歌傷害+20%。",
+                                "精煉+11時，對不死型、天使型怪的魔法傷害+20%。",
+                                "",
+                                "搭配施密特國王新衣、施密特國王斗篷時，",
+                                "MATK+30，魔法攻擊時有機率10秒內火屬性，暗屬性魔法傷害+10%。",
+                                "",
+                                "施密特國王新衣、施密特國王斗篷、皇室高級魔杖的精煉值總合為30以上時，對聖屬性、不死屬性敵人的魔法傷害+20%。"
+                            ],
+                            "class": "單手杖",
+                            "value": 80,
+                            "position": "",
+                            "weight": 80,
+                            "property": "",
+                            "equipmentLevel": 4,
+                            "requiresLevel": 170,
+                            "usableBy": "大主教系列",
+                            "enchantments": []
                         }
                     ]
                 }
