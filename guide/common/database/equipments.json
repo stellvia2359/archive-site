@@ -3343,6 +3343,54 @@
                             "enchantments": []
                         }
                     ]
+                },
+                {
+                    "id": "0aa16a98-7bff-4054-9cbd-287a50cd3537",
+                    "imgNames": [
+                        "122.png"
+                    ],
+                    "name": "木柄橡膠槌",
+                    "slots": 2,
+                    "available": true,
+                    "loot": "使用「超神力礦石 x 50」隨機兌換",
+                    "externalUrls": [],
+                    "infos": [
+                        {
+                            "contents": [
+                                "用於勘察艾音貝赫坑道的鎚子，原本用於探勘坑道，但特殊的設計與結構常用於戰鬥上。。",
+                                "MATK+180，不可破壞。",
+                                "MATK + 7%。",
+                                "治癒量+15%，謳歌傷害+10%。",
+                                "[謳歌]的傷害提高10%。",
+                                "精煉+7時，聖屬性魔法傷害+7%，變動詠唱-10%。",
+                                "精煉+9時，謳歌傷害再+15%。",
+                                "魔法攻擊時，有機率10秒內對全體型敵人的魔法傷害+15%。",
+                                "精煉+11時，技能後延遲-20%。"
+                            ],
+                            "class": "鈍器",
+                            "value": 160,
+                            "position": "",
+                            "weight": 190,
+                            "property": "",
+                            "equipmentLevel": 4,
+                            "requiresLevel": 170,
+                            "usableBy": "大主教系列",
+                            "enchantments": [
+                                {
+                                    "name": "MATK+10%",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "對暗屬性魔物魔法傷害 + 20%",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "對BOSS階級魔物魔法傷害 + 18%",
+                                    "detail": []
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "cards": [
@@ -3556,6 +3604,46 @@
                             "contents": [
                                 "對惡魔型怪的魔法攻擊力+10%。",
                                 "搭配褐方體惡魔卡片時，武器精煉每+2，對惡魔型怪的魔法攻擊力再+3%。"
+                            ],
+                            "class": "卡片",
+                            "position": "武器",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "acd4ff8a-18ed-4e38-9e51-3e36a70fdacf",
+                    "imgNames": [
+                        "Magaleta Sorin.png"
+                    ],
+                    "name": "真●大主教卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "謳歌傷害+20%。",
+                                "若為4級武器時，謳歌傷害再+20%。",
+                                "武器精煉+10時，謳歌傷害再+20%。"
+                            ],
+                            "class": "卡片",
+                            "position": "武器",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "4dea450a-6fa5-41a4-8beb-5a6539e49765",
+                    "imgNames": [
+                        "null.png"
+                    ],
+                    "name": "神聖彩色皮影魔卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "若裝備武器為單手杖、雙手杖時，聖屬性魔法傷害+10%。",
+                                "武器精煉+10以上時，聖屬性魔法傷害再+10%。",
+                                "武器精煉+10時，謳歌傷害再+20%。"
                             ],
                             "class": "卡片",
                             "position": "武器",
@@ -4669,6 +4757,42 @@
                             "enchantments": []
                         }
                     ]
+                },
+                {
+                    "id": "8210999d-9ec8-4f65-b164-41c87b90f637",
+                    "imgNames": [
+                        "119.png"
+                    ],
+                    "name": "烏爾蒂奧聖魔法斗篷",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "infos": [
+                        {
+                            "contents": [
+                                "精煉每+2時，MATK+10。",
+                                "精煉每+4時，聖/無屬性魔法傷害+3%。",
+                                "精煉+9時，MATK+10%。",
+                                "精煉+11時，技能後延遲-12%。",
+                                "精煉+13時，無視首領階級魔物的魔法防禦力10%。",
+                                "",
+                                "當搭配「烏爾蒂奧流星錘-OS」時，",
+                                "MATK+30。",
+                                "當武器精煉+12時，謳歌的冷卻時間-0.5秒，",
+                                "無視惡魔/不死型魔物的魔法防禦力15%。"
+                            ],
+                            "class": "披肩",
+                            "value": 20,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 130,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
                 }
             ],
             "cards": [
@@ -4789,6 +4913,69 @@
                                 "對無屬性攻擊的耐性 + 15%",
                                 "精煉值每 + 1 時，風屬性的魔法傷害 + 3%",
                                 "與「深淵的人魚卡片」同時裝備時，對無屬性攻擊的耐性 + 5%"
+                            ],
+                            "class": "卡片",
+                            "position": "披肩",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "1175bbc4-9ab6-44c7-8eb0-cfa2b78e6ed2",
+                    "imgNames": [
+                        "null.png"
+                    ],
+                    "name": "希梅爾茲幻影卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "聖屬性、無屬性魔法的攻擊力+100%。",
+                                "對所有屬性攻擊的抗性-30%。"
+                            ],
+                            "class": "卡片",
+                            "position": "披肩",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2cc36d2b-e7ba-4bed-810a-1604388f0230",
+                    "imgNames": [
+                        "Archbishop Magaleta.png"
+                    ],
+                    "name": "闇●大主教 瑪嘉雷特卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "若為大主教時，MaxHP+10%，治癒量+15%。",
+                                "BaseLv為175時，All State+10。",
+                                "披肩精煉+10時，All State+10。",
+                                "",
+                                "搭配真●大主教卡片時，",
+                                "魔法攻擊時，以3%的機率變身為闇●神官。",
+                                "變身期間，MATK+100。"
+                            ],
+                            "class": "卡片",
+                            "position": "披肩",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "2e4fc34f-1279-41ec-a6bd-012fdedd414d",
+                    "imgNames": [
+                        "null.png"
+                    ],
+                    "name": "黃色的皮塔亞卡片",
+                    "available": false,
+                    "infos": [
+                        {
+                            "contents": [
+                                "對無屬性攻擊的耐性 + 15%",
+                                "精煉值每 + 1 時，聖屬性的魔法傷害 + 3%",
+                                "搭配煮熟的馬克卡片，對無屬性攻擊的抗性再 +5%。"
                             ],
                             "class": "卡片",
                             "position": "披肩",
