@@ -5430,6 +5430,43 @@
                             "enchantments": []
                         }
                     ]
+                },
+                {
+                    "id": "794cd06c-ca3c-4e01-b04e-bc3c7cb380e6",
+                    "imgNames": [
+                        "123.png"
+                    ],
+                    "name": "審判決議長靴",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "infos": [
+                        {
+                            "contents": [
+                                "感覺不太單純的長靴，那些主事者通常在謀圖不軌時所穿的靴子。",
+                                "Mdef+15",
+                                "使用技能時，SP消耗+10%，",
+                                "對玩家人類型、人類型、惡魔型、不死型的物理/魔法攻擊力+10%。",
+                                "",
+                                "搭配惡言外袍時，",
+                                "審判決議長靴[1]精煉每+3時，雷光彈的傷害 +20%。",
+                                "",
+                                "搭配議程外袍時，",
+                                "謳歌的冷卻時間 -1秒，",
+                                "審判決議長靴[1]精煉每+3時，聖屬性魔法傷害 +10%。"
+                            ],
+                            "class": "鞋子",
+                            "value": 20,
+                            "position": "",
+                            "weight": 30,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 100,
+                            "usableBy": "3轉服事系列",
+                            "enchantments": []
+                        }
+                    ]
                 }
             ],
             "cards": [
