@@ -5605,6 +5605,62 @@
                             "weight": 1
                         }
                     ]
+                },
+                {
+                    "id": "62695ef9-9e31-4fee-8317-c051c8bbb640",
+                    "imgNames": [
+                        "null.png"
+                    ],
+                    "name": "吉芬小偷卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "MATK+3%。",
+                                "火屬性、聖屬性魔法傷害+5%。"
+                            ],
+                            "class": "卡片",
+                            "position": "鞋靴",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "a2e462ec-a215-4447-86cb-0e0e65b96de4",
+                    "imgNames": [
+                        "null.png"
+                    ],
+                    "name": "大賽吉芬小偷卡片",
+                    "available": false,
+                    "infos": [
+                        {
+                            "contents": [
+                                "火屬性、聖屬性魔法傷害+10%。"
+                            ],
+                            "class": "卡片",
+                            "position": "鞋靴",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "50eab10f-9c94-4175-bd8d-68479c978313",
+                    "imgNames": [
+                        "null.png"
+                    ],
+                    "name": "煮熟的馬克卡片",
+                    "available": false,
+                    "infos": [
+                        {
+                            "contents": [
+                                "聖屬性、水屬性魔法傷害+5%。",
+                                "精煉每+2時，聖屬性、水屬性魔法傷害+1%。"
+                            ],
+                            "class": "卡片",
+                            "position": "鞋靴",
+                            "weight": 1
+                        }
+                    ]
                 }
             ]
         },
