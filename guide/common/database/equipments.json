@@ -360,7 +360,7 @@
                                 "<span class='text-danger'>該物品不可與其它帳號交易。</span>",
                                 "精煉每+2時，MATK+15。",
                                 "精煉每+3時，變動詠唱-3%。",
-                                "精煉每+3時， [謳歌]傷害+20%。",
+                                "精煉每+3時，[謳歌]傷害+20%。",
                                 "精煉每+4時，聖屬性魔法傷害+7%。",
                                 "精煉+11時，MATK+5%。"
                             ],
@@ -437,6 +437,64 @@
                                 {
                                     "name": "INT+5",
                                     "detail": []
+                                },
+                                {
+                                    "name": "魔精Lv.5",
+                                    "detail": [
+                                        "MATK+15%，固詠 -0.5秒。"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "fe121c80-3f77-4b7c-a4b5-5c235fdd0053",
+                    "imgNames": [
+                        "78.png"
+                    ],
+                    "name": "超時空頭冠(獵靈士)",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "以「封印超時空頭冠 x 5」於挑戰古城門口販賣機兌換",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3949"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "使用從時間縫隙中產生的礦石和寶石加工而成的頭冠。",
+                                "吸收了福金特殊的氣息而產生了力量。",
+                                "<span class='text-danger'>該物品不可與其它帳號交易。</span>",
+                                "精煉每+2時，MATK+15。",
+                                "精煉每+3時, 變動詠唱-5%。",
+                                "精煉每+3時，[邪靈爆炸、艾斯核]傷害+20%。",
+                                "精煉每+4時，暗屬性魔法傷害+7%。",
+                                "精煉+11時，MATK+5%。"
+                            ],
+                            "class": "頭具",
+                            "value": 10,
+                            "position": "頭上",
+                            "weight": 20,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 170,
+                            "usableBy": "大主教系列",
+                            "enchantments": [
+                                {
+                                    "name": "INT+4",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "超時空附魔寶石(INT) 3Lv",
+                                    "detail": [
+                                        "依照頭具的精鍊每+2時，治癒量+5%。",
+                                        "依照頭具的精鍊每+2時，MATK+7。",
+                                        "依照頭具的精鍊每+5時，MATK+3%。"
+                                    ]
                                 },
                                 {
                                     "name": "魔精Lv.5",
@@ -708,6 +766,25 @@
                             "contents": [
                                 "MHP+300",
                                 "LUK77以上時，HP恢復力和SP恢復力+100%。"
+                            ],
+                            "class": "卡片",
+                            "position": "頭具",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "1f4878e7-8574-4caf-b02b-56f390364751",
+                    "imgNames": [
+                        "Uzhas.png"
+                    ],
+                    "name": "樹林女巫卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "對惡魔型怪的魔法攻擊力+10%，",
+                                "頭具精煉+9時, 對惡魔型怪的魔法攻擊力再+5%。"
                             ],
                             "class": "卡片",
                             "position": "頭具",
@@ -1402,6 +1479,40 @@
                             "property": "",
                             "equipmentLevel": 1,
                             "requiresLevel": 1,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "13a48afc-49e6-4995-a4ae-26737669f45f",
+                    "imgNames": [
+                        "79.png"
+                    ],
+                    "name": "變異的超時空",
+                    "slots": 0,
+                    "available": true,
+                    "loot": "消費禮",
+                    "externalUrls": [],
+                    "infos": [
+                        {
+                            "contents": [
+                                "可使用「瞬間移動Lv2」。",
+                                "搭配「超時空頭冠(拳皇)」時，ATK+2%、暴擊傷害+5%。",
+                                "搭配「超時空頭冠(獵靈士)」時，MATK+2%、對全階級敵人的魔法傷害+3%。",
+                                "搭配「超時空頭冠(叛亂者)」時，DEX+5、遠距離物理攻擊+3%。",
+                                "搭配「超時空頭冠(日影忍者)」時，STR+5、對全階級敵人的物理傷害+3%。",
+                                "搭配「超時空頭冠(月影忍者)」時，NT+5、對全階級敵人的魔法傷害+3%。",
+                                "搭配「超時空頭冠(超級初學者)」時，All state+5、Maxhp+2000。",
+                                "搭配「超時空頭冠(喵族)」時，All State+3、技能後延遲-3%。"
+                            ],
+                            "class": "頭具",
+                            "value": 0,
+                            "position": "頭下",
+                            "weight": 20,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 170,
                             "usableBy": "全職業",
                             "enchantments": []
                         }
@@ -2173,6 +2284,69 @@
                                         "精煉+12時，INT+1，MATK再+8%。",
                                         "精煉+13時，INT+1，MATK再+2%。"
                                     ]
+                                },
+                                {
+                                    "name": "魔力尼夫Lv.3",
+                                    "detail": [
+                                        "精煉+7時，INT+7。",
+                                        "精煉+12時，INT+1，MATK再+8%。",
+                                        "精煉+13時，INT+1，MATK再+2%。"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "0b8203f0-1506-46df-9e66-1e4daa914887",
+                    "imgNames": [
+                        "25.png"
+                    ],
+                    "name": "朱比特輕甲",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "限時活動",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=2166"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "朱比特輕甲。",
+                                "精煉每+4時，INT+3、MATK+3%。",
+                                "",
+                                "精煉+10時，",
+                                "能量外套 技能的詠唱時間 -40%。",
+                                "",
+                                "精煉+12時，",
+                                "半徑擴大技能等級每+1時，技能後延遲 -2%。",
+                                "進化之書技能等級每+1時，鑽石星塵技能後延遲 -0.1秒。",
+                                "",
+                                "搭配滅絕木乃伊犬卡片時，",
+                                "MATK+30、MDEF+10，對所有種族的魔法傷害+3%。",
+                                "",
+                                "搭配墮落大神官 悉潘卡片時，",
+                                "MATK+60、MDEF+20，對所有種族的魔法傷害+5%。"
+                            ],
+                            "class": "鎧甲",
+                            "value": 0,
+                            "position": "",
+                            "weight": 30,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 100,
+                            "usableBy": "3轉魔法師系列",
+                            "enchantments": [
+                                {
+                                    "name": "DEX+3",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "DEX+3",
+                                    "detail": []
                                 },
                                 {
                                     "name": "魔力尼夫Lv.3",
