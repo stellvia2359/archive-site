@@ -462,3 +462,6 @@ main {
 .popover-header{
     font-weight: bold;
 }
+.scrollspy-target{
+    height: 60px;
+}
