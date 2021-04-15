@@ -160,6 +160,15 @@ var site = {
 
             }
         });
+        $.ajax({
+            url: "guide/common/template/equipment-nav.txt",
+            async: false,
+            success: function (data) {
+                template = $.templates(data);
+                var htmlOutput = template.render(json);
+                $("#blk-nav-chapter").html(htmlOutput);
+            }
+        });
     },
     printJson: function (data, source) {
         var x = {

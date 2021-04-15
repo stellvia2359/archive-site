@@ -5687,6 +5687,7 @@
             "category": "飾品",
             "categoryCode": "acc",
             "overrideCategoryName": false,
+            "hasCard": true,
             "items": [
                 {
                     "id": "2af83e55-cb81-4a7b-8a2a-a5efb3b05af4",
