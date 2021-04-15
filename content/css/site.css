@@ -453,9 +453,7 @@ main {
     top: 70px;
     right: 20px;
 }
-#blk-nav-chapter .dropdown-menu{
-    position: absolute !important;
-}
+
 @media (max-width: 1000px) {
     #home {
         background-position: 50% 0%;
@@ -478,4 +476,9 @@ main {
     #eq-nav-2{
         display: none;
     }
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 450px;
+    overflow-x: hidden;
 }
