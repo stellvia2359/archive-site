@@ -464,9 +464,9 @@ main {
     #eq-nav-2{
         display: inline;
     }
-    #blk-nav-chapter .dropdown-menu{
-        /*top: 105px !important;*/
-        left: -15px !important;
+    #blk-nav-chapter {
+        top: 60px;
+        right: 5px;
     }
 }
 @media (min-width:1000px){
