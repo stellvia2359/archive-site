@@ -449,7 +449,7 @@ main {
 }
 
 #blk-nav-chapter {
-    position: absolute;
+    position: fixed;
     top: 70px;
     right: 20px;
 }
