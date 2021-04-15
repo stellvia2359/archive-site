@@ -228,7 +228,7 @@ a.disabled {
     height: auto !important;
 }
 .equip-img{
-    width:100%;
+    max-width:100%;
 }
 .card-img {
     width: 78px;
