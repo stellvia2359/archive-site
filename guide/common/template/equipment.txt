@@ -5,12 +5,18 @@
     <li class="media m-2 equipment">
         <div class="d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
-            {{if #index == 0}}
-            <img src="content/image/guide/general/{{if #parent.parent.parent.parent.parent.data.categoryCode != "pet"}}equipment{{else}}pet{{/if}}/{{:}}" class="equip-img z-{{:~array.length-#getIndex()}}">
+            
+             {{if #index == 0}}
+             <div class="equip-img-blk z-{{:~array.length-#getIndex()}}">
+            <img class="equip-img" src="content/image/guide/general/{{if #parent.parent.parent.parent.parent.data.categoryCode != "pet"}}equipment{{else}}pet{{/if}}/{{:}}">
+            </div>  
             {{else}}
-            <img src="content/image/guide/general/equipment/{{:}}" class="equip-img back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}}">
+            <div class="equip-img-blk back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}}">
+            <img class="equip-img" src="content/image/guide/general/equipment/{{:}}">
+            </div>
             {{/if}}
-            {{/for}}
+              
+            {{/for}}        
         </div>
         
         <div class="media-body">

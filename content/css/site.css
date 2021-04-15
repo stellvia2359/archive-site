@@ -222,10 +222,13 @@ a.disabled {
     max-width: 100%;
     /* Max Width of the popover (depending on the container!) */
 }
-.equip-img{
+.equip-img-blk{
     width:75px;
     max-width: 75px;
     height: auto !important;
+}
+.equip-img{
+    width:100%;
 }
 .card-img {
     width: 78px;
