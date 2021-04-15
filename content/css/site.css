@@ -197,12 +197,13 @@ a.disabled {
     -webkit-appearance: none;
 }
 
-.tag-name {
+.tag-available {
     height: 17px;
     padding: 0 2px;
     line-height: 1.4;
     font-size: 12px;
     margin-left: 3px;
+    white-space:nowrap;
 }
 .score-name{
     height: 17px;
@@ -221,7 +222,9 @@ a.disabled {
     max-width: 100%;
     /* Max Width of the popover (depending on the container!) */
 }
-
+.equip-img{
+     width: 75px;
+}
 .card-img {
     width: 78px;
     height: 104px;

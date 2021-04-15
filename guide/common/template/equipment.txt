@@ -3,12 +3,12 @@
 <ul class="list-unstyled">
     {{for items sort="star" reverse=true}}
     <li class="media m-2 equipment">
-        <div class="shadow-equipmenmt-img d-flex flex-nowrap mr-3">
+        <div class="d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
             {{if #index == 0}}
-            <img src="content/image/guide/general/{{if #parent.parent.parent.parent.parent.data.categoryCode != "pet"}}equipment{{else}}pet{{/if}}/{{:}}" class="z-{{:~array.length-#getIndex()}}">
+            <img src="content/image/guide/general/{{if #parent.parent.parent.parent.parent.data.categoryCode != "pet"}}equipment{{else}}pet{{/if}}/{{:}}" class="equip-img z-{{:~array.length-#getIndex()}}">
             {{else}}
-            <img src="content/image/guide/general/equipment/{{:}}" class="back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}}">
+            <img src="content/image/guide/general/equipment/{{:}}" class="equip-img back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}}">
             {{/if}}
             {{/for}}
         </div>
@@ -18,9 +18,9 @@
             <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
                 <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover" data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                 {{if available == true}}
-                <span class="tag-name border border-primary rounded text-primary">已實裝</span>
+                <span class="tag-available border border-primary rounded text-primary">已實裝</span>
                 {{else}}
-                <span class="tag-name border border-secondary rounded text-secondary">未實裝</span>
+                <span class="tag-available border border-secondary rounded text-secondary">未實裝</span>
                 {{/if}}
                 <span class="score-name">{{:star.toFixed(1)}}</span>
                 <span class="stars" data-score="{{:star}}"></span>
@@ -106,7 +106,7 @@
 <ul class="list-unstyled">
     {{for cards sort="star" reverse=true}}
     <li class="media m-2 equipment">
-        <div class="shadow-equipmenmt-img d-flex flex-nowrap mr-3">
+        <div class="d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
             {{if #index == 0}}
             <img src="content/image/guide/general/card/{{:}}" class="z-{{:~array.length-#getIndex()}} card-img">
@@ -121,9 +121,9 @@
             <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
                 <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover" data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
                 {{if available == true}}
-                <span class="tag-name border border-primary rounded text-primary">已實裝</span>
+                <span class="tag-available border border-primary rounded text-primary">已實裝</span>
                 {{else}}
-                <span class="tag-name border border-secondary rounded text-secondary">未實裝</span>
+                <span class="tag-available border border-secondary rounded text-secondary">未實裝</span>
                 {{/if}}
                 <span class="score-name">{{:star.toFixed(1)}}</span>
                 <span class="stars" data-score="{{:star}}"></span>
