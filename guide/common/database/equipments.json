@@ -5835,6 +5835,25 @@
                             "weight": 1
                         }
                     ]
+                },
+                {
+                    "id": "f45e1af8-1379-41a2-bf72-4d777d38a8d6",
+                    "imgNames": [
+                        "null.png"
+                    ],
+                    "name": "光芒泰迪熊卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "使用技能時, SP消耗+10%。",
+                                "精煉每+1時, 聖屬性魔法傷害+3%。"
+                            ],
+                            "class": "卡片",
+                            "position": "鞋靴",
+                            "weight": 1
+                        }
+                    ]
                 }
             ]
         },
