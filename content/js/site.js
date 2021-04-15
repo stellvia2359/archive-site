@@ -29,8 +29,7 @@ var site = {
         $(".link-to-chapter").click(function (e) {
             e.preventDefault();
             var id = $(this).attr("href");
-            var y =  $(id).offset().top;
-            window.scrollTo({ top: y-60, behavior: 'smooth' });
+            utility.scrollTo(id);
         });
         utility.loadTooltip();
     },
@@ -206,6 +205,12 @@ var utility = {
     backToTop: function () {
         $('body,html').animate({
             scrollTop: 0
+        }, 400);
+    },
+    scrollTo:function(id){
+        var y =  $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: y - 60
         }, 400);
     },
     generateStars: function () {
