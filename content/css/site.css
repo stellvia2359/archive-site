@@ -225,6 +225,7 @@ a.disabled {
 .equip-img{
     width:75px;
     max-width: 75px;
+    height: auto !important;
 }
 .card-img {
     width: 78px;
