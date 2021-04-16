@@ -1,0 +1,16 @@
+<div class="dropleft">
+  <button id="eq-nav" class="btn btn-dark" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="text-danger far fa-compass"></i>
+  </button>
+  <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
+  {{for equipments ~array=equipments}}
+        <a class="dropdown-item link-to-chapter" href="#equip-{{:categoryCode}}">{{:category}}裝備</a>
+        {{if hasCard}}
+        <a class="dropdown-item link-to-chapter" href="#card-{{:categoryCode}}">{{:category}}卡片</a>
+        {{/if}}
+        {{if #getIndex()!=~array.length-1}}
+        <div role="separator" class="dropdown-divider"></div>
+        {{/if}}
+  {{/for}}
+  </div>
+</div>

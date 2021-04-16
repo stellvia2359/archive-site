@@ -13,7 +13,7 @@ var site = {
         } else {
             site.loadHome();
         }
-        $(".external-link").click(utility.closeMenu);
+        $(".external-link,.my-site-link").click(utility.closeMenu);
         $('#back-to-top').click(function () {
             utility.backToTop();
             return false;
@@ -26,12 +26,10 @@ var site = {
             }
         });
 
-        $("body").attr({
-            "data-spy": "scroll",
-            "data-target": "#navbar-chapter"
-        }).scrollspy();
-        $(window).on('activate.bs.scrollspy', function () {
-            window.scrollBy(0, -30);
+        $(".link-to-chapter").click(function (e) {
+            e.preventDefault();
+            var id = $(this).attr("href");
+            utility.scrollTo(id);
         });
         utility.loadTooltip();
     },
@@ -39,6 +37,7 @@ var site = {
         $.ajax({
             url: url + ".html",
             dataType: "html",
+            async:false,
             success: function (data) {
                 $("#main-content").html(data);
                 $(".nav-link").removeClass("active");
@@ -161,10 +160,19 @@ var site = {
 
             }
         });
+        $.ajax({
+            url: "guide/common/template/equipment-nav.txt",
+            async: false,
+            success: function (data) {
+                template = $.templates(data);
+                var htmlOutput = template.render(json);
+                $("#blk-nav-chapter").html(htmlOutput);
+            }
+        });
     },
-    printJson: function (data,source) {
+    printJson: function (data, source) {
         var x = {
-            equipments: data.equipments.map(e => ({ categoryCode: e.categoryCode, items: e.items.map(i => ({ id:source.equipments.filter(function(category){return category.categoryCode == e.categoryCode})[0].items.filter(function(item){return item.name == i.name })[0].id,name: i.name, star: i.star, comments: i.comments })), cards: e.cards.map(c => ({ id:source.equipments.filter(function(category){return category.categoryCode == e.categoryCode})[0].cards.filter(function(card){return card.name == c.name })[0].id, name: c.name, star: c.star, comments: c.comments })) }))
+            equipments: data.equipments.map(e => ({ categoryCode: e.categoryCode, items: e.items.map(i => ({ id: source.equipments.filter(function (category) { return category.categoryCode == e.categoryCode })[0].items.filter(function (item) { return item.name == i.name })[0].id, name: i.name, star: i.star, comments: i.comments })), cards: e.cards.map(c => ({ id: source.equipments.filter(function (category) { return category.categoryCode == e.categoryCode })[0].cards.filter(function (card) { return card.name == c.name })[0].id, name: c.name, star: c.star, comments: c.comments })) }))
         };
         console.log(x);
     },
@@ -185,7 +193,7 @@ var utility = {
     },
     loadPopover: function () {
         $(".equipment-info-content").hide();
-        
+
         var equipmentInfo = $(".equipment-info");
         for (var i = 0; i < equipmentInfo.length; i++) {
             var title = $(equipmentInfo[i]).closest(".secondary-title-line").siblings(".equipment-name").text();
@@ -206,6 +214,12 @@ var utility = {
     backToTop: function () {
         $('body,html').animate({
             scrollTop: 0
+        }, 400);
+    },
+    scrollTo:function(id){
+        var y =  $(id).offset().top;
+        $('body,html').animate({
+            scrollTop: y - 60
         }, 400);
     },
     generateStars: function () {
