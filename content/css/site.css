@@ -453,16 +453,21 @@ main {
     top: 70px;
     right: 20px;
 }
-
+#eq-nav {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    opacity: 90%;
+}
+#eq-nav i{
+    position: absolute;
+    top:8px;
+    left:9px;
+    font-size: 40px;
+}
 @media (max-width: 1000px) {
     #home {
         background-position: 50% 0%;
-    }
-    #eq-nav-1{
-        display: none;
-    }
-    #eq-nav-2{
-        display: inline;
     }
     #blk-nav-chapter {
         top: 60px;
@@ -470,12 +475,7 @@ main {
     }
 }
 @media (min-width:1000px){
-    #eq-nav-1{
-        display: inline;
-    }
-    #eq-nav-2{
-        display: none;
-    }
+
 }
 @media (max-height: 1040px){
     .scrollable-menu {

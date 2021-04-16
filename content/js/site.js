@@ -13,7 +13,7 @@ var site = {
         } else {
             site.loadHome();
         }
-        $(".external-link").click(utility.closeMenu);
+        $(".external-link,.my-site-link").click(utility.closeMenu);
         $('#back-to-top').click(function () {
             utility.backToTop();
             return false;
