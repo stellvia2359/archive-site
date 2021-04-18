@@ -1,6 +1,6 @@
-<div class="dropleft">
+<div class="dropup">
   <button id="eq-nav" class="btn btn-dark" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <i class="text-danger far fa-compass"></i>
+    <i class="far fa-compass"></i>
   </button>
   <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
   {{for equipments ~array=equipments}}

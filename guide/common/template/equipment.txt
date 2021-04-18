@@ -64,8 +64,10 @@
                 <div>{{:#data}}</div>
                 {{/if}}
             {{/for}}
+            {{if class || value || position || weight || property}}
             <br>
-            {{if class || value}}
+            {{/if}}
+            {{if class || value}}        
             <div>系列: {{:class}} {{if #parent.parent.parent.parent.data.categoryCode != "shadow"}}{{if #parent.parent.parent.parent.parent.data.categoryCode=="weapon"}}攻擊{{else}}防禦{{/if}}: {{:value}}{{/if}}</div>
             {{/if}}      
             <div>
