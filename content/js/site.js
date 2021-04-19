@@ -14,6 +14,9 @@ var site = {
             site.loadHome();
         }
         $(".external-link,.my-site-link").click(utility.closeMenu);
+        if($("#eq-nav").length == 0){
+            $('#back-to-top').removeClass("back-to-top").addClass("back-to-top2")
+        }
         $('#back-to-top').click(function () {
             utility.backToTop();
             return false;

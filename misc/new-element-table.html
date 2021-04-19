@@ -7,21 +7,23 @@
             之前KRO懇談會中，就有玩家提出咒術四轉非常弱的問題，如下圖
         </p>
         <figure class="figure m-1">
-            <img src="content/image/misc/others/qa_warlock.png" class="figure-img img-fluid rounded skill-img">
+            <img src="content/image/misc/others/qa_warlock.png" class="figure-img img-fluid rounded">
             <figcaption class="figure-caption"><span><i class="far fa-image"></i> KRO 懇談會Q&A</span></figcaption>
         </figure>
+        <br>
+        <br>
         <p>
             其實這個問題不是4轉才發生，咒術一直以來都被現在的屬性表嚴重限制了傷害，由於RO有非常多的聖暗怪，而且通常強力的BOSS都是聖暗屬性，四大屬性(水火地風)完全打不到聖4，打暗4也只有25%傷害，加上完全沒有轉屬手段，導致咒術傷害長年被壓制，
             最近G社終於注意到這個問題了，近期KRO提出目前正在檢討遊戲中存在的各種問題，其中就有對屬性剋制傷害的調整，目前只公布了對屬性等級4的實際數值，不過基本上看對4的就能大概知道前面了。
             可以發現四大屬性已經不再怕聖暗了，地位大幅提升，風念咒術的風和念屬性也可以互補不足的地方，打所有屬性都能有100%以上的傷害了，可以期待一下之後咒術和4轉大魔法師了。
         </p>
         <figure class="figure m-1">
-            <img src="content/image/misc/others/element_old_new.png" class="figure-img img-fluid rounded skill-img">
+            <img src="content/image/misc/others/element_old_new.png" class="figure-img img-fluid rounded">
             <figcaption class="figure-caption"><span><i class="far fa-image"></i> 新舊屬性相剋圖</span></figcaption>
         </figure>
         <br>
         <br>
-        <table class="table table-sm table-bordered table-hover text-center">
+        <table id="table-element" class="table table-sm table-bordered table-hover text-center">
             <tbody>
                 <tr>
                     <th rowspan="2" colspan="2" class="align-middle text-light bg-dark">屬性等級4</th>
@@ -37,7 +39,7 @@
                     <td class="bg-light">聖</td>
                     <td class="bg-light">暗</td>
                     <td class="bg-light">念</td>
-                    <td class="bg-light">不死</td>
+                    <td class="bg-light">死</td>
                 </tr>
                 <tr>
                     <th class="def-title align-middle text-light bg-dark" rowspan="10">守方屬性</th>
@@ -158,7 +160,7 @@
                     <td class="text-success">175%</td>
                 </tr>
                 <tr>
-                    <td class="bg-light">不死</td>
+                    <td class="bg-light">死</td>
                     <td>100%</td>
                     <td>100%</td>
                     <td>100%</td>
@@ -190,12 +192,17 @@
    <br>
    <br>
 </div>
-<input class="nav-id" value="nav-link-m-m3" hidden>
+<input class="nav-id" value="nav-link-m-net" hidden>
 <style>
     .def-title{
         width: 30px;
     }
     .atk-title{
         height: 30px;
+    }
+    @media (max-width: 525px) {
+        #table-element{
+            font-size: small;
+        }
     }
 </style>
