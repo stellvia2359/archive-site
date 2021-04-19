@@ -206,4 +206,33 @@
             font-size: small;
         }
     }
+    * {
+  box-sizing:border-box;
+}
+
+table {
+  overflow: hidden;
+
+}
+
+td, th {
+    position: relative;
+}
+
+th {
+  background-color:#fff;
+}
+    td:hover::before { 
+    background-color: #eee;       
+}
+td:hover::after { 
+    background-color: #eee;
+    content: '';  
+    height: 10000px;    
+    left: 0;
+    position: absolute;  
+    top: -5000px;
+    width: 100%;
+    z-index: -1;        
+}
 </style>
