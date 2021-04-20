@@ -68,11 +68,11 @@
             <br>
             {{/if}}
             {{if class || value}}        
-            <div>系列: {{:class}} {{if #parent.parent.parent.parent.data.categoryCode != "shadow"}}{{if #parent.parent.parent.parent.parent.data.categoryCode=="weapon"}}攻擊{{else}}防禦{{/if}}: {{:value}}{{/if}}</div>
+            <div>系列: {{:class}} {{if #parent.parent.parent.parent.parent.data.categoryCode != "shadow"}}{{if #parent.parent.parent.parent.parent.parent.data.categoryCode=="weapon"}}攻擊{{else}}防禦{{/if}}: {{:value}}{{/if}}</div>
             {{/if}}      
             <div>
             {{if position}}位置: {{:position}}{{/if}}
-            {{if weight}}重量: {{:weight}}{{/if}}
+            重量: {{:weight}}
             {{if property}}屬性: {{:property}}{{/if}}
             </div>
             {{if equipmentLevel}}
