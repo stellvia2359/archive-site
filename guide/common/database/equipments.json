@@ -3652,7 +3652,7 @@
                     ],
                     "name": "神話量子靈魂石",
                     "slots": 2,
-                    "available": false,
+                    "available": true,
                     "loot": "轉蛋",
                     "externalUrls": [],
                     "infos": [
