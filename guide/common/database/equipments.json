@@ -933,6 +933,25 @@
                             "weight": 1
                         }
                     ]
+                },
+                {
+                    "id": "00555cbd-7302-4cab-9376-98eabcf903bf",
+                    "imgNames": [
+                        "Lichtern Red.png"
+                    ],
+                    "name": "元素鬼火(紅)卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "MATK+10,火屬性魔法攻擊力+5%。",
+                                "精煉+9以上時,火屬性魔法攻擊力再+5%。"
+                            ],
+                            "class": "卡片",
+                            "position": "頭具",
+                            "weight": 1
+                        }
+                    ]
                 }
             ]
         },
@@ -1655,6 +1674,48 @@
                             "property": "",
                             "equipmentLevel": 1,
                             "requiresLevel": 170,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "58721428-3d88-43cb-9c23-4f955c7bdfd5",
+                    "imgNames": [
+                        "150.png"
+                    ],
+                    "name": "永恆波利氣球",
+                    "slots": 0,
+                    "available": true,
+                    "loot": "消費禮",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4488"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "對所有屬性的攻擊抗性+2%。",
+                                "",
+                                "搭配「永恆之翼」時，",
+                                "擊殺魔物後取得經驗值+8%。",
+                                "當「永恆之翼」精煉+8以上時：",
+                                "基本屬性STR每20時，近距離物理傷害+3%。",
+                                "基本屬性AGI每20時，暴擊傷害+4%。",
+                                "基本屬性VIT每20時，對無屬性攻擊的抗性+2%、MaxHP+1%。",
+                                "基本屬性INT每20時，所有屬性魔法攻擊傷害+3%。.",
+                                "基本屬性DEX每20時，技能後延遲-3%。",
+                                "基本屬性LUK每20時，ATK+5、MATK+5、CRI+2。"
+                            ],
+                            "class": "頭具",
+                            "value": 0,
+                            "position": "頭下",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 1,
                             "usableBy": "全職業",
                             "enchantments": []
                         }
@@ -3831,6 +3892,54 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "a34dc2aa-fdc3-4fb8-8b3f-9b5e6d293d95",
+                    "imgNames": [
+                        "152.png"
+                    ],
+                    "name": "碧血玫瑰魔杖",
+                    "slots": 2,
+                    "available": true,
+                    "loot": "EDDA活體研究所",
+                    "externalUrls": [],
+                    "infos": [
+                        {
+                            "contents": [
+                                "可以變出精彩魔法的魔杖。",
+                                "MATK+180，不可破壞。",
+                                "火屬性/暗屬性魔法傷害+5%。",
+                                "精煉每+1時，MATK+4。",
+                                "精煉+9時，[地獄火焰]傷害+30%。",
+                                "精煉+11時，[碧血隕石]冷卻時間-1秒。"
+                            ],
+                            "class": "單手杖",
+                            "value": 100,
+                            "position": "",
+                            "weight": 70,
+                            "property": "",
+                            "equipmentLevel": 4,
+                            "requiresLevel": 170,
+                            "usableBy": "咒術士系列",
+                            "enchantments": [
+                                {
+                                    "name": "凱特莉娜的記憶",
+                                    "detail": [
+                                        "碧血玫瑰法杖精煉每+3時，[地獄火焰]傷害+7%、[碧血隕石]傷害+5%。",
+                                        "天降奇蹟法杖精煉每+3時，[聖靈召喚、念力連擊]傷害+10%，[靈魂爆炸]傷害+5%。",
+                                        "萬有引力法杖精煉每+3時，[重力原野]傷害+10%、[吸星大法]傷害+5%。"
+                                    ]
+                                },
+                                {
+                                    "name": "魔力Lv.1",
+                                    "detail": [
+                                        "MATK+6",
+                                        "變動詠唱時間縮短4%"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "cards": [
@@ -4084,6 +4193,46 @@
                                 "若裝備武器為單手杖、雙手杖時，聖屬性魔法傷害+10%。",
                                 "武器精煉+10以上時，聖屬性魔法傷害再+10%。",
                                 "武器精煉+10時，謳歌傷害再+20%。"
+                            ],
+                            "class": "卡片",
+                            "position": "武器",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "acf6df17-3ce9-40e0-8054-379edf96aae1",
+                    "imgNames": [
+                        "Kateinn Keyron.png"
+                    ],
+                    "name": "真●咒術士卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "碧血隕石傷害+20%。",
+                                "若為4級武器時,碧血隕石傷害再+20%。",
+                                "武器精煉+10時,碧血隕石傷害再+20%。"
+                            ],
+                            "class": "卡片",
+                            "position": "武器",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "bfe82ba8-b11b-45af-8d9d-dddf2acfbfb6",
+                    "imgNames": [
+                        "null.png"
+                    ],
+                    "name": "紅色的皮塔亞卡片",
+                    "available": false,
+                    "infos": [
+                        {
+                            "contents": [
+                                "搭配「單手杖」或「雙手杖」系列武器時，火屬性魔法傷害+10%，",
+                                "精煉+10以上時，火屬性魔法傷害+10%，",
+                                "精煉+14以上時，火屬性魔法傷害+10%。"
                             ],
                             "class": "卡片",
                             "position": "武器",
@@ -5233,6 +5382,33 @@
                             "enchantments": []
                         }
                     ]
+                },
+                {
+                    "id": "1079c679-9711-461f-9ebd-c26512cbd8c6",
+                    "imgNames": [
+                        "151.png"
+                    ],
+                    "name": "永恆之翼",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "神秘咒語集",
+                    "externalUrls": [],
+                    "infos": [
+                        {
+                            "contents": [
+                                "永恆之翼, 白色巨型翅膀"
+                            ],
+                            "class": "披肩",
+                            "value": 18,
+                            "position": "",
+                            "weight": 20,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 1,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
                 }
             ],
             "cards": [
@@ -5416,6 +5592,45 @@
                                 "對無屬性攻擊的耐性 + 15%",
                                 "精煉值每 + 1 時，聖屬性的魔法傷害 + 3%",
                                 "搭配煮熟的馬克卡片，對無屬性攻擊的抗性再 +5%。"
+                            ],
+                            "class": "卡片",
+                            "position": "披肩",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "b9d59d7e-f2a1-4f9f-97cd-5b55e9e4fc6b",
+                    "imgNames": [
+                        "null.png"
+                    ],
+                    "name": "深海的魔女卡片",
+                    "available": false,
+                    "infos": [
+                        {
+                            "contents": [
+                                "火屬性、暗屬性魔法的攻擊力+100%，",
+                                "對所有屬性攻擊的抗性-30%。"
+                            ],
+                            "class": "卡片",
+                            "position": "披肩",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "6d72addf-f1a0-4e7f-afeb-5c1d11de0e9b",
+                    "imgNames": [
+                        "Nightmare Ancient Mummy.png"
+                    ],
+                    "name": "滅絕狂暴木乃伊卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "對無屬性攻擊的耐性 + 15%",
+                                "精煉值每 + 1 時，火屬性的魔法傷害 + 3%",
+                                "與「滅絕木乃伊卡片」同時裝備時，對無屬性攻擊的耐性 + 5%"
                             ],
                             "class": "卡片",
                             "position": "披肩",
@@ -7109,6 +7324,24 @@
                             "weight": 1
                         }
                     ]
+                },
+                {
+                    "id": "f8fde2fa-1ba1-4c9c-94a9-3f56828ab8b9",
+                    "imgNames": [
+                        "Mavka.png"
+                    ],
+                    "name": "森林妖精卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "火屬性、地屬性的魔法傷害 +20%。"
+                            ],
+                            "class": "卡片",
+                            "position": "飾品",
+                            "weight": 1
+                        }
+                    ]
                 }
             ]
         },
@@ -8122,6 +8355,93 @@
                             "requiresLevel": 100,
                             "usableBy": "獵靈士",
                             "enchantments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "b3070548-1831-4e13-98f6-064ee6742493",
+                    "imgNames": [
+                        "11.png",
+                        "13.png",
+                        "12.png"
+                    ],
+                    "name": "影子碧血隕石套裝(盾/鎧/靴)",
+                    "slots": 0,
+                    "available": true,
+                    "loot": "轉蛋",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3643"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "<b>影子碧血隕石神盾</b>",
+                                "可套在手腕上的小盾牌，有額外的防禦效果。雖然可以單獨使用，但防禦效果會降低。",
+                                "火屬性魔法傷害+3%。",
+                                "精煉+7時，火屬性魔法傷害再+3%，",
+                                "精煉+9時，火屬性魔法傷害再+4%。",
+                                "搭配影子碧血隕石鎧甲/神盾/戰靴時，碧血隕石傷害%增加至精煉總合。",
+                                "搭配影子咒術士手套時，無視玩家型除外的全種族魔法防禦力40%，再無視影子碧血隕石神盾/影子咒術士手套精煉值總和的魔法防禦力。"
+                            ],
+                            "class": "影子裝備",
+                            "value": 0,
+                            "position": "盾牌",
+                            "weight": 0,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 99,
+                            "usableBy": "咒術士系列",
+                            "enchantments": []
+                        },
+                        {
+                            "contents": [
+                                "<b>影子碧血隕石鎧甲</b>",
+                                "可套在鎧甲上的鎧甲，有額外的防禦效果。雖然可以單穿，但防禦效果會降低。",
+                                "碧血隕石傷害+5%。",
+                                "精煉每+1時，碧血隕石傷害再+2%。"
+                            ],
+                            "class": "影子裝備",
+                            "value": 0,
+                            "position": "鎧甲",
+                            "weight": 0,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 99,
+                            "usableBy": "咒術士系列",
+                            "enchantments": []
+                        },
+                        {
+                            "contents": [
+                                "<b>影子碧血隕石戰靴</b>",
+                                "可穿在鞋子裡面的靴子，雖然可以單穿，但效果會降低。",
+                                "碧血隕石SP消耗-4%。",
+                                "精煉每+2時，碧血隕石SP消耗再-1%。"
+                            ],
+                            "class": "影子裝備",
+                            "value": 0,
+                            "position": "鞋子",
+                            "weight": 0,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 99,
+                            "usableBy": "咒術士系列",
+                            "enchantments": [
+                                {
+                                    "name": "對所有屬性攻擊的抗性+5%。",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "遭受BOSS怪物理傷害-5%",
+                                    "detail": []
+                                },
+                                {
+                                    "name": "減少攻擊後延遲 5%",
+                                    "detail": []
+                                }
+                            ]
                         }
                     ]
                 }
