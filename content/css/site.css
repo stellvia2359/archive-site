@@ -246,6 +246,7 @@ main {
     background-size: cover;
     background-position: 0% 0%;
 }
+
 @media (max-width: 1000px) {
     #home {
         background-position: 50% 0%;
@@ -329,6 +330,7 @@ main {
 
 .video-block {
     max-width: 960px;
+    margin-bottom: 10px;
 }
 
 .page-title {
@@ -434,19 +436,23 @@ main {
 .scrollspy-target {
     height: 60px;
 }
-#back-to-top{
+
+#back-to-top {
     position: fixed;
     display: none;
     opacity: 50%;
 }
-.back-to-top {   
+
+.back-to-top {
     bottom: 22px;
-    right: 148px;  
+    right: 148px;
 }
-.back-to-top2{
+
+.back-to-top2 {
     bottom: 22px;
     right: 85px;
 }
+
 #blk-nav-chapter {
     position: fixed;
     bottom: 22px;
@@ -454,22 +460,25 @@ main {
     z-index: 99;
     padding: 0;
 }
+
 #eq-nav {
     height: 48px;
     width: 51.5px;
     opacity: 50%;
 }
-#eq-nav i{
+
+#eq-nav i {
     position: absolute;
-    top:14px;
-    left:16px;
+    top: 14px;
+    left: 16px;
 }
+
 @media (max-width: 500px) {
     #blk-nav-chapter {
         bottom: 4px;
         right: 62px;
     }
-    .back-to-top{
+    .back-to-top {
         bottom: 4px;
         right: 118px;
     }
@@ -478,7 +487,6 @@ main {
         right: 62px;
     }
 }
-
 
 @media (min-width:1000px) {}
 
