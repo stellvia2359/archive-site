@@ -497,3 +497,37 @@ main {
         overflow-x: hidden;
     }
 }
+
+.list-common, .list-common ul {
+    margin-left: -15px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.list-common>li>ul>li>ul>li>ul {
+    list-style-type: "\25AB";
+}
+
+.list-common>li:nth-child(1)>ul>li {
+    font-weight: normal;
+    font-size: initial;
+}
+
+.list-common>li {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.list-common>li>ul>li {
+    font-weight: normal;
+    font-size: x-large;
+}
+
+.list-common>li>ul>li>ul>li {
+    font-weight: normal;
+    font-size: initial;
+}
+
+.list-common img {
+    display: block;
+}
