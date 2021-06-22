@@ -510,7 +510,7 @@ main {
 
 .list-common>li:nth-child(1)>ul>li {
     font-weight: normal;
-    font-size: initial;
+    font-size: 0.875rem;
 }
 
 .list-common>li {
@@ -525,7 +525,7 @@ main {
 
 .list-common>li>ul>li>ul>li {
     font-weight: normal;
-    font-size: initial;
+    font-size: 0.875rem;
 }
 
 .list-common img {
