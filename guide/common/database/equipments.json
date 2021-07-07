@@ -2118,6 +2118,10 @@
                         {
                             "name": "相關資訊",
                             "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3162"
+                        },
+                        {
+                            "name": "新附魔資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4698"
                         }
                     ],
                     "infos": [
@@ -4830,7 +4834,12 @@
                     "slots": 1,
                     "available": true,
                     "loot": "轉蛋",
-                    "externalUrls": [],
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3162"
+                        }
+                    ],
                     "infos": [
                         {
                             "contents": [
