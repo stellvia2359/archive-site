@@ -1720,6 +1720,49 @@
                             "enchantments": []
                         }
                     ]
+                },
+                {
+                    "id": "ad03d2a0-8429-450f-bc5c-e5e61e359359",
+                    "imgNames": [
+                        "161.png"
+                    ],
+                    "name": "魔力星陣",
+                    "slots": 0,
+                    "available": true,
+                    "loot": "消費禮",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4488"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "固定詠唱-0.2秒。",
+                                "",
+                                "搭配魔力之星時，",
+                                "基本屬性STR每+20時，MATK+1%。",
+                                "基本屬性AGI每+20時，技能後延遲-1%。",
+                                "基本屬性VIT每+20時，對全種族的魔法傷害+1%。",
+                                "基本屬性INT每+20時，對全階級的魔法傷害+1%。",
+                                "基本屬性DEX每+20時，對全體型的魔法傷害+1%。",
+                                "基本屬性LUK每+20時，對全屬性敵人的魔法傷害+1%。",
+                                "",
+                                "搭配魔力星環時，",
+                                "變動詠唱-20%。"
+                            ],
+                            "class": "頭具",
+                            "value": 0,
+                            "position": "頭下",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 100,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
                 }
             ],
             "cards": []
@@ -5676,6 +5719,43 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "66f2ece5-7c97-4362-a990-b2360d4ec7a9",
+                    "imgNames": [
+                        "159.png"
+                    ],
+                    "name": "魔鬼惡火斗篷",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "infos": [
+                        {
+                            "contents": [
+                                "精煉+2時，MATK+10。",
+                                "精煉+4時，火/暗屬性魔法傷害+3%。",
+                                "精煉+7時，MATK+10%。",
+                                "精煉+9時，地獄火焰、碧血隕石傷害+30%。",
+                                "精煉+11時，技能後延遲-12%。",
+                                "精煉+13時，無視首領階級魔物的魔法防禦力10%。",
+                                "",
+                                "搭配「紅魔鬼法杖-OS」時，",
+                                "火/暗屬性魔法傷害+10%。",
+                                "武器精煉每+4時，地獄火焰傷害+20%。",
+                                "武器精煉+12時,地獄火焰、碧血隕石的冷卻時間-1秒。"
+                            ],
+                            "class": "披肩",
+                            "value": 0,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 130,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
                 }
             ],
             "cards": [
@@ -7128,11 +7208,11 @@
                     "name": "幻象戰戒",
                     "slots": 1,
                     "available": true,
-                    "loot": "「血腥詛咒水晶 x 5」、「時光結晶 x 10」於EDDA克雷斯特漢姆的沒落副本門口販賣機兌換",
+                    "loot": "消費禮",
                     "externalUrls": [
                         {
                             "name": "相關資訊",
-                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=3844"
+                            "url": "https://tro.gnjoy.com.tw/Event/ACT_20200317_illusory_return"
                         }
                     ],
                     "infos": [
@@ -7155,7 +7235,7 @@
                                 "Mdef+15，固定詠唱-0.3秒。"
                             ],
                             "class": "飾品",
-                            "value": 10,
+                            "value": 0,
                             "position": "",
                             "weight": 30,
                             "property": "",
@@ -7668,6 +7748,106 @@
                                     ]
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "id": "afdbd231-58be-48a0-b8e0-5e91d70750b9",
+                    "imgNames": [
+                        "160.png"
+                    ],
+                    "name": "全自動戰戒",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "消費禮",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=44810"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "All State+1。",
+                                "ATK / MATK+5%。",
+                                "技能後延遲-5%，",
+                                "MHP / MSP+5%。",
+                                "",
+                                "搭配「全自動助推器R」時，",
+                                "以1%的機率將傷害的1%吸收為SP，",
+                                "對BOSS階級的物理攻擊+15%。",
+                                "",
+                                "搭配「全自動助推器L」時，",
+                                "近距離物理攻擊+4%。",
+                                "遠距離物理攻擊+4%。",
+                                "",
+                                "搭配「全自動戰鬥晶片R」時，",
+                                "技能後延遲-5%。",
+                                "對BOSS階級的魔法攻擊+15%。",
+                                "",
+                                "搭配「全自動戰鬥晶片L」時，",
+                                "對全屬性敵人的魔法攻擊+6%。",
+                                "固定詠唱-0.3秒。"
+                            ],
+                            "class": "飾品",
+                            "value": 0,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 100,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "b839a3ad-8a09-41a7-9143-12dfac7af46b",
+                    "imgNames": [
+                        "162.png"
+                    ],
+                    "name": "思念體忿恨因子研究錄(法師篇)",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "轉蛋",
+                    "externalUrls": [],
+                    "infos": [
+                        {
+                            "contents": [
+                                "技能後延遲-6%。",
+                                "對全體型敵人的魔法傷害+6%。",
+                                "",
+                                "搭配神秘魔力石帽子時，",
+                                "固定詠唱 -0.2秒，",
+                                "毀滅彗星傷害+30%。",
+                                "",
+                                "搭配神秘徐風之耳語時，",
+                                "INT+20，",
+                                "劇毒猛擊冷卻時間-0.5秒，",
+                                "可使用毒耐性弱化LV5。",
+                                "",
+                                "搭配思念體破壞因子研究錄(法師篇)時，",
+                                "MATK+10%。",
+                                "",
+                                "搭配闇●超魔導師 凱特莉娜卡片時，",
+                                "對Boss階級的魔法傷害+30%。",
+                                "",
+                                "搭配闇●智者 西里亞卡片時，",
+                                "對全屬性敵人的魔法傷害+20%。",
+                                "",
+                                "搭配席琳的胸針時，",
+                                "對Boss階級的魔法傷害-50%。"
+                            ],
+                            "class": "飾品",
+                            "value": 0,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 100,
+                            "usableBy": "3轉魔法師系列",
+                            "enchantments": []
                         }
                     ]
                 }

@@ -114,7 +114,6 @@
 {{/if}}
 
 {{if hasCard}}
-
 {{if cards.length > 0}}
 <h5 id="card-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}卡片</h5>
 <ul class="list-unstyled">
@@ -173,13 +172,6 @@
     </li>
     {{/for}}
 </ul>
-{{else}}
-{{if noCardMessage}}
-<h5 id="card-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}卡片</h5>
-<div class="alert alert-dark" role="alert">
-    {{:noCardMessage}}
-</div>
-{{/if}}
 {{/if}}
 {{/if}}
 {{/for}}

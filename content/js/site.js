@@ -14,7 +14,7 @@ var site = {
             site.loadHome();
         }
         $(".external-link,.my-site-link").click(utility.closeMenu);
-        if($("#eq-nav").length == 0){
+        if ($("#eq-nav").length == 0) {
             $('#back-to-top').removeClass("back-to-top").addClass("back-to-top2")
         }
         $('#back-to-top').click(function () {
@@ -40,7 +40,7 @@ var site = {
         $.ajax({
             url: url + ".html",
             dataType: "html",
-            async:false,
+            async: false,
             success: function (data) {
                 $("#main-content").html(data);
                 $(".nav-link").removeClass("active");
@@ -48,7 +48,7 @@ var site = {
                 $("#" + navId).addClass("active");
                 if (loadeqjson) {
                     var json = site.loadEquipmentDataOfAllCategories(url);
-                    site.loadTemplate(json);
+                    site.loadTemplate(json, loadeqjson);
 
 
                 }
@@ -151,10 +151,22 @@ var site = {
         }
         return result;
     },
-    loadTemplate: function (json) {
+    loadTemplate: function (json, loadeqjson) {
         var template;
+        var templateName;
+        switch (loadeqjson) {
+            case "full":
+                templateName = "equipment";
+                break;
+            case "selected":
+                templateName = "equipment-selected";
+                break;
+            default:
+                templateName = "equipment";
+                break;
+        }
         $.ajax({
-            url: "guide/common/template/equipment.txt",
+            url: "guide/common/template/" + templateName + ".txt",
             async: false,
             success: function (data) {
                 template = $.templates(data);
@@ -219,8 +231,8 @@ var utility = {
             scrollTop: 0
         }, 400);
     },
-    scrollTo:function(id){
-        var y =  $(id).offset().top;
+    scrollTo: function (id) {
+        var y = $(id).offset().top;
         $('body,html').animate({
             scrollTop: y - 60
         }, 400);
