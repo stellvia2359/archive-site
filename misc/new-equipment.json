@@ -1,0 +1,99 @@
+{
+    "equipments": [
+        {
+            "categoryCode": "head-top",
+            "items": [],
+            "cards": []
+        },
+        {
+            "categoryCode": "head-middle",
+            "items": [],
+            "cards": []
+        },
+        {
+            "categoryCode": "head-bottom",
+            "items": [
+                {
+                    "id": "ad03d2a0-8429-450f-bc5c-e5e61e359359",
+                    "name": "魔力星陣",
+                    "star": -1,
+                    "comments": [
+                        "搭配魔力之星套用的，這套是小資裝的定位，但魔力之星卻被炒到很誇張的價錢，我個人認為已經完全沒有買的必要了，要花這麼多不如去買暴徒。"
+                    ]
+                }
+            ],
+            "cards": []
+        },
+        {
+            "categoryCode": "body",
+            "items": [],
+            "cards": []
+        },
+        {
+            "categoryCode": "weapon",
+            "items": [],
+            "cards": []
+        },
+        {
+            "categoryCode": "shield",
+            "items": [],
+            "cards": []
+        },
+        {
+            "categoryCode": "robe",
+            "items": [
+                {
+                    "id": "66f2ece5-7c97-4362-a990-b2360d4ec7a9",
+                    "name": "魔鬼惡火斗篷",
+                    "star": -1,
+                    "comments": [
+                        "台服特別裝備，搭配紅魔鬼效果我覺得不錯，可以秒7地獄火焰，解決現階段咒術師打聖屬很癢甚至打不到的問題，不過未來屬性表優化後就比較沒有非得用暗屬性打聖的問題了，而且綁OS武器未來勢必會弱於其他技能，加上電擊的倍率高且屬性增傷也是較容易取得，我認為未來屬性優化後的優勢並沒有很大。"
+                    ]
+                }
+            ],
+            "cards": []
+        },
+        {
+            "categoryCode": "shoes",
+            "items": [],
+            "cards": []
+        },
+        {
+            "categoryCode": "acc",
+            "items": [
+                {
+                    "id": "b839a3ad-8a09-41a7-9143-12dfac7af46b",
+                    "name": "思念體忿恨因子研究錄(法師篇)",
+                    "star": -1,
+                    "comments": [
+                        "非常綁裝備，還綁兩張王卡，以可能會用到這件的彗星咒來說，頭上綁戰死頭和魔導王卡，已經損失掉最後一格可以插齊爾的位子，這樣一定無法自體秒7點地板，然後智者王卡又會自詠地領導致彗星打不到怪，缺點很多的裝備，不推薦使用。"
+                    ]
+                },
+                {
+                    "id": "afdbd231-58be-48a0-b8e0-5e91d70750b9",
+                    "name": "全自動戰戒",
+                    "star": -1,
+                    "comments": [
+                        "就是幻象戰戒加強版，平民用的，沒什麼好說。"
+                    ]
+                }
+            ],
+            "cards": []
+        },
+        {
+            "categoryCode": "shadow",
+            "items": [],
+            "cards": []
+        },
+        {
+            "categoryCode": "costume",
+            "items": [],
+            "cards": []
+        },
+        {
+            "categoryCode": "pet",
+            "items": [],
+            "cards": []
+        }
+    ]
+}
