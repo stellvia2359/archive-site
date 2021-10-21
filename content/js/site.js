@@ -86,7 +86,7 @@ var site = {
     loadEquipmentDB: function () {
         var result;
         $.ajax({
-            url: "guide/common/database/equipments.json",
+            url: "database/equipments.json",
             dataType: "json",
             async: false,
             success: function (data) {
@@ -166,7 +166,7 @@ var site = {
                 break;
         }
         $.ajax({
-            url: "guide/common/template/" + templateName + ".txt",
+            url: "template/" + templateName + ".txt",
             async: false,
             success: function (data) {
                 template = $.templates(data);
@@ -176,7 +176,7 @@ var site = {
             }
         });
         $.ajax({
-            url: "guide/common/template/equipment-nav.txt",
+            url: "template/equipment-nav.txt",
             async: false,
             success: function (data) {
                 template = $.templates(data);

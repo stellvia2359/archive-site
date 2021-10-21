@@ -9,11 +9,11 @@
             
              {{if #index == 0}}
              <div class="equip-img-blk z-{{:~array.length-#getIndex()}}">
-            <img class="equip-img" src="content/image/guide/general/{{if #parent.parent.parent.parent.parent.data.categoryCode != "pet"}}equipment{{else}}pet{{/if}}/{{:}}">
+            <img class="equip-img" src="content/image/{{if #parent.parent.parent.parent.parent.data.categoryCode != "pet"}}equipment{{else}}pet{{/if}}/{{:}}">
             </div>  
             {{else}}
             <div class="equip-img-blk back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}}">
-            <img class="equip-img" src="content/image/guide/general/equipment/{{:}}">
+            <img class="equip-img" src="content/image/equipment/{{:}}">
             </div>
             {{/if}}
               
@@ -114,7 +114,6 @@
 {{/if}}
 
 {{if hasCard}}
-
 {{if cards.length > 0}}
 <h5 id="card-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}卡片</h5>
 <ul class="list-unstyled">
@@ -123,9 +122,9 @@
         <div class="d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
             {{if #index == 0}}
-            <img src="content/image/guide/general/card/{{:}}" class="z-{{:~array.length-#getIndex()}} card-img">
+            <img src="content/image/card/{{:}}" class="z-{{:~array.length-#getIndex()}} card-img">
             {{else}}
-            <img src="content/image/guide/general/card/{{:}}" class="back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}} card-img">
+            <img src="content/image/card/{{:}}" class="back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}} card-img">
             {{/if}}
             {{/for}}
         </div>
@@ -173,13 +172,6 @@
     </li>
     {{/for}}
 </ul>
-{{else}}
-{{if noCardMessage}}
-<h5 id="card-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}卡片</h5>
-<div class="alert alert-dark" role="alert">
-    {{:noCardMessage}}
-</div>
-{{/if}}
 {{/if}}
 {{/if}}
 {{/for}}
