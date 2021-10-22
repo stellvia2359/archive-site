@@ -531,3 +531,11 @@ main {
 .list-common img {
     display: block;
 }
+
+.toast {
+    z-index: 99;
+    position: fixed;
+    top: 4.5rem;
+    right: 1rem;
+    max-width: 70%;
+}

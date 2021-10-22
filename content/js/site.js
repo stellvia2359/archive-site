@@ -1,6 +1,6 @@
 $(function () {
     site.initialize();
-
+    $('.toast').toast('show');
 });
 var versionNumber = "202104091252"
 var site = {
@@ -34,7 +34,7 @@ var site = {
             var id = $(this).attr("href");
             utility.scrollTo(id);
         });
-        utility.loadTooltip();
+
     },
     loadPage: function (url, loadeqjson) {
         $.ajax({
@@ -57,6 +57,7 @@ var site = {
                 utility.hideLoadingMask();
             }
         });
+        $(".toast").data("autohide", true);
     },
     loadHome: function () {
         var url = "home.html?v=" + versionNumber;
@@ -70,6 +71,7 @@ var site = {
                 utility.hideLoadingMask();
             }
         });
+        $(".toast").data("autohide", false);
     },
     loadCommentDB: function (url) {
         var comments;
