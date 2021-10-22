@@ -6,20 +6,20 @@
     <li class="media m-2 equipment">
         <div class="d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
-            
-             {{if #index == 0}}
-             <div class="equip-img-blk z-{{:~array.length-#getIndex()}}">
-            <img class="equip-img" src="content/image/{{if #parent.parent.parent.parent.parent.data.categoryCode != "pet"}}equipment{{else}}pet{{/if}}/{{:}}">
-            </div>  
+
+            {{if #index == 0}}
+            <div class="equip-img-blk z-{{:~array.length-#getIndex()}}">
+                <img class="equip-img" src="content/image/{{if #parent.parent.parent.parent.parent.data.categoryCode != 'pet'}}equipment{{else}}pet{{/if}}/{{:}}">
+            </div>
             {{else}}
             <div class="equip-img-blk back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}}">
-            <img class="equip-img" src="content/image/equipment/{{:}}">
+                <img class="equip-img" src="content/image/equipment/{{:}}">
             </div>
             {{/if}}
-              
-            {{/for}}        
+
+            {{/for}}
         </div>
-        
+
         <div class="media-body">
             <h6 class="mt-0 mb-0 equipment-name">{{:name}}{{if slots > 0}}[{{:slots}}]{{/if}}</h6>
             <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
@@ -56,39 +56,39 @@
             {{/for}}
         </div>
         <div class="equipment-info-content">
-        {{for infos}}
+            {{for infos}}
             {{if #getIndex()>0}}
             <hr>
             {{/if}}
             {{for contents}}
-                {{if #data == ""}}
-                <br>
-                {{else}}
-                <div>{{:#data}}</div>
-                {{/if}}
+            {{if #data == ""}}
+            <br>
+            {{else}}
+            <div>{{:#data}}</div>
+            {{/if}}
             {{/for}}
             {{if class || value || position || weight || property}}
             <br>
             {{/if}}
-            {{if class || value}}        
+            {{if class || value}}
             <div>系列: {{:class}} {{if #parent.parent.parent.parent.parent.data.categoryCode != "shadow"}}{{if #parent.parent.parent.parent.parent.parent.data.categoryCode=="weapon"}}攻擊{{else}}防禦{{/if}}: {{:value}}{{/if}}</div>
-            {{/if}}      
+            {{/if}}
             <div>
-            {{if position}}位置: {{:position}}{{/if}}
-            重量: {{:weight}}
-            {{if property}}屬性: {{:property}}{{/if}}
+                {{if position}}位置: {{:position}}{{/if}}
+                重量: {{:weight}}
+                {{if property}}屬性: {{:property}}{{/if}}
             </div>
             {{if equipmentLevel}}
-                {{if #parent.parent.parent.parent.parent.data.categoryCode=="weapon"}}
-                <div>武器等級: {{:equipmentLevel}}</div>
-                {{/if}} 
-            {{/if}}    
-            {{if requiresLevel}}  
+            {{if #parent.parent.parent.parent.parent.data.categoryCode=="weapon"}}
+            <div>武器等級: {{:equipmentLevel}}</div>
+            {{/if}}
+            {{/if}}
+            {{if requiresLevel}}
             <div>要求等級: {{:requiresLevel}}</div>
             {{/if}}
             {{if usableBy}}
             <div>裝備: {{:usableBy}}</div>
-            {{/if}}      
+            {{/if}}
             {{if enchantments.length > 0}}
             <hr>
             <b>附魔(範例)</b>
@@ -106,7 +106,7 @@
                 {{/for}}
             </ul>
             {{/if}}
-        {{/for}}            
+            {{/for}}
         </div>
     </li>
     {{/for}}
@@ -128,7 +128,7 @@
             {{/if}}
             {{/for}}
         </div>
-        
+
         <div class="media-body">
             <h6 class="mt-0 mb-0 equipment-name">{{:name}}</h6>
             <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
@@ -152,7 +152,7 @@
             </div>
         </div>
         <div class="equipment-info-content">
-         {{for infos}}
+            {{for infos}}
             {{if #getIndex()>0}}
             <hr>
             {{/if}}
@@ -167,7 +167,7 @@
             <div>系列: {{:class}}</div>
             <div>裝備: {{:position}}</div>
             <div>重量: {{:weight}}</div>
-        {{/for}}
+            {{/for}}
         </div>
     </li>
     {{/for}}

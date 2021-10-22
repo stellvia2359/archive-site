@@ -166,7 +166,7 @@ var site = {
                 break;
         }
         $.ajax({
-            url: "template/" + templateName + ".txt",
+            url: "template/" + templateName + ".html",
             async: false,
             success: function (data) {
                 template = $.templates(data);
@@ -176,7 +176,7 @@ var site = {
             }
         });
         $.ajax({
-            url: "template/equipment-nav.txt",
+            url: "template/equipment-nav.html",
             async: false,
             success: function (data) {
                 template = $.templates(data);
