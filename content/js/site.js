@@ -7,8 +7,12 @@ var site = {
     initialize: function () {
         var urlParams = new URLSearchParams(window.location.search);
         var isPage = urlParams.has('page');
+        var disableAlert = false;
         if (isPage) {
             var url = urlParams.get('page');
+            if (url == "others/thanks") {
+                disableAlert = true;
+            }
             var loadeqjson = urlParams.get('loadeqjson');
             site.loadPage(url, loadeqjson);
         } else {
@@ -44,7 +48,10 @@ var site = {
                 }, 1000);
             }
         });
-        $('.toast').toast('show');
+        if (!disableAlert) {
+            $('.toast').toast('show');
+        }
+
     },
     loadPage: function (url, loadeqjson) {
         $.ajax({
