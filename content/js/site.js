@@ -39,6 +39,7 @@ var site = {
             var id = $(this).attr("href");
             utility.scrollTo(id);
         });
+        utility.loadTooltip();
         $('.toast').on('shown.bs.toast', function () {
             if (isPage) {
                 var i = 5;
