@@ -1,12 +1,13 @@
 $(function () {
     site.initialize();
-    $('.toast').toast('show');
+
 });
 var versionNumber = "202104091252"
 var site = {
     initialize: function () {
         var urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has('page')) {
+        var isPage = urlParams.has('page');
+        if (isPage) {
             var url = urlParams.get('page');
             var loadeqjson = urlParams.get('loadeqjson');
             site.loadPage(url, loadeqjson);
@@ -34,7 +35,16 @@ var site = {
             var id = $(this).attr("href");
             utility.scrollTo(id);
         });
-
+        $('.toast').on('shown.bs.toast', function () {
+            if (isPage) {
+                $("#toast-countdown").countdown(moment().add(5, 'second').format("YYYY/MM/DD hh:mm:ss"), function (event) {
+                    $(this).text(
+                        event.strftime('%S')
+                    );
+                });
+            }
+        });
+        $('.toast').toast('show');
     },
     loadPage: function (url, loadeqjson) {
         $.ajax({
@@ -58,6 +68,7 @@ var site = {
             }
         });
         $(".toast").data("autohide", true);
+
     },
     loadHome: function () {
         var url = "home.html?v=" + versionNumber;
@@ -271,3 +282,4 @@ var utility = {
         });
     }
 };
+
