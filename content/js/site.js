@@ -37,11 +37,11 @@ var site = {
         });
         $('.toast').on('shown.bs.toast', function () {
             if (isPage) {
-                $("#toast-countdown").countdown(moment().add(5, 'second').format("YYYY/MM/DD hh:mm:ss"), function (event) {
-                    $(this).text(
-                        event.strftime('%S')
-                    );
-                });
+                var i = 5;
+                $("#toast-countdown").text(i--);
+                setInterval(function () {
+                    $("#toast-countdown").text(i--);
+                }, 1000);
             }
         });
         $('.toast').toast('show');
