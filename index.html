@@ -62,10 +62,13 @@
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                 <div class="sidebar-sticky pt-3">
-                    <ul class="nav flex-column">
-                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                            <span><i class="fas fa-book"></i> 攻略 GUIDE</span>
-                        </h6>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <a class="nav-category" data-toggle="collapse" data-target="#guides" aria-expanded="true"><i class="fas fa-book"></i> 攻略 GUIDE
+                            <i class="collapse-close fas fa-angle-up"></i>
+                            <i class="collapse-open fas fa-angle-down"></i>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column collapse show" id="guides">
                         <li class="nav-item">
                             <a id="nav-link-g-w-wg" class="nav-link my-site-link" href="index.html?page=guide/warlock/warlock_wind_ghost&loadeqjson=full">
                                 風念咒術士
@@ -99,50 +102,94 @@
                     </ul>
                     <hr>
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span><i class="far fa-comment-dots"></i> 雜談 MISC</span>
+                        <a class="nav-category" data-toggle="collapse" data-target="#misc" aria-expanded="true"><i class="far fa-comment-dots"></i> 雜談 MISC
+                            <i class="collapse-close fas fa-angle-up"></i>
+                            <i class="collapse-open fas fa-angle-down"></i>
+                        </a>
                     </h6>
-                    <ul class="nav flex-column mb-2">
+                    <div id="misc" class="collapse show">
+                        <ul class="nav flex-column mb-2">
+                            <li class="nav-item">
+                                <a id="nav-link-m-ne" class="nav-link my-site-link" href="index.html?page=misc/new-equipment&loadeqjson=selected">
+                                    <span data-feather="file-text"></span> 法系新裝備簡評
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="nav-link-m-wgwee" class="nav-link my-site-link" href="index.html?page=misc/wg-warlock-equip-example">
+                                    <span data-feather="file-text"></span> 小資風念咒術配裝
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="nav-link-m-net" class="nav-link my-site-link" href="index.html?page=misc/new-element-table">
+                                    <span data-feather="file-text"></span> KRO 2021 新版屬性相剋調整
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="nav-link-m-co" class="nav-link my-site-link" href="index.html?page=misc/class-optimization">
+                                    <span data-feather="file-text"></span> KRO 2020 四轉前職業優化
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul id="misc2" class="nav flex-column mb-2 collapse">
+                            <li class="nav-item">
+                                <a id="nav-link-m-m3" class="nav-link my-site-link" href="index.html?page=misc/mine-3f">
+                                    <span data-feather="file-text"></span> 礦山3F裝備相關資訊
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="nav-link-m-et" class="nav-link my-site-link" href="index.html?page=misc/endless-tower">
+                                    <span data-feather="file-text"></span> 無限塔MVP資訊
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-outline-secondary ml-3 btn-more" data-toggle="collapse" data-target="#misc2" aria-expanded="false">
+                            <span class="collapse-close">顯示較少</span>
+                            <span class="collapse-open">顯示更多</span>
+                        </a>
+                    </div>
+
+                    <hr>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <a class="nav-category" data-toggle="collapse" data-target="#contacts" aria-expanded="true"><i class="fas fa-phone"></i> 聯絡 CONTACT
+                            <i class="collapse-close fas fa-angle-up"></i>
+                            <i class="collapse-open fas fa-angle-down"></i>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2 collapse show" id="contacts">
                         <li class="nav-item">
-                            <a id="nav-link-m-ne" class="nav-link my-site-link" href="index.html?page=misc/new-equipment&loadeqjson=selected">
-                                <span data-feather="file-text"></span> 法系新裝備簡評
+                            <a class="nav-link external-link" href="https://discord.gg/MPUhAP5" target="_blank">
+                                <span data-feather="file-text"></span>
+                                <span>Discord 頻道</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a id="nav-link-m-wgwee" class="nav-link my-site-link" href="index.html?page=misc/wg-warlock-equip-example">
-                                <span data-feather="file-text"></span> 小資風念咒術配裝
+                            <a class="nav-link external-link" href="https://www.youtube.com/channel/UCA95-CLz2Ipd1dduzSkkjHQ" target="_blank">
+                                <span data-feather="file-text"></span>
+                                <span>Youtube 頻道</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a id="nav-link-m-m3" class="nav-link my-site-link" href="index.html?page=misc/mine-3f">
-                                <span data-feather="file-text"></span> 礦山3F裝備相關資訊
+                            <a id="nav-link-c-ci" class="nav-link my-site-link" href="index.html?page=others/contact-info" target="_blank">
+                                <span data-feather="file-text"></span>
+                                <span>關於我</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a id="nav-link-m-et" class="nav-link my-site-link" href="index.html?page=misc/endless-tower">
-                                <span data-feather="file-text"></span> 無限塔MVP資訊
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="nav-link-m-net" class="nav-link my-site-link" href="index.html?page=misc/new-element-table">
-                                <span data-feather="file-text"></span> KRO 2021 新版屬性相剋調整
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="nav-link-m-co" class="nav-link my-site-link" href="index.html?page=misc/class-optimization">
-                                <span data-feather="file-text"></span> KRO 2020 四轉前職業優化
-                            </a>
-                        </li>
-                        <li class="nav-item" hidden>
-                            <a class="nav-link my-site-link disabled" href="#">
-                                <span data-feather="file-text"></span> 挑戰古城紀錄
+                            <a class="nav-link external-link btn-donate" href="https://p.opay.tw/68lYf" target="_blank">
+                                <span data-feather="file-text"></span>
+                                <span data-toggle="tooltip" data-placement="top" title="真的假的?你人也太好了吧!">贊助我</span>
                             </a>
                         </li>
                     </ul>
                     <hr>
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span><i class="fas fa-external-link-alt"></i> 連結 LINK</span>
+                        <a class="nav-category" data-toggle="collapse" data-target="#links" aria-expanded="false"><i class="fas fa-external-link-alt"></i> 連結 LINK
+                            <i class="collapse-close fas fa-angle-up"></i>
+                            <i class="collapse-open fas fa-angle-down"></i>
+                        </a>
                     </h6>
-                    <ul class="nav flex-column mb-2">
+                    <ul class="nav flex-column mb-2 collapse" id="links">
                         <li class="nav-item">
                             <a class="nav-link external-link" href="https://ro.gnjoy.com.tw" target="_blank">
                                 <span data-feather="file-text"></span>
@@ -176,36 +223,7 @@
                             </a>
                         </li>
                     </ul>
-                    <hr>
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span><i class="fas fa-phone"></i> 聯絡 CONTACT</span>
-                    </h6>
-                    <ul class="nav flex-column mb-2">
-                        <li class="nav-item">
-                            <a class="nav-link external-link" href="https://discord.gg/MPUhAP5" target="_blank">
-                                <span data-feather="file-text"></span>
-                                <span>Discord 頻道</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link external-link" href="https://www.youtube.com/channel/UCA95-CLz2Ipd1dduzSkkjHQ" target="_blank">
-                                <span data-feather="file-text"></span>
-                                <span>Youtube 頻道</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="nav-link-c-ci" class="nav-link my-site-link" href="index.html?page=others/contact-info" target="_blank">
-                                <span data-feather="file-text"></span>
-                                <span>關於我</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" hidden>
-                            <a class="nav-link external-link" href="https://p.opay.tw/68lYf" target="_blank">
-                                <span data-feather="file-text"></span>
-                                <span data-toggle="tooltip" data-placement="top" title="真的假的?你人也太好了吧!">贊助我</span>
-                            </a>
-                        </li>
-                    </ul>
+
                 </div>
             </nav>
 

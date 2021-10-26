@@ -46,6 +46,32 @@ body, .tooltip {
     }
 }
 
+.sidebar .nav-category {
+    text-decoration: none;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.sidebar .nav-category:hover {
+    color: #007bff;
+}
+
+[aria-expanded="false"] .collapse-open {
+    display: inline;
+}
+
+[aria-expanded="false"] .collapse-close {
+    display: none;
+}
+
+[aria-expanded="true"] .collapse-open {
+    display: none;
+}
+
+[aria-expanded="true"] .collapse-close {
+    display: inline;
+}
+
 .sidebar .nav-link {
     font-weight: 500;
     color: #333;
@@ -71,6 +97,22 @@ body, .tooltip {
 
 .sidebar .nav-link:hover {
     color: #007bff;
+}
+
+.btn-more {
+    line-height: 0.4rem;
+}
+
+.btn-more::after {
+    box-sizing: none;
+}
+
+.btn-more::before {
+    box-sizing: none;
+}
+
+.btn-more span {
+    font-size: 4px;
 }
 
 /*

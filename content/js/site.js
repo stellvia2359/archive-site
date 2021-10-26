@@ -53,6 +53,8 @@ var site = {
             $('.toast').toast('show');
         }
 
+        $(".btn-donate").click(site.confirmDonate);
+
     },
     loadPage: function (url, loadeqjson) {
         $.ajax({
@@ -217,6 +219,9 @@ var site = {
             equipments: data.equipments.map(e => ({ category: e.category, categoryCode: e.categoryCode, overrideCategoryName: e.overrideCategoryName, hasCard: e.hasCard, items: e.items.map(i => ({ id: utility.uuidv4(), imgNames: i.imgNames, name: i.name, slots: i.slots, available: i.available, loot: i.loot, externalUrls: i.externalUrls, infos: i.infos })), cards: e.cards.map(c => ({ id: utility.uuidv4(), imgNames: c.imgNames, name: c.name, available: c.available, infos: c.infos })) }))
         };
         console.log(x);
+    },
+    confirmDonate: function (e) {
+        alert("真的假的?你人也太好了吧!");
     }
 }
 
