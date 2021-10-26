@@ -53,7 +53,7 @@ body, .tooltip {
 }
 
 .sidebar .nav-category:hover {
-    color: #007bff;
+    color: #6c757d;
 }
 
 [aria-expanded="false"] .collapse-open {
