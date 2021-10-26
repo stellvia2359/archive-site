@@ -18,7 +18,7 @@ body, .tooltip {
    */
 
 .sidebar {
-    position: fixed;
+    position: sticky;
     top: 0;
     bottom: 0;
     left: 0;
