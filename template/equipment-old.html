@@ -3,8 +3,8 @@
 <h5 id="equip-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}{{if !overrideCategoryName}}裝備{{/if}}</h5>
 <ul class="list-unstyled">
     {{for items sort="star" reverse=true}}
-    <li class="media d-flex m-2 equipment">
-        <div class="flex-shrink-0 d-flex flex-nowrap mr-3">
+    <li class="media m-2 equipment">
+        <div class="d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
 
             {{if #index == 0}}
@@ -20,7 +20,7 @@
             {{/for}}
         </div>
 
-        <div class="flex-grow-1 ms-3">
+        <div class="media-body">
             <h6 class="mt-0 mb-0 equipment-name">{{:name}}{{if slots > 0}}[{{:slots}}]{{/if}}</h6>
             <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
                 <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover" data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
@@ -114,12 +114,13 @@
 {{/if}}
 
 {{if hasCard}}
+
 {{if cards.length > 0}}
 <h5 id="card-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}卡片</h5>
 <ul class="list-unstyled">
     {{for cards sort="star" reverse=true}}
-    <li class="media d-flex m-2 equipment">
-        <div class="flex-shrink-0 d-flex flex-nowrap mr-3">
+    <li class="media m-2 equipment">
+        <div class="d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
             {{if #index == 0}}
             <img src="content/image/card/{{:}}" class="z-{{:~array.length-#getIndex()}} card-img">
@@ -129,7 +130,7 @@
             {{/for}}
         </div>
 
-        <div class="flex-grow-1 ms-3">
+        <div class="media-body">
             <h6 class="mt-0 mb-0 equipment-name">{{:name}}</h6>
             <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
                 <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover" data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
@@ -172,6 +173,13 @@
     </li>
     {{/for}}
 </ul>
+{{else}}
+{{if noCardMessage}}
+<h5 id="card-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}卡片</h5>
+<div class="alert alert-dark" role="alert">
+    {{:noCardMessage}}
+</div>
+{{/if}}
 {{/if}}
 {{/if}}
 {{/for}}

@@ -1,88 +1,157 @@
+body {
+    position: relative;
+}
+
 body, .tooltip {
     font-size: .875rem;
     font-family: 'Rajdhani', 'Noto Sans TC', sans-serif;
 }
 
-/*scroll bar*/
-
-:hover::-webkit-scrollbar-thumb {
-    background-color: #777777;
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
 }
 
-::-webkit-scrollbar {
-    height: 10px;
-    width: 5px;
-    background-color: transparent;
+/*
+   * Sidebar
+   */
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    /* Behind the navbar */
+    padding: 48px 0 0;
+    /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: rgba(170, 170, 170, 0.3);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    padding-bottom: 2.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
 }
 
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-#home {
-    height: 100vh;
-    background-image: url('../image/general/home.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% 0%;
-}
-
-@media (max-width: 1000px) {
-    #home {
-        background-position: 50% 0%;
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+    .sidebar-sticky {
+        position: -webkit-sticky;
+        position: sticky;
     }
 }
 
-.home-title {
-    font-size: 4rem;
-    color: white;
-    text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+.sidebar .nav-category {
+    text-decoration: none;
+    cursor: pointer;
+    color: #6c757d;
 }
 
-.home-description {
-    font-size: 1.5rem;
-    color: white;
-    text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+.sidebar .nav-category:hover {
+    color: #6c757d;
+}
+
+[aria-expanded="false"] .collapse-open {
+    display: inline;
+}
+
+[aria-expanded="false"] .collapse-close {
+    display: none;
+}
+
+[aria-expanded="true"] .collapse-open {
+    display: none;
+}
+
+[aria-expanded="true"] .collapse-close {
+    display: inline;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather, .sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.sidebar .nav-link:hover {
+    color: #007bff;
+}
+
+.btn-more {
+    line-height: 0.4rem;
+}
+
+.btn-more::after {
+    box-sizing: none;
+}
+
+.btn-more::before {
+    box-sizing: none;
+}
+
+/*
+   * Navbar
+   */
+
+.navbar-brand2 {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
 
 #main-content {
-    padding: 0;
-}
-
-.content {
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-@media (max-width: 992px) {
-    .back-image-6 {
-        margin-left: -70px;
-    }
-    .back-image-3 {
-        margin-left: -58px;
-    }
-    .back-image-2 {
-        margin-left: -38px;
-    }
+    border: none;
 }
 
 #site-name {
     font-size: 1.3rem;
-    margin-left: 0.25rem;
 }
 
 a.disabled {
@@ -114,117 +183,6 @@ a.disabled {
     margin-top: -2.5rem;
 }
 
-#main-navbar {
-    background-color: #24272b !important;
-    opacity: 97%;
-}
-
-#blk-nav {
-    padding-top: 1rem;
-}
-
-.warning {
-    font-size: 1rem;
-    width: 1rem;
-}
-
-.nav-category, .nav-category .sb-nav-link-icon {
-    font-size: 0.75rem !important;
-}
-
-.nav-link {
-    padding-top: 0.35rem !important;
-    padding-bottom: 0.35rem !important;
-    color: #333;
-}
-
-.nav-link.active {
-    color: #0d6efd;
-}
-
-.sb-sidenav {
-    border-right: 1.5px solid #DFE0E1;
-}
-
-.sb-sidenav-menu-nested {
-    margin-left: 0 !important;
-}
-
-[aria-expanded="false"] .collapse-open {
-    display: inline;
-}
-
-[aria-expanded="false"] .collapse-close {
-    display: none;
-}
-
-[aria-expanded="true"] .collapse-open {
-    display: none;
-}
-
-[aria-expanded="true"] .collapse-close {
-    display: inline;
-}
-
-.btn-more {
-    line-height: 0.4rem;
-    margin-left: 1rem;
-    font-size: .5rem;
-}
-
-.menu-icon {
-    font-size: .5rem !important;
-    padding-top: 0;
-}
-
-.menu-icon-text {
-    padding-bottom: 0;
-    padding-top: 0.15rem;
-    font-size: .5rem !important;
-}
-
-.btn-more::after {
-    box-sizing: none;
-}
-
-.btn-more::before {
-    box-sizing: none;
-}
-
-#footer {
-    background-color: #e9ebec;
-}
-
-.toast {
-    z-index: 99;
-    position: fixed;
-    top: 4.5rem;
-    right: 1rem;
-    width: auto;
-    margin-left: 1rem;
-    max-width: 30rem;
-}
-
-.toast-header strong {
-    padding-top: 0.25rem;
-    padding-left: 0.25rem;
-}
-
-.btn-contact {
-    width: 10rem;
-}
-
-.contact-icon {
-    margin-top: 0.15rem;
-}
-
-#contact-ingame {
-    height: 2rem;
-    line-height: 1.8rem;
-}
-
-/*Content*/
-
 .skill {
     background-color: rgba(224, 237, 245, 0.753);
     padding: 1rem;
@@ -254,6 +212,10 @@ a.disabled {
 
 .loot {
     color: red;
+}
+
+#main-navbar {
+    background-color: rgba(52, 58, 64, 0.95) !important;
 }
 
 .equipment {
@@ -344,6 +306,13 @@ main {
     text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+
+.content {
+    padding-top: 4.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -563,7 +532,7 @@ main {
 @media (max-height: 1040px) {
     .scrollable-menu {
         height: auto;
-        max-height: 30rem;
+        max-height: 450px;
         overflow-x: hidden;
     }
 }
@@ -600,4 +569,12 @@ main {
 
 .list-common img {
     display: block;
+}
+
+.toast {
+    z-index: 99;
+    position: fixed;
+    top: 4.5rem;
+    right: 1rem;
+    max-width: 70%;
 }
