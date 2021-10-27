@@ -203,11 +203,17 @@ a.disabled {
     width: auto;
     margin-left: 1rem;
     max-width: 30rem;
+    opacity: 1 !important;
+    background-color: white;
 }
 
 .toast-header strong {
     padding-top: 0.25rem;
     padding-left: 0.25rem;
+}
+
+.toast div {
+    opacity: 1 !important;
 }
 
 .btn-contact {
