@@ -65,6 +65,16 @@ var site = {
         $("#btn-notification").click(function () {
             $('.toast').toast('show');
         });
+
+        //$("#discord").css("height", window.innerHeight - 250);
+        //$("#discord").css("height", "100vh");
+        // // create an Observer instance
+        // const resizeObserver = new ResizeObserver(entries => {
+        //     $("#discord").css("height", entries[0].target.clientHeight - 250);
+        // });
+
+        // // start observing a DOM node
+        // resizeObserver.observe(document.body);
     },
     loadPage: function (url, loadeqjson) {
         $.ajax({
