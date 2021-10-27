@@ -219,15 +219,13 @@ a.disabled {
 
 .btn-contact {
     width: 10rem;
+    height: 2rem;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
 }
 
 .contact-icon {
     margin-top: 0.15rem;
-}
-
-#contact-ingame {
-    height: 2rem;
-    line-height: 1.8rem;
 }
 
 /*Content*/
