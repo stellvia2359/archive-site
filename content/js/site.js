@@ -1,8 +1,8 @@
 $(function () {
     site.initialize();
-
 });
 var versionNumber = "202110261442"
+var timer;
 var site = {
     initialize: function () {
         var urlParams = new URLSearchParams(window.location.search);
@@ -41,12 +41,20 @@ var site = {
         });
         utility.loadTooltip();
         $('.toast').on('shown.bs.toast', function () {
+
+
             if (isPage) {
+                clearInterval(timer);
                 var i = 5;
                 $("#toast-countdown").text(i--);
-                setInterval(function () {
+                timer = setInterval(function () {
                     $("#toast-countdown").text(i--);
+                    if (i < 0) {
+                        clearInterval(timer);
+                        $('.toast').toast('hide');
+                    }
                 }, 1000);
+
             }
         });
         if (!disableAlert) {
@@ -54,7 +62,9 @@ var site = {
         }
 
         $(".btn-donate").click(site.confirmDonate);
-
+        $("#btn-notification").click(function () {
+            $('.toast').toast('show');
+        });
     },
     loadPage: function (url, loadeqjson) {
         $.ajax({
@@ -77,8 +87,6 @@ var site = {
                 utility.hideLoadingMask();
             }
         });
-        $(".toast").data("autohide", true);
-
     },
     loadHome: function () {
         var url = "home.html?v=" + versionNumber;
@@ -92,7 +100,6 @@ var site = {
                 utility.hideLoadingMask();
             }
         });
-        $(".toast").data("autohide", false);
     },
     loadCommentDB: function (url) {
         var comments;
@@ -240,11 +247,13 @@ var utility = {
             var title = $(equipmentInfo[i]).closest(".secondary-title-line").siblings(".equipment-name").text();
             var content = $(equipmentInfo[i]).closest(".media").children(".equipment-info-content").html();
             $(equipmentInfo[i]).attr("title", title);
-            $(equipmentInfo[i]).data("content", content);
+            $(equipmentInfo[i]).attr("data-bs-content", content);
         }
-        $('[data-toggle="popover"]').popover({
-            html: true
-        });
+
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
     },
     loadTooltip: function () {
         $('[data-toggle="tooltip"]').tooltip();
