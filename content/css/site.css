@@ -137,6 +137,7 @@ a.disabled {
     padding-top: 0.35rem !important;
     padding-bottom: 0.35rem !important;
     color: #333;
+    cursor: pointer;
 }
 
 .nav-link.active {

@@ -3,80 +3,36 @@ $(function () {
 });
 var versionNumber = "202110261442"
 var timer;
+var disableAlert;
 var site = {
     initialize: function () {
+        site.loadPage();
+        utility.initialEquipmentNav();
+        utility.initialBackToTop();
+        utility.loadTooltip();
+        utility.initialToast();
+        utility.initialHistory();
+        $(".btn-donate").click(site.confirmDonate);
+        $("#btn-contact-ingame").click(function () { utility.copyTextToClipboard("Rein"); });
+
+    },
+    loadPage: function () {
         var urlParams = new URLSearchParams(window.location.search);
         var isPage = urlParams.has('page');
-        var disableAlert = false;
+        disableAlert = false;
         if (isPage) {
             var url = urlParams.get('page');
             if (url == "others/thanks") {
                 disableAlert = true;
             }
             var loadeqjson = urlParams.get('loadeqjson');
-            site.loadPage(url, loadeqjson);
+            site.loadPageHtml(url, loadeqjson);
         } else {
-            site.loadHome();
+            site.loadHomeHtml();
         }
-        $(".external-link,.my-site-link").click(utility.closeMenu);
-        if ($("#eq-nav").length == 0) {
-            $('#back-to-top').removeClass("back-to-top").addClass("back-to-top2")
-        }
-        $('#back-to-top').click(function () {
-            utility.backToTop();
-            return false;
-        });
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-
-        $(".link-to-chapter").click(function (e) {
-            e.preventDefault();
-            var id = $(this).attr("href");
-            utility.scrollTo(id);
-        });
-        utility.loadTooltip();
-        $('.toast').on('shown.bs.toast', function () {
-
-
-            if (isPage) {
-                clearInterval(timer);
-                var i = 5;
-                $("#toast-countdown").text(i--);
-                timer = setInterval(function () {
-                    $("#toast-countdown").text(i--);
-                    if (i < 0) {
-                        clearInterval(timer);
-                        $('.toast').toast('hide');
-                    }
-                }, 1000);
-
-            }
-        });
-        if (!disableAlert) {
-            $('.toast').toast('show');
-        }
-
-        $(".btn-donate").click(site.confirmDonate);
-        $("#btn-notification").click(function () {
-            $('.toast').toast('show');
-        });
-        $("#btn-contact-ingame").click(function () { utility.copyTextToClipboard("Rein"); });
-        //$("#discord").css("height", window.innerHeight - 250);
-        //$("#discord").css("height", "100vh");
-        // // create an Observer instance
-        // const resizeObserver = new ResizeObserver(entries => {
-        //     $("#discord").css("height", entries[0].target.clientHeight - 250);
-        // });
-
-        // // start observing a DOM node
-        // resizeObserver.observe(document.body);
     },
-    loadPage: function (url, loadeqjson) {
+    loadPageHtml: function (url, loadeqjson = null) {
+        utility.showLoadingMask();
         $.ajax({
             url: url + ".html",
             dataType: "html",
@@ -86,19 +42,21 @@ var site = {
                 $(".nav-link").removeClass("active");
                 var navId = $(".nav-id").val();
                 $("#" + navId).addClass("active");
-                if (loadeqjson) {
+                var loadeqjsonQS = "";
+                if (loadeqjson != null) {
                     var json = site.loadEquipmentDataOfAllCategories(url);
                     site.loadTemplate(json, loadeqjson);
-
-
+                    loadeqjsonQS = `&loadeqjson=${loadeqjson}`;
                 }
+                window.history.pushState({ html: data }, "", `/index.html?page=${url}${loadeqjsonQS}`);
+
                 utility.loadPopover();
                 utility.generateStars();
                 utility.hideLoadingMask();
             }
         });
     },
-    loadHome: function () {
+    loadHomeHtml: function () {
         var url = "home.html?v=" + versionNumber;
         $.ajax({
             url: url,
@@ -107,6 +65,8 @@ var site = {
             success: function (data) {
                 $(".nav-link").removeClass("active");
                 $("#main-content").html(data);
+
+                window.history.pushState({ html: data }, "", `/index.html`);
                 utility.hideLoadingMask();
             }
         });
@@ -243,6 +203,13 @@ var site = {
 }
 
 var utility = {
+    initialHistory: function () {
+        window.onpopstate = function (e) {
+            if (e.state) {
+                $("#main-content").html(e.state.html);
+            }
+        };
+    },
     showLoadingMask: function () {
         $(".lmask").show();
     },
@@ -268,13 +235,53 @@ var utility = {
     loadTooltip: function () {
         $('[data-toggle="tooltip"]').tooltip();
     },
-    closeMenu: function () {
-        $('#sidebarMenu').collapse("hide");
+    initialBackToTop: function () {
+        if ($("#eq-nav").length == 0) {
+            $('#back-to-top').removeClass("back-to-top").addClass("back-to-top2")
+        }
+        $('#back-to-top').click(function () {
+            utility.backToTop();
+            return false;
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
     },
     backToTop: function () {
         $('body,html').animate({
             scrollTop: 0
         }, 400);
+    },
+    initialEquipmentNav: function () {
+        $(".link-to-chapter").click(function (e) {
+            e.preventDefault();
+            var id = $(this).attr("href");
+            utility.scrollTo(id);
+        });
+    },
+    initialToast: function () {
+        $('.toast').on('shown.bs.toast', function () {
+            clearInterval(timer);
+            var i = 5;
+            $("#toast-countdown").text(i--);
+            timer = setInterval(function () {
+                $("#toast-countdown").text(i--);
+                if (i < 0) {
+                    clearInterval(timer);
+                    $('.toast').toast('hide');
+                }
+            }, 1000);
+        });
+        if (!disableAlert) {
+            $('.toast').toast('show');
+        }
+        $("#btn-notification").click(function () {
+            $('.toast').toast('show');
+        });
     },
     scrollTo: function (id) {
         var y = $(id).offset().top;
@@ -359,17 +366,20 @@ var utility = {
         document.body.appendChild(textArea);
         textArea.focus();
         textArea.select();
-
+        var success = true;
         try {
             var successful = document.execCommand('copy');
             var msg = successful ? 'successful' : 'unsuccessful';
             console.log('Copying text command was ' + msg);
-            alert("已複製到剪貼簿");
+
         } catch (err) {
             console.log('Oops, unable to copy');
+            success = false;
         }
-
         document.body.removeChild(textArea);
+        if (success) {
+            alert("已複製到剪貼簿");
+        }
     }
 };
 
