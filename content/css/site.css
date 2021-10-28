@@ -161,6 +161,10 @@ a.disabled {
     margin-left: 0 !important;
 }
 
+.sb-sidenav-menu {
+    padding-bottom: 10rem;
+}
+
 #layoutSidenav_nav {
     z-index: 2000;
 }
