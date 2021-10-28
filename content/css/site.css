@@ -30,8 +30,6 @@ body, .tooltip {
 
 #home {
     height: 100vh;
-    /*給 Safari 以外的瀏覽器讀取*/
-    height: calc(var(--vh, 1vh) * 100);
     background-image: url('../image/general/home.gif');
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,6 +38,7 @@ body, .tooltip {
 
 .home {
     top: 0 !important;
+    overflow-y: hidden;
 }
 
 @media (max-width: 1000px) {

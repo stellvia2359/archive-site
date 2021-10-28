@@ -10,12 +10,6 @@ var site = {
         utility.initialSidBarMenu();
         utility.initialToast();
         utility.initialHistory();
-        let windowsVH = window.innerHeight / 100;
-        document.querySelector('#home').style.setProperty('--vh', windowsVH + 'px');
-        window.addEventListener('resize', function () {
-            document.querySelector('#home').style.setProperty('--vh', windowsVH + 'px');
-        });
-
     },
     loadPage: async function () {
         var urlParams = new URLSearchParams(window.location.search);
