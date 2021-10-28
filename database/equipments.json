@@ -4327,8 +4327,8 @@
                     "imgNames": [
                         "null.png"
                     ],
-                    "name": "深海的深海電鰻卡片",
-                    "available": false,
+                    "name": "幻影深海電鰻卡片",
+                    "available": true,
                     "infos": [
                         {
                             "contents": [
@@ -5868,14 +5868,15 @@
                     "imgNames": [
                         "null.png"
                     ],
-                    "name": "深海的劍魚",
-                    "available": false,
+                    "name": "深海劍魚卡片",
+                    "available": true,
                     "infos": [
                         {
                             "contents": [
-                                "對無屬性攻擊的耐性 + 15%",
-                                "精煉值每 + 1 時，風屬性的魔法傷害 + 3%",
-                                "與「深淵的人魚卡片」同時裝備時，對無屬性攻擊的耐性 + 5%"
+                                "對無屬性攻擊的抗性+15%。",
+                                "精煉每+1時，風屬性魔法傷害+3%。",
+                                "搭配深海人魚卡片時，",
+                                "對無屬性攻擊的抗性+5%。"
                             ],
                             "class": "卡片",
                             "position": "披肩",
@@ -5971,8 +5972,8 @@
                     "imgNames": [
                         "null.png"
                     ],
-                    "name": "深海的魔女卡片",
-                    "available": false,
+                    "name": "深海魔女卡片",
+                    "available": true,
                     "infos": [
                         {
                             "contents": [
@@ -7848,6 +7849,206 @@
                             "requiresLevel": 100,
                             "usableBy": "3轉魔法師系列",
                             "enchantments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "7754deab-917c-4710-97a4-7f7825a238ea",
+                    "imgNames": [
+                        "163.png"
+                    ],
+                    "name": "聖光藍寶石項鍊",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "以「善行雕塑 x 50」於達納托斯塔台NPC兌換。",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4706"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "鑲嵌著藍色光芒的藍寶石璀璨項鍊。",
+                                "從深淵處散發著強烈的神聖氣息。",
+                                "MATK+10%，變動詠唱 -7%。",
+                                "",
+                                "搭配聖光藍寶石戒指時，",
+                                "技能後延遲-5%，固定詠唱-0.2秒，對天使型、惡魔型怪的魔法傷害+15%。"
+                            ],
+                            "class": "飾品(左)",
+                            "value": 0,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 170,
+                            "usableBy": "全職業",
+                            "enchantments": [
+                                {
+                                    "name": "幸福 Lv5",
+                                    "detail": [
+                                        "MATK+10%"
+                                    ]
+                                },
+                                {
+                                    "name": "驅魔 Lv5",
+                                    "detail": [
+                                        "對天使型、惡魔型怪的魔法傷害+35%。"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "f7f8eea9-2e6a-4994-ab79-d8fde2883428",
+                    "imgNames": [
+                        "164.png"
+                    ],
+                    "name": "聖光藍寶石戒指",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "以「善行雕塑 x 50」於達納托斯塔台NPC兌換。",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4706"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "鑲嵌著藍色光芒的藍寶石璀璨。",
+                                "從深淵處散發著強烈的神聖氣息。",
+                                "MATK+10%，攻擊速度增加(攻擊後延遲-7%)。",
+                                "",
+                                "搭配智慧長袍、主教斗篷、主教長靴時，",
+                                "技能後延遲-5%，固定詠唱-0.2秒，對天使型、惡魔型怪的魔法傷害+20%，受到天使型、惡魔型怪的傷害-10%。"
+                            ],
+                            "class": "飾品(右)",
+                            "value": 0,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 170,
+                            "usableBy": "全職業",
+                            "enchantments": [
+                                {
+                                    "name": "幸福 Lv5",
+                                    "detail": [
+                                        "MATK+10%"
+                                    ]
+                                },
+                                {
+                                    "name": "驅魔 Lv5",
+                                    "detail": [
+                                        "對天使型、惡魔型怪的魔法傷害+35%。"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1eea82b2-b01f-4724-ad6a-c0bfe9f9153d",
+                    "imgNames": [
+                        "166.png"
+                    ],
+                    "name": "撒旦藍寶石項鍊",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "以「惡行雕塑 x 50」於達納托斯塔台NPC兌換。",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4706"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "鑲嵌著藍色光芒的藍寶石罪惡項鍊。",
+                                "從深淵處散發著強烈的邪惡氣息。",
+                                "MATK+10%，變動詠唱 -7%。",
+                                "",
+                                "搭配撒旦藍寶石戒指時，",
+                                "技能後延遲-5%，固定詠唱-0.3秒，對天使型、龍族怪的魔法傷害+15%。"
+                            ],
+                            "class": "飾品(左)",
+                            "value": 0,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 170,
+                            "usableBy": "全職業",
+                            "enchantments": [
+                                {
+                                    "name": "恐懼 Lv5",
+                                    "detail": [
+                                        "MATK+10%"
+                                    ]
+                                },
+                                {
+                                    "name": "龍鱗 Lv5",
+                                    "detail": [
+                                        "對天使型、龍族怪的魔法傷害+35%。"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "e99834bf-7446-4fe1-9d46-827f877c2464",
+                    "imgNames": [
+                        "165.png"
+                    ],
+                    "name": "撒旦藍寶石戒指",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "以「惡行雕塑 x 50」於達納托斯塔台NPC兌換。",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4706"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "鑲嵌著藍色光芒的藍寶石罪惡戒指。",
+                                "從深處淵散發著強烈的邪惡氣息。",
+                                "MATK+10%，攻擊速度增加(攻擊後延遲-7%)。",
+                                "",
+                                "搭配藍龍鎧甲、天龍戰靴、天龍披風時，",
+                                "技能後延遲-5%，固定詠唱再-0.2秒，對天使型、龍族怪的魔法傷害+20%，受到天使型、龍族怪的傷害-10%。"
+                            ],
+                            "class": "飾品(右)",
+                            "value": 0,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 170,
+                            "usableBy": "全職業",
+                            "enchantments": [
+                                {
+                                    "name": "恐懼 Lv5",
+                                    "detail": [
+                                        "MATK+10%"
+                                    ]
+                                },
+                                {
+                                    "name": "龍鱗 Lv5",
+                                    "detail": [
+                                        "對天使型、龍族怪的魔法傷害+35%。"
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
@@ -9897,7 +10098,7 @@
                         "aliot.gif"
                     ],
                     "name": "愛麗俄",
-                    "available": false,
+                    "available": true,
                     "loot": "「玩偶熊」使用「生鏽的螺絲 x 500」、「蜂蜜 x 100」、「白寶石 x 10」、「玩偶熊卡片 x 1」進化",
                     "externalUrls": [
                         {
@@ -9923,7 +10124,7 @@
                         "alicel.gif"
                     ],
                     "name": "愛麗瑟",
-                    "available": false,
+                    "available": true,
                     "loot": "「玩偶熊」使用「生鏽的螺絲 x 500」、「蜂蜜 x 100」、「血跡書頁 x 50」、「玩偶熊卡片 x 1」進化",
                     "externalUrls": [
                         {
@@ -9949,7 +10150,7 @@
                         "nightmare_terror_mj.gif"
                     ],
                     "name": "堅硬七彩夢魘",
-                    "available": false,
+                    "available": true,
                     "loot": "「七彩夢魘」使用「燃燒的馬蹄鐵 x 500」、「藍色藥草 x 100」、「堅硬外殼 x 100」、「七彩夢魘卡片 x 1」進化",
                     "externalUrls": [
                         {
