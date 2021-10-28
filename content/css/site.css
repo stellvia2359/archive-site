@@ -29,11 +29,15 @@ body, .tooltip {
 }
 
 #home {
-    height: 100vh;
+    height: 100vh!important;
     background-image: url('../image/general/home.gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 0%;
+}
+
+.home {
+    top: 0 !important;
 }
 
 @media (max-width: 1000px) {
@@ -93,7 +97,7 @@ a.disabled {
 }
 
 .lmask {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     background-color: #000;
@@ -127,6 +131,10 @@ a.disabled {
 .warning {
     font-size: 1rem;
     width: 1rem;
+}
+
+.home-link {
+    cursor: pointer;
 }
 
 .nav-category, .nav-category .sb-nav-link-icon {
@@ -195,6 +203,12 @@ a.disabled {
 
 #footer {
     background-color: #e9ebec;
+}
+
+.home-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .toast {
@@ -320,36 +334,6 @@ a.disabled {
 
 main {
     padding: 0!important;
-}
-
-#home {
-    height: 100vh;
-    background-image: url('../image/general/home.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% 0%;
-}
-
-@media (max-width: 1000px) {
-    #home {
-        background-position: 50% 0%;
-    }
-}
-
-.home-title {
-    font-size: 4rem;
-    color: white;
-    text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.home-description {
-    font-size: 1.5rem;
-    color: white;
-    text-shadow: -1px 0 10px black, 0 1px 10px black, 1px 0 10px black, 0 -1px 10px black;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
 }
 
 @media (max-width: 992px) {
@@ -517,6 +501,7 @@ main {
     position: fixed;
     display: none;
     opacity: 50%;
+    z-index: 99;
 }
 
 .back-to-top {

@@ -30,24 +30,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
     <link href="content/css/site.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
-        const button = new Crate({
-            server: '689104053690433546',
-            channel: '689104054164783247',
-            color: 'rgba(52, 58, 64, 0.8)',
-            glyph: ['content/image/general/logo_trans.png', '53.5px'],
-        })
-        crate.notify({
-            content: '`有問題歡迎討論，若無法使用可直接至Discord頻道留言喔。`',
-            timeout: 5000,
-        })
-    </script>
+
 </head>
 
 <body class="sb-nav-fixed">
     <nav id="main-navbar" class="sb-topnav navbar navbar-expand-lg navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3 home-link d-flex" href="/" data-url="home.html">
+        <a class="navbar-brand ps-3 home-link d-flex" onclick="site.loadHomeHtml()" data-url="home.html">
             <img src="content/image/general/logo_trans.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
             <div id="site-name">Rein Forest</div>
         </a>
@@ -233,6 +222,20 @@
     <script src="content/js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.11/jsrender.min.js"></script>
     <script src="content/js/site.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+        const button = new Crate({
+            server: '689104053690433546',
+            channel: '689104054164783247',
+            color: 'rgba(52, 58, 64, 0.8)',
+            glyph: ['content/image/general/logo_trans.png', '53.5px'],
+        });
+        crate.notify({
+            content: '`有問題歡迎討論，若無法使用可直接至Discord頻道留言喔。`',
+            timeout: 3000,
+        });
+
+
+    </script>
 </body>
 
 </html>

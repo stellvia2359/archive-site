@@ -23,7 +23,7 @@
         <div class="flex-grow-1 ms-3">
             <h6 class="mt-0 mb-0 equipment-name">{{:name}}{{if slots > 0}}[{{:slots}}]{{/if}}</h6>
             <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover" data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
+                <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-html="true" tabindex="0"><i class="fas fa-info"></i></a>
                 {{if available == true}}
                 <span class="tag-available border border-primary rounded text-primary">已實裝</span>
                 {{else}}
@@ -132,14 +132,12 @@
         <div class="flex-grow-1 ms-3">
             <h6 class="mt-0 mb-0 equipment-name">{{:name}}</h6>
             <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-toggle="popover" data-trigger="focus" tabindex="0"><i class="fas fa-info"></i></a>
+                <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-html="true" tabindex="0"><i class="fas fa-info"></i></a>
                 {{if available == true}}
                 <span class="tag-available border border-primary rounded text-primary">已實裝</span>
                 {{else}}
                 <span class="tag-available border border-secondary rounded text-secondary">未實裝</span>
                 {{/if}}
-                <span class="score-name">{{:star.toFixed(1)}}</span>
-                <span class="stars" data-score="{{:star}}"></span>
             </div>
             <div>
                 {{for comments}}

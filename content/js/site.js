@@ -1,22 +1,18 @@
-$(function () {
-    site.initialize();
+$(async function () {
+    await site.initialize();
 });
 var versionNumber = "202110261442"
 var timer;
 var disableAlert;
 var site = {
-    initialize: function () {
-        site.loadPage();
-        utility.initialEquipmentNav();
-        utility.initialBackToTop();
-        utility.loadTooltip();
+    initialize: async function () {
+        await site.loadPage();
+
         utility.initialToast();
         utility.initialHistory();
-        $(".btn-donate").click(site.confirmDonate);
-        $("#btn-contact-ingame").click(function () { utility.copyTextToClipboard("Rein"); });
 
     },
-    loadPage: function () {
+    loadPage: async function () {
         var urlParams = new URLSearchParams(window.location.search);
         var isPage = urlParams.has('page');
         disableAlert = false;
@@ -26,66 +22,82 @@ var site = {
                 disableAlert = true;
             }
             var loadeqjson = urlParams.get('loadeqjson');
-            site.loadPageHtml(url, loadeqjson);
+            await site.loadPageHtml(url, loadeqjson);
         } else {
             site.loadHomeHtml();
         }
     },
-    loadPageHtml: function (url, loadeqjson = null) {
+    loadPageHtml: async function (url, loadeqjson = null) {
         utility.showLoadingMask();
+        utility.closeSideBarMenu();
         $.ajax({
             url: url + ".html",
             dataType: "html",
-            async: false,
-            success: function (data) {
+            async: true,
+            success: async function (data) {
                 $("#main-content").html(data);
                 $(".nav-link").removeClass("active");
                 var navId = $(".nav-id").val();
                 $("#" + navId).addClass("active");
                 var loadeqjsonQS = "";
                 if (loadeqjson != null) {
-                    var json = site.loadEquipmentDataOfAllCategories(url);
-                    site.loadTemplate(json, loadeqjson);
+                    var json = await site.loadEquipmentDataOfAllCategories(url);
+                    await site.loadTemplate(json, loadeqjson);
                     loadeqjsonQS = `&loadeqjson=${loadeqjson}`;
                 }
+                else {
+                    $("#blk-nav-chapter").html("");
+                }
                 window.history.pushState({ html: data }, "", `/index.html?page=${url}${loadeqjsonQS}`);
+                $(".sb-nav-fixed #layoutSidenav #layoutSidenav_content").removeClass("home");
+                $("#footer").removeClass("home-footer");
 
                 utility.loadPopover();
                 utility.generateStars();
+                utility.initialEquipmentNav();
+                utility.initialBackToTop();
+                utility.loadTooltip();
+                utility.backToTop();
                 utility.hideLoadingMask();
             }
         });
     },
-    loadHomeHtml: function () {
+    loadHomeHtml: async function () {
+        utility.showLoadingMask();
+        utility.closeSideBarMenu();
         var url = "home.html?v=" + versionNumber;
-        $.ajax({
+        await $.ajax({
             url: url,
-            async: false,
+            async: true,
             dataType: "html",
             success: function (data) {
                 $(".nav-link").removeClass("active");
                 $("#main-content").html(data);
-
+                $("#blk-nav-chapter").html("");
+                $(".sb-nav-fixed #layoutSidenav #layoutSidenav_content").addClass("home");
+                $("#footer").addClass("home-footer");
+                utility.initialBackToTop();
                 window.history.pushState({ html: data }, "", `/index.html`);
+                utility.backToTop();
                 utility.hideLoadingMask();
             }
         });
     },
-    loadCommentDB: function (url) {
+    loadCommentDB: async function (url) {
         var comments;
-        $.ajax({
+        await $.ajax({
             url: url + ".json",
             dataType: "json",
-            async: false,
+            async: true,
             success: function (data) {
                 comments = data;
             }
         });
         return comments;
     },
-    loadEquipmentDB: function () {
+    loadEquipmentDB: async function () {
         var result;
-        $.ajax({
+        await $.ajax({
             url: "database/equipments.json",
             dataType: "json",
             async: false,
@@ -95,9 +107,9 @@ var site = {
         });
         return result;
     },
-    loadEquipmentDataOfAllCategories: function (url) {
-        var commentDB = site.loadCommentDB(url);
-        var equipmentDB = site.loadEquipmentDB();
+    loadEquipmentDataOfAllCategories: async function (url) {
+        var commentDB = await site.loadCommentDB(url);
+        var equipmentDB = await site.loadEquipmentDB();
         var finalEquipments = [];
 
         $.each(commentDB.equipments, function (i, category) {
@@ -151,7 +163,7 @@ var site = {
         }
         return result;
     },
-    loadTemplate: function (json, loadeqjson) {
+    loadTemplate: async function (json, loadeqjson) {
         var template;
         var templateName;
         switch (loadeqjson) {
@@ -165,9 +177,9 @@ var site = {
                 templateName = "equipment";
                 break;
         }
-        $.ajax({
+        var template = $.ajax({
             url: "template/" + templateName + ".html",
-            async: false,
+            async: true,
             success: function (data) {
                 template = $.templates(data);
                 var htmlOutput = template.render(json);
@@ -175,27 +187,18 @@ var site = {
 
             }
         });
-        $.ajax({
+        var templateNav = $.ajax({
             url: "template/equipment-nav.html",
-            async: false,
+            async: true,
             success: function (data) {
                 template = $.templates(data);
                 var htmlOutput = template.render(json);
                 $("#blk-nav-chapter").html(htmlOutput);
             }
         });
-    },
-    printJson: function (data, source) {
-        var x = {
-            equipments: data.equipments.map(e => ({ categoryCode: e.categoryCode, items: e.items.map(i => ({ id: source.equipments.filter(function (category) { return category.categoryCode == e.categoryCode })[0].items.filter(function (item) { return item.name == i.name })[0].id, name: i.name, star: i.star, comments: i.comments })), cards: e.cards.map(c => ({ id: source.equipments.filter(function (category) { return category.categoryCode == e.categoryCode })[0].cards.filter(function (card) { return card.name == c.name })[0].id, name: c.name, star: c.star, comments: c.comments })) }))
-        };
-        console.log(x);
-    },
-    printJson2: function (data) {
-        var x = {
-            equipments: data.equipments.map(e => ({ category: e.category, categoryCode: e.categoryCode, overrideCategoryName: e.overrideCategoryName, hasCard: e.hasCard, items: e.items.map(i => ({ id: utility.uuidv4(), imgNames: i.imgNames, name: i.name, slots: i.slots, available: i.available, loot: i.loot, externalUrls: i.externalUrls, infos: i.infos })), cards: e.cards.map(c => ({ id: utility.uuidv4(), imgNames: c.imgNames, name: c.name, available: c.available, infos: c.infos })) }))
-        };
-        console.log(x);
+
+        await template;
+        await templateNav;
     },
     confirmDonate: function (e) {
         alert("真的假的?你人也太好了吧!");
@@ -209,6 +212,11 @@ var utility = {
                 $("#main-content").html(e.state.html);
             }
         };
+    },
+    closeSideBarMenu: function () {
+        if ($(window).width() < 992) {
+            document.body.classList.remove('sb-sidenav-toggled');
+        }
     },
     showLoadingMask: function () {
         $(".lmask").show();
@@ -237,7 +245,10 @@ var utility = {
     },
     initialBackToTop: function () {
         if ($("#eq-nav").length == 0) {
-            $('#back-to-top').removeClass("back-to-top").addClass("back-to-top2")
+            $('#back-to-top').removeClass("back-to-top").addClass("back-to-top2");
+        }
+        else {
+            $('#back-to-top').removeClass("back-to-top2").addClass("back-to-top");
         }
         $('#back-to-top').click(function () {
             utility.backToTop();
@@ -254,7 +265,7 @@ var utility = {
     backToTop: function () {
         $('body,html').animate({
             scrollTop: 0
-        }, 400);
+        }, 10);
     },
     initialEquipmentNav: function () {
         $(".link-to-chapter").click(function (e) {
@@ -287,7 +298,7 @@ var utility = {
         var y = $(id).offset().top;
         $('body,html').animate({
             scrollTop: y - 60
-        }, 400);
+        }, 10);
     },
     generateStars: function () {
         var stars = $(".stars");
@@ -380,6 +391,28 @@ var utility = {
         if (success) {
             alert("已複製到剪貼簿");
         }
+    },
+    iOS: function () {
+        return [
+            'iPad Simulator',
+            'iPhone Simulator',
+            'iPod Simulator',
+            'iPad',
+            'iPhone',
+            'iPod'
+        ].includes(navigator.platform)
+            // iPad on iOS 13 detection
+            || (navigator.userAgent.includes("Mac") && "ontouchend" in document);
+    },
+    iOSversion: function () {
+        /* /iP(hone|od|ad)/.test(navigator.platform) */
+        if (utility.iOS()) {
+            // supports iOS 2.0 and later: <https://bit.ly/TJjs1V>
+            var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+            return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+        }
+        else {
+            return [0, 0, 0];
+        }
     }
 };
-
