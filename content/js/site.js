@@ -7,7 +7,7 @@ var disableAlert;
 var site = {
     initialize: async function () {
         await site.loadPage();
-
+        utility.initialSidBarMenu();
         utility.initialToast();
         utility.initialHistory();
 
@@ -206,6 +206,9 @@ var site = {
 }
 
 var utility = {
+    initialSidBarMenu: function () {
+        $("#layoutSidenav_content").click(utility.closeSideBarMenu);
+    },
     initialHistory: function () {
         window.onpopstate = function (e) {
             if (e.state) {
