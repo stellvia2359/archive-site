@@ -1,3 +1,11 @@
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+}
+
 body, .tooltip {
     font-size: .875rem;
     font-family: 'Rajdhani', 'Noto Sans TC', sans-serif;
@@ -158,6 +166,10 @@ a.disabled {
 
 .sb-sidenav-menu-nested {
     margin-left: 0 !important;
+}
+
+#layoutSidenav_nav {
+    z-index: 2000;
 }
 
 [aria-expanded="false"] .collapse-open {
