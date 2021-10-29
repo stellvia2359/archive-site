@@ -389,6 +389,7 @@ var utility = {
             console.log('Oops, unable to copy');
             success = false;
         }
+        document.activeElement.blur();
         textArea.blur();
         document.body.removeChild(textArea);
         if (success) {
