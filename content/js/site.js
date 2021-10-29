@@ -389,6 +389,7 @@ var utility = {
             console.log('Oops, unable to copy');
             success = false;
         }
+        textArea.blur();
         document.body.removeChild(textArea);
         if (success) {
             alert("已複製到剪貼簿");
