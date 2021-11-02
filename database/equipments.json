@@ -4731,7 +4731,12 @@
                     "slots": 1,
                     "available": true,
                     "loot": "轉蛋",
-                    "externalUrls": [],
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=54909"
+                        }
+                    ],
                     "infos": [
                         {
                             "contents": [
