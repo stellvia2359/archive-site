@@ -27,6 +27,7 @@ var site = {
         }
     },
     loadPageHtml: async function (url, loadeqjson = null) {
+        utility.backToTop();
         utility.showLoadingMask();
         utility.closeSideBarMenu();
         $.ajax({
@@ -56,12 +57,12 @@ var site = {
                 utility.initialEquipmentNav();
                 utility.initialBackToTop();
                 utility.loadTooltip();
-                utility.backToTop();
                 utility.hideLoadingMask();
             }
         });
     },
     loadHomeHtml: async function () {
+        utility.backToTop();
         utility.showLoadingMask();
         utility.closeSideBarMenu();
         var url = "home.html?v=" + versionNumber;
@@ -77,7 +78,7 @@ var site = {
                 $("#footer").addClass("home-footer");
                 utility.initialBackToTop();
                 window.history.pushState({ html: data }, "", `/index.html`);
-                utility.backToTop();
+
                 utility.hideLoadingMask();
             }
         });
