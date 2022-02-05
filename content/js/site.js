@@ -199,9 +199,6 @@ var site = {
 
         await template;
         await templateNav;
-    },
-    confirmDonate: function (e) {
-        alert("真的假的?你人也太好了吧!");
     }
 }
 
