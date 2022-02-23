@@ -5249,7 +5249,12 @@
                             "equipmentLevel": 1,
                             "requiresLevel": 100,
                             "usableBy": "全職業",
-                            "enchantments": []
+                            "enchantments": [
+                                {
+                                    "name": "減少技能後延遲 15%",
+                                    "detail": []
+                                }
+                            ]
                         }
                     ]
                 },
@@ -5332,7 +5337,12 @@
                             "equipmentLevel": 1,
                             "requiresLevel": 170,
                             "usableBy": "全職業",
-                            "enchantments": []
+                            "enchantments": [
+                                {
+                                    "name": "減少技能後延遲 15%",
+                                    "detail": []
+                                }
+                            ]
                         }
                     ]
                 },
@@ -5641,7 +5651,12 @@
                     "slots": 1,
                     "available": true,
                     "loot": "轉蛋",
-                    "externalUrls": [],
+                    "externalUrls": [
+                        {
+                            "name": "附魔資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=95059"
+                        }
+                    ],
                     "infos": [
                         {
                             "contents": [
@@ -5670,7 +5685,12 @@
                             "equipmentLevel": 1,
                             "requiresLevel": 100,
                             "usableBy": "全職業",
-                            "enchantments": []
+                            "enchantments": [
+                                {
+                                    "name": "減少技能後延遲 15%",
+                                    "detail": []
+                                }
+                            ]
                         }
                     ]
                 },
