@@ -5306,7 +5306,12 @@
                     "slots": 1,
                     "available": true,
                     "loot": "「戰死者斗篷 x 1」、「亡者的寒氣 x 20」、「能量碎片 x 100」，至戰死者之墓的「淒惘靈魂的思念」機率取得。若後兩者為5倍材料則100%取得。",
-                    "externalUrls": [],
+                    "externalUrls": [
+                        {
+                            "name": "附魔資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=95059"
+                        }
+                    ],
                     "infos": [
                         {
                             "contents": [
@@ -7236,6 +7241,26 @@
                                 "INT+2。",
                                 "MHP+ 10%，MSP+10%。",
                                 "神聖之光傷害+50%。"
+                            ],
+                            "class": "卡片",
+                            "position": "鞋靴",
+                            "weight": 1
+                        }
+                    ]
+                },
+                {
+                    "id": "69653547-5f67-474d-bf66-b1975dafb74b",
+                    "imgNames": [
+                        "Elder of Chung-Geum.png"
+                    ],
+                    "name": "青琴公主卡片",
+                    "available": true,
+                    "infos": [
+                        {
+                            "contents": [
+                                "MATK+15。",
+                                "精煉+9時，對魚貝型、人類型敵人的魔法傷害+10%。",
+                                "精煉+11時，技能後延遲-3%。"
                             ],
                             "class": "卡片",
                             "position": "鞋靴",
