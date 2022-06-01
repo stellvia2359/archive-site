@@ -7055,6 +7055,46 @@
                             "enchantments": []
                         }
                     ]
+                },
+                {
+                    "id": "b866c862-2089-401e-9aaf-05723266f186",
+                    "imgNames": [
+                        "177.png"
+                    ],
+                    "name": "深紅魔術之靴",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "消費禮",
+                    "externalUrls": [
+                        "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=145182"
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "魔法使的弟子依照設計圖仿製的神祕寶具，擁有優秀的抵抗能力，難以想像寶具真品的強大力量。",
+                                "MDEF+15。",
+                                "ATK+5%、MATK+5%。",
+                                "對遠距離攻擊的抗性+5%，",
+                                "對無屬性攻擊的抗性+5%。",
+                                "",
+                                "精煉每+2時，ATK+1%，MATK+1%。",
+                                "精煉+11時，對水、風、地、火屬性攻擊的抗性+10%。",
+                                "精煉+13時，固定詠唱-0.6秒，技能後延遲-6%。",
+                                "",
+                                "與「深紅寶石結晶之墜」和「深紅寶石胸針」同時裝備時，獲得以下效果：",
+                                "精煉每+3時,對無屬性攻擊的抗性再+3%。"
+                            ],
+                            "class": "鞋子",
+                            "value": 10,
+                            "position": "",
+                            "weight": 30,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 100,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
                 }
             ],
             "cards": [
@@ -8510,6 +8550,93 @@
                                     ]
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "id": "caa6bb1b-2404-4cf2-a593-40b1b4296317",
+                    "imgNames": [
+                        "175.png"
+                    ],
+                    "name": "深紅寶石結晶之墜",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "消費禮",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=4152"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "疑似魔法的至高結晶之一，它的持有者將會得到來自未知世界源源不絕的力量。",
+                                "MDEF +15，",
+                                "對無屬性攻擊的抗性+5%，",
+                                "對遠距離攻擊的抗性+5%，",
+                                "可使用「魔法醒悟」LV1，",
+                                "使用「魔法醒悟」技能時，SP消耗+100，",
+                                "「魔法醒悟」的冷卻時間+120秒。",
+                                "(咒術士不受此限制影響, 但如果咒術士未學習魔法省悟, 裝備此道具將不會學習)。"
+                            ],
+                            "class": "飾品(右)",
+                            "value": 10,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 100,
+                            "usableBy": "全職業",
+                            "enchantments": []
+                        }
+                    ]
+                },
+                {
+                    "id": "f99cd002-a73b-4e48-a91e-3361963cbb19",
+                    "imgNames": [
+                        "176.png"
+                    ],
+                    "name": "深紅寶石胸針",
+                    "slots": 1,
+                    "available": true,
+                    "loot": "消費禮",
+                    "externalUrls": [
+                        {
+                            "name": "相關資訊",
+                            "url": "https://ro.gnjoy.com.tw/notice/notice_view.aspx?id=54939"
+                        }
+                    ],
+                    "infos": [
+                        {
+                            "contents": [
+                                "魔法使所贈予的胸針，上面所鑲的寶石所儲存了大量魔力，似乎需要呼應的物品或是資格相符的魔術師才可以完整發揮。",
+                                "MDEF +15，",
+                                "技能後延遲-5%，ATK+5%，MATK+5%，",
+                                "對全屬性攻擊的抗性+5%，",
+                                "對遠距離攻擊的抗性+5%，",
+                                "基本屬性STR每+16時，ATK+1%，",
+                                "基本屬性INT每+16時，MATK+1%。",
+                                "",
+                                "與「深紅寶石結晶之墜」同時裝備時，獲得以下效果：",
+                                "對全屬性攻擊的抗性+5%。",
+                                "",
+                                "裝備職業為「超級初學者」時，獲得以下效果：",
+                                "可使用「能量外套」LV1，",
+                                "基本屬性STR/LUK的總和每+24時，",
+                                "近距離物理傷害+1%，遠距離物理傷害+1%，",
+                                "基本屬性INT/DEX的總和每+24時，",
+                                "全屬性的魔法傷害+2%。"
+                            ],
+                            "class": "飾品(左)",
+                            "value": 10,
+                            "position": "",
+                            "weight": 10,
+                            "property": "",
+                            "equipmentLevel": 1,
+                            "requiresLevel": 100,
+                            "usableBy": "全職業",
+                            "enchantments": []
                         }
                     ]
                 }
