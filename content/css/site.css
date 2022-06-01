@@ -78,9 +78,11 @@ body, .tooltip {
     .back-image-6 {
         margin-left: -70px;
     }
+
     .back-image-3 {
         margin-left: -58px;
     }
+
     .back-image-2 {
         margin-left: -38px;
     }
@@ -342,16 +344,18 @@ a.disabled {
 }
 
 main {
-    padding: 0!important;
+    padding: 0 !important;
 }
 
 @media (max-width: 992px) {
     .back-image-6 {
         margin-left: -70px;
     }
+
     .back-image-3 {
         margin-left: -58px;
     }
+
     .back-image-2 {
         margin-left: -38px;
     }
@@ -479,6 +483,7 @@ main {
         max-width: 500px;
         min-width: 200px;
     }
+
     .pet-table {
         max-width: 300px;
         min-width: 200px;
@@ -548,10 +553,12 @@ main {
         bottom: 4px;
         right: 62px;
     }
+
     .back-to-top {
         bottom: 4px;
         right: 118px;
     }
+
     .back-to-top2 {
         bottom: 4px;
         right: 62px;
@@ -600,4 +607,10 @@ main {
 
 .list-common img {
     display: block;
+}
+
+.modal-header {
+    padding-left: 1rem !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
 }

@@ -5,12 +5,12 @@
 
     <hr>
     <div class="text-update-time d-flex justify-content-end">
-        <small class="form-text text-muted"><i class="far fa-clock"></i> 更新日期 : 2022/05/21</small>
+        <small class="form-text text-muted"><i class="far fa-clock"></i> 更新日期 : 2022/06/01</small>
     </div>
     <h3 id="chapter-introduction"><i class="fas fa-angle-right"></i> 介紹</h3>
     <div>
         <p>
-            RO風風雨雨近20年終於來到了四轉，咒術4轉後風念型老實說沒有太多加強，基本上就只是吃到四轉新屬性的增幅而已，技能方面幾乎沒有是沒有什麼加強，風系技能只有一個魔力巔峰LV4微幅增傷效果，其他我個人覺得實用性非常低，傷害也很可憐，念系技能的話傷害是不錯，但卡在屬性還沒優化加上獨力延遲0.5秒，比較難當打王的主力技能。
+            RO風風雨雨近20年終於來到了四轉，咒術4轉後風念型老實說沒有太多加強，裝備方面沒什麼變動，基本上就只是吃到四轉新屬性的增幅而已，技能方面幾乎沒有是沒有什麼加強，風系技能只有一個魔力巔峰LV4微幅增傷效果，其他我個人覺得實用性非常低，傷害也很可憐，念系技能的話傷害是不錯，但卡在屬性還沒優化加上獨力延遲0.5秒，比較難當打王的主力技能。
             未來主力有可能會是火系，畢竟火系技能光是基傷就已經贏其他四系，還有-100%抗性的加持，風念有可能會漸漸式微。
         </p>
     </div>
@@ -71,14 +71,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">資料來源:官方、幻想廳</td>
+                    <td colspan="2">資料來源:官方、Divine Pride、RO Calculator、幻想廳</td>
                 </tr>
             </tbody>
         </table>
         <table class="skill">
             <thead>
                 <tr>
-                    <td><img src="content/image/guide/arch_mage/skill_icon/am_soul_vc_strike" /></td>
+                    <td><img src="content/image/guide/arch_mage/skill_icon/am_soul_vc_strike.png" /></td>
                     <td><strong>靈魂連擊</strong></td>
                 </tr>
             </thead>
@@ -89,7 +89,7 @@
                             <p>給予目標1個與附近目標強力靈魂連擊。依施法者的BaseLv及SPL而再增加傷害。</p>
                         </div>
                         <div>
-                            <p>傷害公式: 暫無</p>
+                            <p>傷害公式: (技能等級傷害 x 180 + SPL x 3) x ([Base Lv] / 100)</p>
                         </div>
                         <div>
                             <p>依施法者的BaseLv及SPL而再增加傷害。</p>
@@ -99,10 +99,16 @@
                 <tr>
                     <td colspan="2">
                         <div>
-                            獨立延遲0.5秒
+                            獨立延遲?秒
                         </div>
                         <div>
-                            共通延遲0.5秒
+                            共通延遲?秒
+                        </div>
+                        <div>
+                            固定詠唱1秒
+                        </div>
+                        <div>
+                            變動詠唱1秒
                         </div>
                     </td>
                 </tr>
@@ -118,7 +124,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">資料來源:官方、Divine Pride</td>
+                    <td colspan="2">資料來源:官方、Divine Pride、RO Calculator</td>
                 </tr>
             </tbody>
         </table>
@@ -150,10 +156,10 @@
         <p>
             為了達到每秒7次技能(秒7)，必須要無詠唱、延遲96%以上以及攻速(ASPD)193，配點就以這三個目標下去配。<br>
             我是用裝備無詠所以ID就沒有點130了，目前固定會吃的就是ALL+10的終極料理，以及菠色克藥水和攻速濃縮汁。<br>
-            4轉素質部分就主SPL副CON傷害最大化。
+            4轉素質部分就主SPL副CON傷害最大化，這也是4轉後大家傷害大幅提升的主要因素，SPL對於傷害的影響非常巨大。
         </p>
         <figure class="figure m-1">
-            <img src="content/image/guide/warlock/wind_ghost/Warlock_State_Full_20220114.png" class="figure-img img-fluid rounded status-img" alt="...">
+            <img src="content/image/guide/arch_mage/wind_ghost/state.png" class="figure-img img-fluid rounded status-img" alt="...">
             <figcaption class="figure-caption"><span><i class="far fa-image"></i> 素質配點(含天賜、加速、終極料理、菠色克藥水、攻速濃縮汁)</span>
             </figcaption>
         </figure>
@@ -235,3 +241,16 @@
     </div>
 </div>
 <input class="nav-id" value="nav-link-g-am-wg" hidden>
+<div id="equipment-info-modal" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>

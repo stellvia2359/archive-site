@@ -4,12 +4,14 @@ $(async function () {
 var versionNumber = "202110261442"
 var timer;
 var disableAlert;
+var equipmentDB = {};
 var site = {
     initialize: async function () {
         await site.loadPage();
         utility.initialSidBarMenu();
         utility.initialToast();
         utility.initialHistory();
+
     },
     loadPage: async function () {
         var urlParams = new URLSearchParams(window.location.search);
@@ -23,7 +25,7 @@ var site = {
             var loadeqjson = urlParams.get('loadeqjson');
             await site.loadPageHtml(url, loadeqjson);
         } else {
-            site.loadHomeHtml();
+            await site.loadHomeHtml();
         }
     },
     loadPageHtml: async function (url, loadeqjson = null) {
@@ -44,6 +46,14 @@ var site = {
                     var json = await site.loadEquipmentDataOfAllCategories(url);
                     await site.loadTemplate(json, loadeqjson);
                     loadeqjsonQS = `&loadeqjson=${loadeqjson}`;
+                    var equipmentInfoModal = document.getElementById('equipment-info-modal');
+                    equipmentInfoModal.addEventListener('show.bs.modal', async function (event) {
+                        var button = $(event.relatedTarget);
+                        var categoryCode = $(button).data("categorycode");
+                        var isCard = $(button).data("iscard");
+                        var id = $(button).data("id");
+                        await site.loadEquipmentInfo(categoryCode, isCard, id);
+                    });
                 }
                 else {
                     $("#blk-nav-chapter").html("");
@@ -52,7 +62,7 @@ var site = {
                 $(".sb-nav-fixed #layoutSidenav #layoutSidenav_content").removeClass("home");
                 $("#footer").removeClass("home-footer");
 
-                utility.loadPopover();
+                //utility.loadPopover();
                 utility.generateStars();
                 utility.initialEquipmentNav();
                 utility.initialBackToTop();
@@ -96,20 +106,18 @@ var site = {
         return comments;
     },
     loadEquipmentDB: async function () {
-        var result;
         await $.ajax({
             url: "database/equipments.json",
             dataType: "json",
             async: false,
             success: function (data) {
-                result = data;
+                equipmentDB = data;
             }
         });
-        return result;
     },
     loadEquipmentDataOfAllCategories: async function (url) {
         var commentDB = await site.loadCommentDB(url);
-        var equipmentDB = await site.loadEquipmentDB();
+        await site.loadEquipmentDB();
         var finalEquipments = [];
 
         $.each(commentDB.equipments, function (i, category) {
@@ -163,6 +171,45 @@ var site = {
         }
         return result;
     },
+    loadEquipmentInfo: async function (categoryCode, isCard, id) {
+        var targetCategory = $.grep(equipmentDB.equipments, function (category, index) {
+            return category.categoryCode == categoryCode;
+        })[0];
+        var targetEquipment;
+        var templateName;
+        if (!isCard) {
+            targetEquipment = $.grep(targetCategory.items, function (item, index) {
+                return item.id == id;
+            })[0];
+            templateName = "equipment-info";
+        }
+        else {
+            targetEquipment = $.grep(targetCategory.cards, function (card, index) {
+                return card.id == id;
+            })[0];
+            templateName = "card-info";
+        }
+        targetEquipment.categoryCode = categoryCode;
+
+
+
+        var template = $.ajax({
+            url: "template/" + templateName + ".html",
+            async: true,
+            success: function (data) {
+                template = $.templates(data);
+                var htmlOutput = template.render(targetEquipment);
+                $("#equipment-info-modal .modal-body").html(htmlOutput);
+
+                var title = targetEquipment.name;
+                if (targetEquipment.slots > 0) {
+                    title += ` [${targetEquipment.slots}]`;
+                }
+                $("#equipment-info-modal .modal-title").text(title);
+            }
+        });
+        await template;
+    },
     loadTemplate: async function (json, loadeqjson) {
         var template;
         var templateName;
@@ -184,7 +231,6 @@ var site = {
                 template = $.templates(data);
                 var htmlOutput = template.render(json);
                 $("#equipments-block").html(htmlOutput);
-
             }
         });
         var templateNav = $.ajax({

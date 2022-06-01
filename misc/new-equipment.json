@@ -74,6 +74,14 @@
             "categoryCode": "shoes",
             "items": [
                 {
+                    "id": "b866c862-2089-401e-9aaf-05723266f186",
+                    "name": "深紅魔術之靴",
+                    "star": -1,
+                    "comments": [
+                        "我覺得是坦裝，傷害給的不多。"
+                    ]
+                },
+                {
                     "id": "6b1cfe9b-4cb7-4d1d-aed9-7453d1788d07",
                     "name": "墮落的神吟魔靴",
                     "star": -1,

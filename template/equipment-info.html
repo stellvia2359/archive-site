@@ -1,0 +1,53 @@
+<div>
+    {{for infos}}
+    {{if #getIndex()>0}}
+    <hr>
+    {{/if}}
+    {{for contents}}
+    {{if #data == ""}}
+    <br>
+    {{else}}
+    <div>{{:#data}}</div>
+    {{/if}}
+    {{/for}}
+    {{if class || value || position || weight || property}}
+    <br>
+    {{/if}}
+    {{if class || value}}
+    <div>系列: {{:class}} {{if categoryCode != "shadow"}}{{if categoryCode=="weapon"}}攻擊{{else}}防禦{{/if}}: {{:value}}{{/if}}</div>
+    {{/if}}
+    <div>
+        {{if position}}位置: {{:position}}{{/if}}
+        重量: {{:weight}}
+        {{if property}}屬性: {{:property}}{{/if}}
+    </div>
+    {{if equipmentLevel}}
+    {{if categoryCode=="weapon"}}
+    <div>武器等級: {{:equipmentLevel}}</div>
+    {{/if}}
+    {{/if}}
+    {{if requiresLevel}}
+    <div>要求等級: {{:requiresLevel}}</div>
+    {{/if}}
+    {{if usableBy}}
+    <div>裝備: {{:usableBy}}</div>
+    {{/if}}
+    {{if enchantments.length > 0}}
+    <hr>
+    <b>附魔(範例)</b>
+    <ul>
+        {{for enchantments}}
+        <li class="text-primary">{{:name}}
+            {{if detail.length > 0}}
+            <ul class="text-body">
+                {{for detail}}
+                <li>{{:}}</li>
+                {{/for}}
+            </ul>
+            {{/if}}
+        </li>
+        {{/for}}
+    </ul>
+    {{/if}}
+    {{/for}}
+</div>

@@ -1,0 +1,18 @@
+<div>
+    {{for infos}}
+    {{if #getIndex()>0}}
+    <hr>
+    {{/if}}
+    {{for contents}}
+    {{if #data == ""}}
+    <br>
+    {{else}}
+    <div>{{:#data}}</div>
+    {{/if}}
+    {{/for}}
+    <br>
+    <div>系列: {{:class}}</div>
+    <div>裝備: {{:position}}</div>
+    <div>重量: {{:weight}}</div>
+    {{/for}}
+</div>
