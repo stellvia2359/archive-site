@@ -2,7 +2,7 @@
 {{if items.length > 0}}
 <h5 id="equip-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}{{if !overrideCategoryName}}裝備{{/if}}</h5>
 <ul class="list-unstyled">
-    {{for items sort="star" reverse=true}}
+    {{for items sort="star" reverse=true ~categoryCode=categoryCode}}
     <li class="media d-flex m-2 equipment">
         <div class="flex-shrink-0 d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
@@ -23,7 +23,7 @@
         <div class="flex-grow-1 ms-3">
             <h6 class="mt-0 mb-0 equipment-name">{{:name}}{{if slots > 0}}[{{:slots}}]{{/if}}</h6>
             <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-html="true" tabindex="0"><i class="fas fa-info"></i></a>
+                <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-bs-toggle="modal" data-bs-target="#equipment-info-modal" data-categorycode="{{:~categoryCode}}" data-iscard="false" data-id="{{:id}}" tabindex="0"><i class="fas fa-info"></i></a>
                 {{if available == true}}
                 <span class="tag-available border border-primary rounded text-primary">已實裝</span>
                 {{else}}
@@ -55,59 +55,6 @@
             </div>
             {{/for}}
         </div>
-        <div class="equipment-info-content">
-            {{for infos}}
-            {{if #getIndex()>0}}
-            <hr>
-            {{/if}}
-            {{for contents}}
-            {{if #data == ""}}
-            <br>
-            {{else}}
-            <div>{{:#data}}</div>
-            {{/if}}
-            {{/for}}
-            {{if class || value || position || weight || property}}
-            <br>
-            {{/if}}
-            {{if class || value}}
-            <div>系列: {{:class}} {{if #parent.parent.parent.parent.parent.data.categoryCode != "shadow"}}{{if #parent.parent.parent.parent.parent.parent.data.categoryCode=="weapon"}}攻擊{{else}}防禦{{/if}}: {{:value}}{{/if}}</div>
-            {{/if}}
-            <div>
-                {{if position}}位置: {{:position}}{{/if}}
-                重量: {{:weight}}
-                {{if property}}屬性: {{:property}}{{/if}}
-            </div>
-            {{if equipmentLevel}}
-            {{if #parent.parent.parent.parent.parent.data.categoryCode=="weapon"}}
-            <div>武器等級: {{:equipmentLevel}}</div>
-            {{/if}}
-            {{/if}}
-            {{if requiresLevel}}
-            <div>要求等級: {{:requiresLevel}}</div>
-            {{/if}}
-            {{if usableBy}}
-            <div>裝備: {{:usableBy}}</div>
-            {{/if}}
-            {{if enchantments.length > 0}}
-            <hr>
-            <b>附魔(範例)</b>
-            <ul>
-                {{for enchantments}}
-                <li class="text-primary">{{:name}}
-                    {{if detail.length > 0}}
-                    <ul class="text-body">
-                        {{for detail}}
-                        <li>{{:}}</li>
-                        {{/for}}
-                    </ul>
-                    {{/if}}
-                </li>
-                {{/for}}
-            </ul>
-            {{/if}}
-            {{/for}}
-        </div>
     </li>
     {{/for}}
 </ul>
@@ -117,7 +64,7 @@
 {{if cards.length > 0}}
 <h5 id="card-{{:categoryCode}}"><i class="fas fa-angle-double-right"></i> {{:category}}卡片</h5>
 <ul class="list-unstyled">
-    {{for cards sort="star" reverse=true}}
+    {{for cards sort="star" reverse=true ~categoryCode=categoryCode}}
     <li class="media d-flex m-2 equipment">
         <div class="flex-shrink-0 d-flex flex-nowrap mr-3">
             {{for imgNames ~array=imgNames}}
@@ -132,7 +79,7 @@
         <div class="flex-grow-1 ms-3">
             <h6 class="mt-0 mb-0 equipment-name">{{:name}}</h6>
             <div class="d-flex flex-row justify-content-start align-items-center secondary-title-line">
-                <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-html="true" tabindex="0"><i class="fas fa-info"></i></a>
+                <a type="button" class="btn btn-sm btn-outline-dark equipment-info" data-bs-target="#equipment-info-modal" data-categorycode="{{:~categoryCode}}" data-iscard="true" data-id="{{:id}}" tabindex="0"><i class="fas fa-info"></i></a>
                 {{if available == true}}
                 <span class="tag-available border border-primary rounded text-primary">已實裝</span>
                 {{else}}
@@ -149,27 +96,23 @@
                 {{/for}}
             </div>
         </div>
-        <div class="equipment-info-content">
-            {{for infos}}
-            {{if #getIndex()>0}}
-            <hr>
-            {{/if}}
-            {{for contents}}
-            {{if #data == ""}}
-            <br>
-            {{else}}
-            <div>{{:#data}}</div>
-            {{/if}}
-            {{/for}}
-            <br>
-            <div>系列: {{:class}}</div>
-            <div>裝備: {{:position}}</div>
-            <div>重量: {{:weight}}</div>
-            {{/for}}
-        </div>
     </li>
     {{/for}}
 </ul>
 {{/if}}
 {{/if}}
 {{/for}}
+
+<div id="equipment-info-modal" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
