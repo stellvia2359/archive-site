@@ -9,7 +9,7 @@
 
             {{if #index == 0}}
             <div class="equip-img-blk z-{{:~array.length-#getIndex()}}">
-                <img class="equip-img" src="content/image/{{if #parent.parent.parent.parent.parent.data.categoryCode != 'pet'}}equipment{{else}}pet{{/if}}/{{:}}">
+                <img class="equip-img" src="content/image/{{if ~categoryCode != 'pet'}}equipment{{else}}pet{{/if}}/{{:}}">
             </div>
             {{else}}
             <div class="equip-img-blk back-image-{{:~array.length}} z-{{:~array.length-#getIndex()}}">
