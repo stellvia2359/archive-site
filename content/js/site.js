@@ -5,8 +5,8 @@ var versionNumber = "202110261442"
 var timer;
 var disableAlert;
 var equipmentDB = {};
-//var baseUrl = '/archive-site'
-var baseUrl = ''
+var baseUrl = '/archive-site'
+//var baseUrl = ''
 var site = {
     initialize: async function () {
         await site.loadPage();
