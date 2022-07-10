@@ -58,7 +58,7 @@ var site = {
                 else {
                     $("#blk-nav-chapter").html("");
                 }
-                window.history.pushState({ html: data }, "", `/index.html?page=${url}${loadeqjsonQS}`);
+                window.history.pushState({ html: data }, "", `/archive-site/index.html?page=${url}${loadeqjsonQS}`);
                 $(".sb-nav-fixed #layoutSidenav #layoutSidenav_content").removeClass("home");
                 $("#footer").removeClass("home-footer");
 
@@ -87,7 +87,7 @@ var site = {
                 $(".sb-nav-fixed #layoutSidenav #layoutSidenav_content").addClass("home");
                 $("#footer").addClass("home-footer");
                 utility.initialBackToTop();
-                window.history.pushState({ html: data }, "", `/index.html`);
+                window.history.pushState({ html: data }, "", `/archive-site/index.html`);
 
                 utility.hideLoadingMask();
             }
