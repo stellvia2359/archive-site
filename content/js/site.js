@@ -5,6 +5,8 @@ var versionNumber = "202110261442"
 var timer;
 var disableAlert;
 var equipmentDB = {};
+//var baseUrl = '/archive-site'
+var baseUrl = ''
 var site = {
     initialize: async function () {
         await site.loadPage();
@@ -58,7 +60,7 @@ var site = {
                 else {
                     $("#blk-nav-chapter").html("");
                 }
-                window.history.pushState({ html: data }, "", `/archive-site/index.html?page=${url}${loadeqjsonQS}`);
+                window.history.pushState({ html: data }, "", `${baseUrl}/index.html?page=${url}${loadeqjsonQS}`);
                 $(".sb-nav-fixed #layoutSidenav #layoutSidenav_content").removeClass("home");
                 $("#footer").removeClass("home-footer");
 
@@ -87,7 +89,7 @@ var site = {
                 $(".sb-nav-fixed #layoutSidenav #layoutSidenav_content").addClass("home");
                 $("#footer").addClass("home-footer");
                 utility.initialBackToTop();
-                window.history.pushState({ html: data }, "", `/archive-site/index.html`);
+                window.history.pushState({ html: data }, "", `${baseUrl}/index.html`);
 
                 utility.hideLoadingMask();
             }
